@@ -1,0 +1,42 @@
+{
+  "name": "eyal-golan-quiz",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n client,server -c cyan,magenta \"vite\" \"QUIZ_PORT=8787 tsx watch server/index.ts\"",
+    "dev:client": "vite",
+    "dev:server": "QUIZ_PORT=8787 tsx watch server/index.ts",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "start": "node --experimental-strip-types server/index.ts",
+    "data:fetch": "node scripts/fetch-musicbrainz.mjs",
+    "data:build": "node scripts/build-songs.mjs",
+    "test": "vitest run",
+    "data:content": "node scripts/add-content.mjs",
+    "check:offline": "node offline-check.mjs",
+    "shots": "node shots.mjs",
+    "url": "node scripts/show-url.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@types/ws": "^8.18.1",
+    "@vitejs/plugin-react": "^5.0.4",
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.2.1",
+    "playwright": "^1.63.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.18",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.9",
+    "vite-plugin-pwa": "^1.0.3",
+    "vitest": "^3.2.4"
+  }
+}

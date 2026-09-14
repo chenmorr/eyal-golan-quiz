@@ -1,0 +1,12 @@
+node_modules
+dist
+dev-dist
+data/raw
+public/clips/*
+!public/clips/.gitkeep
+try-quiz.ts
+dist/
+quiz.log
+certs/
+bin/
+tunnel.log

@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-night text-white antialiased;
+    /* אור במה חם שנופל מלמעלה */
+    background-image:
+      radial-gradient(120% 70% at 50% -10%, rgba(229, 181, 103, 0.14), transparent 60%),
+      radial-gradient(90% 60% at 50% 110%, rgba(125, 29, 51, 0.18), transparent 65%);
+    background-attachment: fixed;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* המשחק נמדד במאיות שנייה — גלילה מקרית באמצע שאלה עולה נקודות */
+  button {
+    touch-action: manipulation;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-night-line bg-night-soft/80 backdrop-blur;
+  }
+
+  .btn {
+    @apply rounded-xl px-5 py-3 font-bold transition active:scale-[0.98] disabled:opacity-40 disabled:active:scale-100;
+  }
+
+  .btn-gold {
+    @apply btn bg-gold text-night shadow-lg shadow-gold/20 hover:bg-gold-bright;
+  }
+
+  .btn-ghost {
+    @apply btn border border-night-line bg-night-soft text-white/80 hover:text-white;
+  }
+
+  .field {
+    @apply w-full rounded-xl border border-night-line bg-night px-4 py-3 text-lg
+      outline-none placeholder:text-white/25 focus:border-gold/60;
+  }
+}
