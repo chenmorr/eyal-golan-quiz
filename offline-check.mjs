@@ -2,7 +2,7 @@
 // בלי שום רשת. טוען את האפליקציה, מנתק את האינטרנט לגמרי, ומשחק.
 import { chromium } from 'playwright'
 
-const BASE = process.env.BASE_URL ?? 'http://localhost:4173'
+const BASE = process.env.BASE_URL ?? 'https://chenmorr.github.io/eyal-golan-quiz/'
 const browser = await chromium.launch()
 const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, locale: 'he-IL' })
 const page = await ctx.newPage()

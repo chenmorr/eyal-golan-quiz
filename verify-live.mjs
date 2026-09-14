@@ -5,7 +5,7 @@ import { chromium } from 'playwright'
 const HOST = process.env.QUIZ_HOST ?? 'integrating-microwave-conversation-resumes.trycloudflare.com'
 // ריק = כתובת ציבורית שנפתרת ב-DNS רגיל
 const TAILNET_IP = process.env.TAILNET_IP ?? ''
-const URL = `https://${HOST}/`
+const URL = process.env.QUIZ_URL ?? `https://${HOST}/`
 
 const browser = await chromium.launch(
   TAILNET_IP ? { args: [`--host-resolver-rules=MAP ${HOST.split(':')[0]} ${TAILNET_IP}`] } : {},
