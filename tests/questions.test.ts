@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import songsJson from '../data/songs.json'
-import { generateQuiz, buildPool } from '../shared/questions.ts'
+import { generateQuiz, buildPool, availableKinds } from '../shared/questions.ts'
 import { scoreAnswer, sanitizeElapsed, BASE_POINTS, MAX_SPEED_BONUS } from '../shared/scoring.ts'
 import { createRng, makeRoomCode } from '../shared/rng.ts'
 import type { Song } from '../shared/types.ts'
@@ -189,5 +189,47 @@ describe('קודי חדר', () => {
       expect(code).toHaveLength(4)
       expect(code).toMatch(/^[A-HJ-NP-Z2-9]{4}$/)
     }
+  })
+})
+
+describe('בחירת סוגי שאלות', () => {
+  it('בלי בחירה נכנסים כמה סוגים שונים', () => {
+    const quiz = generateQuiz(SONGS, { seed: 'mix', questionCount: 20 })
+    const kinds = new Set(quiz.map((q) => q.kind))
+    expect(kinds.size).toBeGreaterThan(3)
+  })
+
+  it('בחירת סוג אחד מחזירה רק אותו', () => {
+    for (const kind of ['year', 'album', 'feature', 'which-first'] as const) {
+      const quiz = generateQuiz(SONGS, { seed: `only-${kind}`, questionCount: 8, kinds: [kind] })
+      expect(quiz.length, `לא נוצרו שאלות מסוג ${kind}`).toBeGreaterThan(0)
+      for (const q of quiz) expect(q.kind).toBe(kind)
+    }
+  })
+
+  it('בחירת שני סוגים מחזירה רק אותם', () => {
+    const quiz = generateQuiz(SONGS, {
+      seed: 'two-kinds',
+      questionCount: 15,
+      kinds: ['year', 'album'],
+    })
+    expect(quiz.length).toBeGreaterThan(0)
+    for (const q of quiz) expect(['year', 'album']).toContain(q.kind)
+  })
+
+  it('סוגים שמחכים לתוכן לא מוצעים כשאין תוכן', () => {
+    const kinds = availableKinds(SONGS, { seed: 'x', questionCount: 10 })
+    expect(kinds).not.toContain('audio')
+    expect(kinds).not.toContain('lyric')
+  })
+
+  it('בחירת סוג יחד עם תקופה מכבדת את שניהם', () => {
+    const quiz = generateQuiz(SONGS, {
+      seed: 'combo',
+      questionCount: 6,
+      kinds: ['year'],
+      eras: ['שנות התשעים'],
+    })
+    for (const q of quiz) expect(q.kind).toBe('year')
   })
 })

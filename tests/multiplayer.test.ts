@@ -24,7 +24,7 @@ class FakePhone {
   seed: string | null = null
 
   constructor(public name: string) {
-    this.ws = new WebSocket(`ws://localhost:${PORT}`)
+    this.ws = new WebSocket(`ws://localhost:${PORT}/ws`)
     this.ws.on('message', (raw) => {
       const message = JSON.parse(String(raw)) as ServerMessage
       this.inbox.push(message)
@@ -86,7 +86,7 @@ const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
 beforeAll(async () => {
   server = spawn('npx', ['tsx', 'server/index.ts'], {
     cwd: ROOT,
-    env: { ...process.env, QUIZ_PORT: String(PORT) },
+    env: { ...process.env, QUIZ_PORT: String(PORT), QUIZ_HTTP: '1', QUIZ_LOG_REQUESTS: '0' },
     stdio: 'pipe',
   })
 

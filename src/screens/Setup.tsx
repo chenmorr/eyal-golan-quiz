@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { availableKinds } from '../../shared/questions.ts'
-import type { Difficulty } from '../../shared/types.ts'
+import type { Difficulty, QuestionKind } from '../../shared/types.ts'
 import type { RoomConfig } from '../../shared/protocol.ts'
 import { DIFFICULTY_LABELS, ERAS, KIND_LABELS, SONGS } from '../data.ts'
 
@@ -21,22 +21,35 @@ export function Setup({ initial, title, submitLabel, note, onSubmit, onBack }: P
   const [questionCount, setQuestionCount] = useState(initial.questionCount)
   const [eras, setEras] = useState<string[]>(initial.eras ?? [])
   const [difficulties, setDifficulties] = useState<Difficulty[]>(initial.difficulties ?? [])
+  const [kinds, setKinds] = useState<QuestionKind[]>(initial.kinds ?? [])
 
   const config: RoomConfig = useMemo(
     () => ({
       questionCount,
       eras: eras.length ? eras : undefined,
       difficulties: difficulties.length ? difficulties : undefined,
+      // בלי בחירה נכנסים כל הסוגים, בדיוק כמו בתקופות ובקושי
+      kinds: kinds.length ? kinds : undefined,
     }),
+    [questionCount, eras, difficulties, kinds],
+  )
+
+  // אילו סוגים אפשר בכלל לייצר מהתקופה והקושי שנבחרו. מחושב בלי סינון
+  // הסוגים עצמו, אחרת בחירה אחת הייתה מעלימה את כל השאר מהמסך.
+  const offered = useMemo(
+    () =>
+      availableKinds(SONGS, {
+        seed: 'preview',
+        questionCount,
+        eras: eras.length ? eras : undefined,
+        difficulties: difficulties.length ? difficulties : undefined,
+      }),
     [questionCount, eras, difficulties],
   )
 
-  // בודקים מראש שהסינון לא מייבש את המאגר, במקום להיכשל אחרי "התחל"
-  const kinds = useMemo(
-    () => availableKinds(SONGS, { seed: 'preview', ...config }),
-    [config, questionCount],
-  )
-  const tooNarrow = kinds.length === 0
+  // סוג שנבחר וכבר לא אפשרי (כי צמצמו תקופה) לא נחשב
+  const effective = kinds.filter((k) => offered.includes(k))
+  const tooNarrow = offered.length === 0 || (kinds.length > 0 && effective.length === 0)
 
   return (
     <div className="flex min-h-dvh flex-col gap-6 py-8">
@@ -81,23 +94,20 @@ export function Setup({ initial, title, submitLabel, note, onSubmit, onBack }: P
         </div>
       </Section>
 
-      <Section label="סוגי שאלות שייכנסו">
-        <div className="flex flex-wrap gap-2">
-          {kinds.length ? (
-            kinds.map((k) => (
-              <span
-                key={k}
-                className="rounded-lg border border-night-line bg-night-soft px-3 py-1.5 text-sm text-white/60"
-              >
+      <Section label="סוגי שאלות" hint="בלי בחירה, נכנסים כל הסוגים">
+        {offered.length ? (
+          <div className="grid grid-cols-2 gap-2">
+            {offered.map((k) => (
+              <Chip key={k} active={kinds.includes(k)} onClick={() => setKinds(toggle(kinds, k))}>
                 {KIND_LABELS[k] ?? k}
-              </span>
-            ))
-          ) : (
-            <span className="text-sm text-wine-soft">
-              הסינון צר מדי, לא נשארו מספיק שירים. תרחיבו קצת.
-            </span>
-          )}
-        </div>
+              </Chip>
+            ))}
+          </div>
+        ) : (
+          <span className="text-sm text-wine-soft">
+            הסינון צר מדי, לא נשארו מספיק שירים. תרחיבו קצת.
+          </span>
+        )}
       </Section>
 
       <div className="mt-auto grid gap-2 pt-4">

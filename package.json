@@ -16,7 +16,8 @@
     "data:content": "node scripts/add-content.mjs",
     "check:offline": "node offline-check.mjs",
     "shots": "node shots.mjs",
-    "url": "node scripts/show-url.mjs"
+    "url": "node scripts/show-url.mjs",
+    "deploy:pages": "node scripts/deploy-pages.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",
