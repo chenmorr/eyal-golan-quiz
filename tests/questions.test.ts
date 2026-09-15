@@ -427,3 +427,43 @@ describe('גיוון החידון', () => {
     expect(repeated).toBeLessThanOrEqual(5)
   })
 })
+
+describe('איזון נושאים', () => {
+  // שבעה סוגים נוגעים באלבומים; בלי איזון חידון שלם היה מרגיש
+  // כמו "עוד שאלה על אלבום" גם כשכל שאלה שונה טכנית
+  const THEME: Record<string, string> = {
+    album: 'album', 'album-song': 'album', 'odd-one-out': 'album', era: 'album',
+    'album-order': 'album', 'audio-album': 'album', 'title-track': 'album',
+    year: 'year', 'which-first': 'year', 'audio-year': 'year',
+    'audio-open': 'identify', audio: 'identify',
+    'lyric-open': 'lyrics', lyric: 'lyrics',
+    feature: 'guests', 'guest-count': 'guests',
+  }
+
+  it('אף נושא לא תופס יותר מארבעים אחוז מחידון', () => {
+    for (let i = 0; i < 100; i++) {
+      const quiz = generateQuiz(SONGS, { seed: `bal-${i}`, questionCount: 10 })
+      const counts = new Map<string, number>()
+      for (const q of quiz) {
+        const t = THEME[q.kind] ?? q.kind
+        counts.set(t, (counts.get(t) ?? 0) + 1)
+      }
+      for (const [theme, n] of counts) {
+        expect(n, `חידון ${i}: ${n} שאלות מנושא ${theme}`).toBeLessThanOrEqual(4)
+      }
+    }
+  })
+
+  it('האיזון לא מונע מהחידון להתמלא', () => {
+    for (let i = 0; i < 50; i++) {
+      expect(generateQuiz(SONGS, { seed: `full-${i}`, questionCount: 10 })).toHaveLength(10)
+      expect(generateQuiz(SONGS, { seed: `full20-${i}`, questionCount: 20 })).toHaveLength(20)
+    }
+  })
+
+  it('סינון לסוג אחד עדיין עובד למרות האיזון', () => {
+    const only = generateQuiz(SONGS, { seed: 'one', questionCount: 10, kinds: ['year'] })
+    expect(only).toHaveLength(10)
+    for (const q of only) expect(q.kind).toBe('year')
+  })
+})

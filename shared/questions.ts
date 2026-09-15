@@ -83,6 +83,35 @@ interface Generator {
   make(rng: Rng, pool: Pool, used: Set<string>): Question | null
 }
 
+/**
+ * הנושא שהשחקן חווה, להבדיל מהסוג הטכני.
+ *
+ * שבעה סוגים שונים נוגעים באלבומים, וכשהם מוגרלים בנפרד יוצא חידון
+ * שמרגיש כמו "עוד שאלה על אלבום" גם כשכל שאלה שונה טכנית. האיזון
+ * נעשה לפי הנושא הזה, לא לפי הסוג.
+ */
+const THEME_OF: Record<QuestionKind, string> = {
+  album: 'album',
+  'album-song': 'album',
+  'odd-one-out': 'album',
+  era: 'album',
+  'album-order': 'album',
+  'audio-album': 'album',
+  'title-track': 'album',
+  year: 'year',
+  'which-first': 'year',
+  'audio-year': 'year',
+  'audio-open': 'identify',
+  audio: 'identify',
+  'lyric-open': 'lyrics',
+  lyric: 'lyrics',
+  feature: 'guests',
+  'guest-count': 'guests',
+}
+
+/** אף נושא לא יתפוס יותר מהחלק הזה מהחידון */
+const MAX_THEME_SHARE = 0.4
+
 const yearLabel = (y: number) => String(y)
 
 /**
@@ -544,6 +573,12 @@ export function generateQuiz(allSongs: Song[], config: QuizConfig): Question[] {
   const used = new Set<string>()
   const questions: Question[] = []
   const seenIds = new Set<string>()
+  const themeCount = new Map<string, number>()
+
+  // תקרת נושא: כמה שאלות מאותו נושא מותר בחידון הזה.
+  // לפחות אחת, אחרת חידון קצר לא יוכל לייצר כלום.
+  const themeCap = Math.max(1, Math.floor(config.questionCount * MAX_THEME_SHARE))
+  const themesAvailable = new Set(available.map((g) => THEME_OF[g.kind])).size
 
   // תקרת ניסיונות כדי שמאגר דליל לא ייתקע בלולאה אינסופית
   let attempts = 0
@@ -551,11 +586,22 @@ export function generateQuiz(allSongs: Song[], config: QuizConfig): Question[] {
 
   while (questions.length < config.questionCount && attempts < maxAttempts) {
     attempts++
-    const generator = weightedPick(rng, available)
+
+    // כשנשאר נושא אחד אין טעם באיזון, אחרת נתקע בלי למלא את החידון
+    const capped =
+      themesAvailable > 1
+        ? available.filter((g) => (themeCount.get(THEME_OF[g.kind]) ?? 0) < themeCap)
+        : available
+    const pickFrom = capped.length ? capped : available
+
+    const generator = weightedPick(rng, pickFrom)
     const question = generator.make(rng, pool, used)
     if (!question || seenIds.has(question.id)) continue
+
     seenIds.add(question.id)
     questions.push(question)
+    const theme = THEME_OF[generator.kind]
+    themeCount.set(theme, (themeCount.get(theme) ?? 0) + 1)
   }
 
   return questions
