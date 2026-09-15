@@ -15,7 +15,13 @@ interface Props {
   players: PlayerView[]
   playerId: string | null
   isHost: boolean
-  onAnswer: (questionIndex: number, choiceIndex: number, elapsedMs: number, text?: string) => void
+  onAnswer: (
+    questionIndex: number,
+    choiceIndex: number,
+    elapsedMs: number,
+    text?: string,
+    skipped?: boolean,
+  ) => void
   onNext: () => void
 }
 
@@ -52,7 +58,7 @@ export function MultiGame({
 
   function answer(given: Answer, elapsedMs: number) {
     setSelected(given)
-    onAnswer(questionIndex, given.choiceIndex, elapsedMs, given.text)
+    onAnswer(questionIndex, given.choiceIndex, elapsedMs, given.text, given.skipped)
   }
 
   return (

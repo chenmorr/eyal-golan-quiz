@@ -59,10 +59,12 @@ export function SoloGame({ config, seed, allowAudio, onFinish, onQuit }: Props) 
   }
 
   function answer(given: Answer, elapsedMs: number) {
-    // בשאלה פתוחה משווים טקסט עם סובלנות לשגיאות, אחרת אינדקס
-    const isCorrect = isOpenQuestion(question)
-      ? matchesAnswer(given.text ?? '', question.accepted ?? []).correct
-      : given.choiceIndex === question.answerIndex
+    // ויתור נחשב שגוי, אבל מקדם את המשחק במקום להשאיר את השחקן תקוע
+    const isCorrect = given.skipped
+      ? false
+      : isOpenQuestion(question)
+        ? matchesAnswer(given.text ?? '', question.accepted ?? []).correct
+        : given.choiceIndex === question.answerIndex
     const { points } = scoreAnswer({
       correct: isCorrect,
       elapsedMs,

@@ -25,7 +25,7 @@ export interface Player {
   streak: number
   connected: boolean
   /** התשובה לשאלה הנוכחית, אם כבר ענה */
-  currentAnswer: { choiceIndex: number; text?: string; elapsedMs: number } | null
+  currentAnswer: { choiceIndex: number; text?: string; skipped?: boolean; elapsedMs: number } | null
 }
 
 export interface Room {
@@ -143,6 +143,7 @@ export class RoomStore {
     choiceIndex: number,
     elapsedMs: number,
     text?: string,
+    skipped?: boolean,
   ): { error?: string } {
     if (room.phase !== 'question') return { error: 'אין שאלה פתוחה כרגע' }
     if (questionIndex !== room.questionIndex) return { error: 'השאלה הזאת כבר נסגרה' }
@@ -151,6 +152,17 @@ export class RoomStore {
     const question = room.questions[questionIndex]
     if (!question) return { error: 'תשובה לא חוקית' }
     const limit = question.timeLimitMs ?? QUESTION_TIME_MS
+
+    // ויתור נרשם מיד, בלי לבדוק תוכן — הוא תמיד שגוי
+    if (skipped) {
+      player.currentAnswer = {
+        choiceIndex: -1,
+        skipped: true,
+        elapsedMs: sanitizeElapsed(elapsedMs, limit),
+      }
+      room.lastActivity = Date.now()
+      return {}
+    }
 
     if (isOpenQuestion(question)) {
       const typed = typeof text === 'string' ? text.trim().slice(0, 100) : ''
@@ -202,7 +214,7 @@ export class RoomStore {
     for (const player of room.players.values()) {
       const answer = player.currentAnswer
       // בשאלה פתוחה משווים את מה שהוקלד, עם סובלנות לשגיאות כתיב
-      const correct = !answer
+      const correct = !answer || answer.skipped
         ? false
         : open
           ? matchesAnswer(answer.text ?? '', question.accepted ?? []).correct
@@ -225,6 +237,7 @@ export class RoomStore {
         points,
         totalScore: player.score,
         ...(answer?.text ? { text: answer.text } : {}),
+        ...(answer?.skipped ? { skipped: true } : {}),
       })
     }
 

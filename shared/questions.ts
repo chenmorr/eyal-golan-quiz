@@ -18,6 +18,11 @@ export interface Pool {
   albums: { title: string; year: number }[]
   years: number[]
   artists: string[]
+  /** שירים עם אודיו שלא שרים את שמם — בטוחים לשאלת "איזה שיר זה" */
+  audioSafe: Song[]
+  /** כל שיר עם אודיו, כולל כאלה ששרים את שמם */
+  audioAny: Song[]
+  withLyrics: Song[]
 }
 
 export function buildPool(allSongs: Song[], config: QuizConfig): Pool {
@@ -52,10 +57,17 @@ export function buildPool(allSongs: Song[], config: QuizConfig): Pool {
     ...new Set(songs.flatMap((s) => s.features).filter((a) => !BACKING_BANDS.has(a))),
   ]
 
+  const audioAny = songs.filter((s) => s.audioClip)
+
   return {
     songs,
     dated,
     byAlbum,
+    audioAny,
+    // titleInLyrics לא ידוע נחשב כאילו כן — עדיף לוותר על שיר
+    // מאשר לשאול שאלה שהתשובה שלה נשמעת
+    audioSafe: audioAny.filter((s) => s.titleInLyrics === false),
+    withLyrics: songs.filter((s) => s.lyricLine),
     albums: [...albumYear.entries()].map(([title, year]) => ({ title, year })),
     years: [...new Set(dated.map((s) => s.year!))].sort((a, b) => a - b),
     artists,
@@ -296,11 +308,14 @@ const GENERATORS: Generator[] = [
   {
     // נחש את השיר מהקטע והקלד את השם. בלי אפשרויות זה מבחן זיכרון אמיתי,
     // כי ארבע אפשרויות מסגירות את התשובה כמעט תמיד.
+    //
+    // רק שירים שלא שרים את שמם: הקטע של אפל מתחיל סביב הפזמון, ואם השם
+    // מופיע במילים הוא נשמע באוזניים והשאלה מגלה את עצמה.
     kind: 'audio-open',
-    weight: 5,
-    ready: (p) => p.songs.filter((s) => s.audioClip).length >= 1,
+    weight: 4,
+    ready: (p) => p.audioSafe.length >= 1,
     make(rng, pool, used) {
-      const withAudio = pool.songs.filter((s) => s.audioClip && !used.has(s.id))
+      const withAudio = pool.audioSafe.filter((s) => !used.has(s.id))
       if (!withAudio.length) return null
       const song = pick(rng, withAudio)
       used.add(song.id)
@@ -325,9 +340,9 @@ const GENERATORS: Generator[] = [
     // נחש את השיר מהקטע — נוצרת רק כשיש קבצי אודיו
     kind: 'audio',
     weight: 2,
-    ready: (p) => p.songs.filter((s) => s.audioClip).length >= 4,
+    ready: (p) => p.audioSafe.length >= 4,
     make(rng, pool, used) {
-      const withAudio = pool.songs.filter((s) => s.audioClip && !used.has(s.id))
+      const withAudio = pool.audioSafe.filter((s) => !used.has(s.id))
       if (!withAudio.length) return null
       const song = pick(rng, withAudio)
       const built = choicesFrom(rng, song.title, pool.songs.map((s) => s.title))
@@ -346,12 +361,149 @@ const GENERATORS: Generator[] = [
     },
   },
   {
-    // מאיזה שיר השורה — נוצרת רק כשהוזנו שורות
-    kind: 'lyric',
+    // מאיזה אלבום הקטע. עובד גם על שירים ששרים את שמם: לזהות את השיר
+    // זה חצי מהדרך, עדיין צריך לדעת באיזה אלבום הוא יצא.
+    kind: 'audio-album',
     weight: 3,
-    ready: (p) => p.songs.filter((s) => s.lyricLine).length >= 4,
+    ready: (p) => p.audioAny.length >= 4 && p.albums.length >= 4,
     make(rng, pool, used) {
-      const withLyrics = pool.songs.filter((s) => s.lyricLine && !used.has(s.id))
+      const candidates = pool.audioAny.filter((s) => s.album && s.year && !used.has(s.id))
+      if (!candidates.length) return null
+      const song = pick(rng, candidates)
+      const forbidden = new Set([song.album!, ...song.otherAlbums])
+      const near = pool.albums
+        .filter((a) => !forbidden.has(a.title) && Math.abs(a.year - song.year!) <= 8)
+        .map((a) => a.title)
+      const built = choicesFrom(rng, song.album!, near)
+      if (!built) return null
+      used.add(song.id)
+      return {
+        id: `audioalbum:${song.id}`,
+        kind: 'audio-album',
+        prompt: 'מאיזה אלבום הקטע הזה?',
+        hint: 'תקשיבו ותזהו',
+        ...built,
+        difficulty: song.difficulty,
+        audioClip: song.audioClip,
+        clipSeconds: clipLengthFor(song.difficulty),
+        reveal: `זה "${song.title}" מהאלבום "${song.album}" (${song.year}).`,
+      }
+    },
+  },
+  {
+    // באיזו שנה יצא הקטע
+    kind: 'audio-year',
+    weight: 3,
+    ready: (p) => p.audioAny.length >= 4 && p.years.length >= 4,
+    make(rng, pool, used) {
+      const candidates = pool.audioAny.filter((s) => s.year && !used.has(s.id))
+      if (!candidates.length) return null
+      const song = pick(rng, candidates)
+      const near = pool.years.filter((y) => y !== song.year && Math.abs(y - song.year!) <= 7)
+      const built = choicesFrom(rng, yearLabel(song.year!), near.map(yearLabel))
+      if (!built) return null
+      used.add(song.id)
+      return {
+        id: `audioyear:${song.id}`,
+        kind: 'audio-year',
+        prompt: 'באיזו שנה יצא השיר שמתנגן?',
+        ...built,
+        difficulty: song.difficulty,
+        audioClip: song.audioClip,
+        clipSeconds: clipLengthFor(song.difficulty),
+        reveal: `זה "${song.title}" משנת ${song.year}, מהאלבום "${song.album}".`,
+      }
+    },
+  },
+  {
+    // מאיזה שיר השורה, בהקלדה
+    kind: 'lyric-open',
+    weight: 3,
+    ready: (p) => p.withLyrics.length >= 1,
+    make(rng, pool, used) {
+      const candidates = pool.withLyrics.filter((s) => !used.has(s.id))
+      if (!candidates.length) return null
+      const song = pick(rng, candidates)
+      used.add(song.id)
+      return {
+        id: `lyricopen:${song.id}`,
+        kind: 'lyric-open',
+        prompt: 'מאיזה שיר השורה הזאת?',
+        quote: song.lyricLine,
+        hint: 'תקליטו את שם השיר',
+        choices: [],
+        answerIndex: -1,
+        accepted: acceptedAnswers(song.title),
+        correctLabel: song.title,
+        difficulty: song.difficulty,
+        timeLimitMs: OPEN_QUESTION_TIME_MS,
+        reveal: `השורה היא מ"${song.title}" (${song.year}).`,
+      }
+    },
+  },
+  {
+    // איזה אלבום יצא קודם
+    kind: 'album-order',
+    weight: 2,
+    ready: (p) => p.albums.length >= 6,
+    make(rng, pool, used) {
+      const a = pick(rng, pool.albums)
+      const far = pool.albums.filter((x) => Math.abs(x.year - a.year) >= 4 && x.title !== a.title)
+      if (!far.length) return null
+      const b = pick(rng, far)
+      const key = `albumorder:${[a.title, b.title].sort().join('|')}`
+      if (used.has(key)) return null
+      used.add(key)
+      const [first, second] = a.year < b.year ? [a, b] : [b, a]
+      const choices = shuffle(rng, [a.title, b.title])
+      return {
+        id: key,
+        kind: 'album-order',
+        prompt: 'איזה אלבום יצא קודם?',
+        choices,
+        answerIndex: choices.indexOf(first.title),
+        difficulty: Math.abs(a.year - b.year) >= 10 ? 'easy' : 'medium',
+        reveal: `"${first.title}" יצא ב-${first.year}, "${second.title}" ב-${second.year}.`,
+      }
+    },
+  },
+  {
+    // עם מי אייל שר הכי הרבה
+    kind: 'guest-count',
+    weight: 1,
+    ready: (p) => p.artists.length >= 4,
+    make(rng, pool, used) {
+      const key = 'guestcount'
+      if (used.has(key)) return null
+      const counts = new Map<string, number>()
+      for (const song of pool.songs) {
+        for (const guest of song.features) {
+          if (pool.artists.includes(guest)) counts.set(guest, (counts.get(guest) ?? 0) + 1)
+        }
+      }
+      const ranked = [...counts.entries()].sort((a, b) => b[1] - a[1])
+      // צריך פער ברור בין המוביל לשאר, אחרת זו שאלה שאין לה תשובה אחת
+      if (ranked.length < 4 || ranked[0][1] <= ranked[1][1]) return null
+      const built = choicesFrom(rng, ranked[0][0], ranked.slice(1).map(([name]) => name))
+      if (!built) return null
+      used.add(key)
+      return {
+        id: key,
+        kind: 'guest-count',
+        prompt: 'עם מי אייל גולן שר הכי הרבה דואטים?',
+        ...built,
+        difficulty: 'medium',
+        reveal: `${ranked[0][0]} — ${ranked[0][1]} שירים משותפים.`,
+      }
+    },
+  },
+  {
+    // מאיזה שיר השורה — ארבע אפשרויות
+    kind: 'lyric',
+    weight: 2,
+    ready: (p) => p.withLyrics.length >= 4,
+    make(rng, pool, used) {
+      const withLyrics = pool.withLyrics.filter((s) => !used.has(s.id))
       if (!withLyrics.length) return null
       const song = pick(rng, withLyrics)
       const built = choicesFrom(rng, song.title, pool.songs.map((s) => s.title))
@@ -360,7 +512,8 @@ const GENERATORS: Generator[] = [
       return {
         id: `lyric:${song.id}`,
         kind: 'lyric',
-        prompt: `מאיזה שיר השורה "${song.lyricLine}"?`,
+        prompt: 'מאיזה שיר השורה הזאת?',
+        quote: song.lyricLine,
         ...built,
         difficulty: song.difficulty,
         reveal: `השורה היא מ"${song.title}" (${song.year}).`,

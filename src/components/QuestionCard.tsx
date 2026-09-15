@@ -8,6 +8,8 @@ import { AudioSnippet } from './AudioSnippet.tsx'
 export interface Answer {
   choiceIndex: number
   text?: string
+  /** ויתר במקום לנחש */
+  skipped?: boolean
 }
 
 interface Props {
@@ -83,6 +85,14 @@ export function QuestionCard({
 
       <div className="animate-fade-up">
         <h2 className="text-2xl font-black leading-tight sm:text-3xl">{question.prompt}</h2>
+        {question.quote && (
+          <blockquote
+            className="mt-3 rounded-xl border-r-4 border-gold/60 bg-night-soft/70 px-4 py-3
+              text-xl font-bold leading-snug text-gold-bright"
+          >
+            {question.quote}
+          </blockquote>
+        )}
         {question.hint && <p className="mt-2 text-sm text-white/40">{question.hint}</p>}
       </div>
 
@@ -101,7 +111,9 @@ export function QuestionCard({
           locked={locked}
           revealed={revealed !== null}
           submitted={selected?.text}
+          skipped={!!selected?.skipped}
           onSubmit={(text) => answer({ choiceIndex: -1, text })}
+          onSkip={() => answer({ choiceIndex: -1, skipped: true })}
         />
       ) : (
         <div className="grid min-h-0 flex-1 content-center gap-3">
@@ -123,6 +135,16 @@ export function QuestionCard({
               onClick={() => answer({ choiceIndex: i })}
             />
           ))}
+
+          {!locked && (
+            <button
+              type="button"
+              onClick={() => answer({ choiceIndex: -1, skipped: true })}
+              className="mt-1 py-2 text-sm text-white/35 hover:text-white/60"
+            >
+              לא יודע, הלאה
+            </button>
+          )}
         </div>
       )}
 
@@ -144,13 +166,17 @@ function OpenAnswer({
   locked,
   revealed,
   submitted,
+  skipped,
   onSubmit,
+  onSkip,
 }: {
   question: Question
   locked: boolean
   revealed: boolean
   submitted?: string
+  skipped: boolean
   onSubmit: (text: string) => void
+  onSkip: () => void
 }) {
   const [text, setText] = useState('')
   const input = useRef<HTMLInputElement | null>(null)
@@ -159,8 +185,9 @@ function OpenAnswer({
     setText('')
   }, [question.id])
 
-  const answered = submitted !== undefined
-  const wasRight = answered && matchesAnswer(submitted, question.accepted ?? []).correct
+  const answered = submitted !== undefined || skipped
+  const wasRight =
+    submitted !== undefined && matchesAnswer(submitted, question.accepted ?? []).correct
 
   return (
     <div className="grid flex-1 content-center gap-3">
@@ -175,7 +202,7 @@ function OpenAnswer({
       >
         <input
           ref={input}
-          value={answered ? submitted : text}
+          value={skipped ? 'ויתרתי' : (submitted ?? text)}
           onChange={(e) => setText(e.target.value)}
           disabled={locked}
           placeholder="שם השיר"
@@ -192,9 +219,18 @@ function OpenAnswer({
           }`}
         />
         {!answered && (
-          <button type="submit" disabled={!text.trim()} className="btn-gold py-4 text-lg">
-            שולח
-          </button>
+          <>
+            <button type="submit" disabled={!text.trim()} className="btn-gold py-4 text-lg">
+              שולח
+            </button>
+            <button
+              type="button"
+              onClick={onSkip}
+              className="py-2 text-sm text-white/35 hover:text-white/60"
+            >
+              לא יודע, תגלו לי
+            </button>
+          </>
         )}
       </form>
 

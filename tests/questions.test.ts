@@ -231,9 +231,17 @@ describe('בחירת סוגי שאלות', () => {
     for (const q of quiz) expect(['year', 'album']).toContain(q.kind)
   })
 
-  it('שאלות מילים לא מוצעות כל עוד לא הוזנו שורות', () => {
+  it('שאלות מילים פעילות עכשיו כשיש שורות במאגר', () => {
     const kinds = availableKinds(SONGS, { seed: 'x', questionCount: 10 })
+    expect(kinds).toContain('lyric')
+    expect(kinds).toContain('lyric-open')
+  })
+
+  it('שאלות מילים לא מוצעות כשאין שורות', () => {
+    const noLyrics = SONGS.map((s) => ({ ...s, lyricLine: undefined }))
+    const kinds = availableKinds(noLyrics, { seed: 'x', questionCount: 10 })
     expect(kinds).not.toContain('lyric')
+    expect(kinds).not.toContain('lyric-open')
   })
 
   it('שאלות אודיו מוצעות עכשיו כשיש קטעים במאגר', () => {
@@ -357,5 +365,65 @@ describe('התנהגות בלי רשת', () => {
   it('כשיש רשת הם כן מוצעים', () => {
     const kinds = availableKinds(SONGS, { seed: 'x', questionCount: 10 })
     expect(kinds).toContain('audio-open')
+  })
+})
+
+describe('שאלות אודיו לא מסגירות את התשובה', () => {
+  it('"נחש את השיר" רק על שירים שלא שרים את שמם', () => {
+    for (const kind of ['audio-open', 'audio'] as const) {
+      const byTitle = new Map(SONGS.map((s) => [s.title, s]))
+      for (let i = 0; i < 40; i++) {
+        const quiz = generateQuiz(SONGS, { seed: `safe-${kind}-${i}`, questionCount: 8, kinds: [kind] })
+        for (const q of quiz) {
+          const title = q.correctLabel ?? q.choices[q.answerIndex]
+          const song = byTitle.get(title)
+          expect(song?.titleInLyrics, `"${title}" שר את שמו ונשאל "איזה שיר זה"`).toBe(false)
+        }
+      }
+    }
+  })
+
+  it('שאלות על הקטע שלא מסגירות כן משתמשות בכל השירים', () => {
+    const quiz = generateQuiz(SONGS, {
+      seed: 'anyaudio',
+      questionCount: 20,
+      kinds: ['audio-album', 'audio-year'],
+    })
+    expect(quiz.length).toBeGreaterThan(10)
+    for (const q of quiz) expect(q.audioClip).toBeTruthy()
+  })
+
+  it('שורת מילים אף פעם לא מכילה את שם השיר', () => {
+    for (const song of SONGS.filter((s) => s.lyricLine)) {
+      const line = song.lyricLine!.toLowerCase()
+      const title = song.title.toLowerCase()
+      expect(line.includes(title), `"${song.title}": השורה מכילה את השם`).toBe(false)
+    }
+  })
+})
+
+describe('גיוון החידון', () => {
+  it('יש הרבה יותר מעשרה סוגי שאלות', () => {
+    expect(availableKinds(SONGS, { seed: 'x', questionCount: 10 }).length).toBeGreaterThanOrEqual(14)
+  })
+
+  it('חידון של עשר שאלות מגוון בסוגים', () => {
+    for (let i = 0; i < 30; i++) {
+      const quiz = generateQuiz(SONGS, { seed: `var-${i}`, questionCount: 10 })
+      const kinds = new Set(quiz.map((q) => q.kind))
+      expect(kinds.size, `חידון ${i} מונוטוני`).toBeGreaterThanOrEqual(4)
+    }
+  })
+
+  it('חמישה חידונים רצופים לא חוזרים על אותן שאלות', () => {
+    const seen = new Map<string, number>()
+    for (let i = 0; i < 5; i++) {
+      for (const q of generateQuiz(SONGS, { seed: `sess-${i}`, questionCount: 10 })) {
+        seen.set(q.id, (seen.get(q.id) ?? 0) + 1)
+      }
+    }
+    const repeated = [...seen.values()].filter((n) => n > 1).length
+    // עד חמש חזרות מתוך חמישים שאלות זה סביר; יותר מזה מורגש
+    expect(repeated).toBeLessThanOrEqual(5)
   })
 })

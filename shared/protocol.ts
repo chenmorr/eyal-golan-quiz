@@ -45,6 +45,8 @@ export interface QuestionOutcome {
   totalScore: number
   /** מה השחקן הקליד, בשאלה פתוחה */
   text?: string
+  /** השחקן ויתר במקום לנחש */
+  skipped?: boolean
 }
 
 // --- מה שהטלפון שולח לשרת ---
@@ -60,6 +62,8 @@ export type ClientMessage =
       /** ‎-1 בשאלה פתוחה, ואז התשובה נמצאת ב-text */
       choiceIndex: number
       text?: string
+      /** השחקן ויתר. נספר כתשובה שגויה, אבל לא מעכב את שאר החדר */
+      skipped?: boolean
       elapsedMs: number
     }
   | { type: 'next' }

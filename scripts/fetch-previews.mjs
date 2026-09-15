@@ -45,26 +45,42 @@ async function itunes(params) {
 }
 
 const songs = JSON.parse(await readFile(SONGS_PATH, 'utf8'))
-const byKey = new Map(songs.map((s) => [normalize(s.title), s]))
 
-// שולפים את כל הקטלוג של אייל גולן בכמה עמודים, ומתאימים לפי שם מנורמל.
-// זה הרבה יותר יעיל מחיפוש נפרד לכל שיר, וגם נעים יותר ל-API.
+// שולפים את הקטלוג בכמה זוויות ומתאימים לפי שם מנורמל.
+// iTunes מתעלם מ-offset בחיפוש, אז במקום דפדוף מחפשים לפי אלבום —
+// כל אלבום מחזיר את השירים שלו, וביחד הכיסוי גדל משמעותית.
 const seen = new Map()
-const TERMS = ['eyal golan', 'אייל גולן']
 
-for (const term of TERMS) {
-  for (const offset of [0, 200, 400, 600]) {
-    const data = await itunes({ term, limit: '200', offset: String(offset) })
-    if (!data.results?.length) break
-    for (const r of data.results) {
-      if (!r.previewUrl || !r.trackName) continue
-      const key = normalize(r.trackName)
-      // מעדיפים את ההקלטה הראשונה שנמצאה; האלבומים החוזרים מוסיפים רעש
-      if (!seen.has(key)) seen.set(key, r.previewUrl)
-    }
-    console.log(`  "${term}" offset ${offset}: ${data.results.length} תוצאות, ${seen.size} ייחודיים`)
-    await sleep(700)
+async function harvest(label, params) {
+  const before = seen.size
+  const data = await itunes(params)
+  for (const r of data.results ?? []) {
+    if (!r.previewUrl || !r.trackName) continue
+    const key = normalize(r.trackName)
+    // מעדיפים את ההקלטה הראשונה שנמצאה; האלבומים החוזרים מוסיפים רעש
+    if (!seen.has(key)) seen.set(key, r.previewUrl)
   }
+  const added = seen.size - before
+  if (added) console.log(`  ${label}: +${added} (סה"כ ${seen.size})`)
+  await sleep(400)
+}
+
+for (const term of ['eyal golan', 'אייל גולן']) {
+  await harvest(`"${term}"`, { term, limit: '200' })
+}
+
+// סריקה לפי אלבום — זה מה שמביא את השירים שלא צפים בחיפוש הכללי
+const albums = [...new Set(songs.map((s) => s.album).filter(Boolean))]
+console.log(`סורק ${albums.length} אלבומים...`)
+for (const album of albums) {
+  await harvest(album, { term: `אייל גולן ${album}`, limit: '200' })
+}
+
+// ולבסוף חיפוש נקודתי לשירים שעדיין חסרים
+const missing = songs.filter((s) => !seen.has(normalize(s.title)))
+console.log(`חיפוש נקודתי ל-${missing.length} שירים שחסרים...`)
+for (const song of missing) {
+  await harvest(song.title, { term: `אייל גולן ${song.title}`, limit: '25' })
 }
 
 let matched = 0

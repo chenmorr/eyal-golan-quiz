@@ -313,6 +313,7 @@ function handle(ws: WebSocket, message: ClientMessage): void {
         message.choiceIndex,
         message.elapsedMs,
         message.text,
+        message.skipped,
       )
       if (result.error) return send(ws, { type: 'error', message: result.error })
       broadcastState(room)

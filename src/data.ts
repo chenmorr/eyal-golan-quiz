@@ -26,6 +26,11 @@ export const KIND_LABELS: Record<string, string> = {
   'odd-one-out': 'מי לא שייך',
   audio: 'נחש את השיר',
   'audio-open': 'נחש והקלד',
+  'audio-album': 'אלבום לפי קטע',
+  'audio-year': 'שנה לפי קטע',
+  'lyric-open': 'שורה בהקלדה',
+  'album-order': 'איזה אלבום קודם',
+  'guest-count': 'הכי הרבה דואטים',
   lyric: 'מאיפה השורה',
 }
 
