@@ -9,6 +9,8 @@ import type { Difficulty, QuestionKind } from './types.ts'
 
 export const MAX_PLAYERS = 10
 export const QUESTION_TIME_MS = 20_000
+/** שאלה פתוחה דורשת הקלדה, אז היא מקבלת יותר זמן */
+export const OPEN_QUESTION_TIME_MS = 35_000
 /** כמה זמן מציגים את התשובה הנכונה לפני השאלה הבאה */
 export const REVEAL_TIME_MS = 5_000
 /** כמה זמן חדר שרוף נשאר בזיכרון לפני שהוא נמחק */
@@ -41,6 +43,8 @@ export interface QuestionOutcome {
   elapsedMs: number
   points: number
   totalScore: number
+  /** מה השחקן הקליד, בשאלה פתוחה */
+  text?: string
 }
 
 // --- מה שהטלפון שולח לשרת ---
@@ -50,7 +54,14 @@ export type ClientMessage =
   | { type: 'rejoin'; code: string; playerId: string; token: string }
   | { type: 'update-config'; config: RoomConfig }
   | { type: 'start-game' }
-  | { type: 'answer'; questionIndex: number; choiceIndex: number; elapsedMs: number }
+  | {
+      type: 'answer'
+      questionIndex: number
+      /** ‎-1 בשאלה פתוחה, ואז התשובה נמצאת ב-text */
+      choiceIndex: number
+      text?: string
+      elapsedMs: number
+    }
   | { type: 'next' }
   | { type: 'play-again' }
   | { type: 'ping' }
@@ -79,7 +90,10 @@ export type ServerMessage =
   | {
       type: 'question-end'
       questionIndex: number
+      /** ‎-1 בשאלה פתוחה */
       answerIndex: number
+      /** התשובה הנכונה כטקסט, בשאלה פתוחה */
+      correctLabel?: string
       outcomes: QuestionOutcome[]
       isLast: boolean
     }

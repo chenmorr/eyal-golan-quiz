@@ -62,6 +62,7 @@ export default function App() {
           initial={config}
           title="משחק לבד"
           submitLabel="יאללה, מתחילים"
+          allowAudio={online}
           onSubmit={startSolo}
           onBack={() => setScreen({ name: 'home' })}
         />
@@ -71,6 +72,7 @@ export default function App() {
         <SoloGame
           config={config}
           seed={screen.seed}
+          allowAudio={online}
           onFinish={(result) => setScreen({ name: 'solo-results', result })}
           onQuit={() => setScreen({ name: 'home' })}
         />

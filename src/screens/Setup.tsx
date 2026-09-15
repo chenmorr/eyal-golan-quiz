@@ -6,6 +6,8 @@ import { DIFFICULTY_LABELS, ERAS, KIND_LABELS, SONGS } from '../data.ts'
 
 interface Props {
   initial: RoomConfig
+  /** false כשאין רשת — סוגי שאלות שדורשים אודיו לא מוצגים */
+  allowAudio?: boolean
   title: string
   submitLabel: string
   /** מוצג מעל הכפתור — למשל הודעה שרק המארח קובע */
@@ -17,7 +19,7 @@ interface Props {
 const COUNTS = [5, 10, 15, 20]
 const DIFFICULTIES: Difficulty[] = ['easy', 'medium', 'hard']
 
-export function Setup({ initial, title, submitLabel, note, onSubmit, onBack }: Props) {
+export function Setup({ initial, title, submitLabel, note, allowAudio = true, onSubmit, onBack }: Props) {
   const [questionCount, setQuestionCount] = useState(initial.questionCount)
   const [eras, setEras] = useState<string[]>(initial.eras ?? [])
   const [difficulties, setDifficulties] = useState<Difficulty[]>(initial.difficulties ?? [])
@@ -43,8 +45,9 @@ export function Setup({ initial, title, submitLabel, note, onSubmit, onBack }: P
         questionCount,
         eras: eras.length ? eras : undefined,
         difficulties: difficulties.length ? difficulties : undefined,
+        allowAudio,
       }),
-    [questionCount, eras, difficulties],
+    [questionCount, eras, difficulties, allowAudio],
   )
 
   // סוג שנבחר וכבר לא אפשרי (כי צמצמו תקופה) לא נחשב

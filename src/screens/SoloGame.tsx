@@ -4,11 +4,15 @@ import { scoreAnswer } from '../../shared/scoring.ts'
 import type { RoomConfig } from '../../shared/protocol.ts'
 import { QUESTION_TIME_MS } from '../../shared/protocol.ts'
 import { SONGS } from '../data.ts'
-import { QuestionCard } from '../components/QuestionCard.tsx'
+import { QuestionCard, type Answer } from '../components/QuestionCard.tsx'
+import { matchesAnswer } from '../../shared/answer-matching.ts'
+import { isOpenQuestion } from '../../shared/types.ts'
 
 interface Props {
   config: RoomConfig
   seed: string
+  /** false כשאין רשת — אז שאלות אודיו לא נכנסות */
+  allowAudio: boolean
   onFinish: (result: SoloResult) => void
   onQuit: () => void
 }
@@ -20,14 +24,14 @@ export interface SoloResult {
   bestStreak: number
 }
 
-export function SoloGame({ config, seed, onFinish, onQuit }: Props) {
+export function SoloGame({ config, seed, allowAudio, onFinish, onQuit }: Props) {
   const questions = useMemo(
-    () => generateQuiz(SONGS, { seed, ...config }),
-    [seed, config],
+    () => generateQuiz(SONGS, { seed, ...config, allowAudio }),
+    [seed, config, allowAudio],
   )
 
   const [index, setIndex] = useState(0)
-  const [selected, setSelected] = useState<number | null>(null)
+  const [selected, setSelected] = useState<Answer | null>(null)
   const [revealed, setRevealed] = useState<number | null>(null)
   const [score, setScore] = useState(0)
   const [correct, setCorrect] = useState(0)
@@ -38,6 +42,8 @@ export function SoloGame({ config, seed, onFinish, onQuit }: Props) {
   const [questionStartedAt, setQuestionStartedAt] = useState(() => Date.now())
 
   const question = questions[index]
+  // שאלה פתוחה מקבלת יותר זמן, כי צריך להקליד ולא רק ללחוץ
+  const limitMs = question?.timeLimitMs ?? QUESTION_TIME_MS
 
   if (!question) {
     return (
@@ -52,19 +58,22 @@ export function SoloGame({ config, seed, onFinish, onQuit }: Props) {
     )
   }
 
-  function answer(choiceIndex: number, elapsedMs: number) {
-    const isCorrect = choiceIndex === question.answerIndex
+  function answer(given: Answer, elapsedMs: number) {
+    // בשאלה פתוחה משווים טקסט עם סובלנות לשגיאות, אחרת אינדקס
+    const isCorrect = isOpenQuestion(question)
+      ? matchesAnswer(given.text ?? '', question.accepted ?? []).correct
+      : given.choiceIndex === question.answerIndex
     const { points } = scoreAnswer({
       correct: isCorrect,
       elapsedMs,
-      limitMs: QUESTION_TIME_MS,
+      limitMs,
       streak,
     })
 
     const nextStreak = isCorrect ? streak + 1 : 0
     bestStreak.current = Math.max(bestStreak.current, nextStreak)
 
-    setSelected(choiceIndex)
+    setSelected(given)
     setRevealed(question.answerIndex)
     setScore((s) => s + points)
     setLastPoints(points)
@@ -74,7 +83,7 @@ export function SoloGame({ config, seed, onFinish, onQuit }: Props) {
 
   function timeUp() {
     if (revealed !== null) return
-    setSelected(-1) // לא ענה בזמן
+    setSelected({ choiceIndex: -1 }) // לא ענה בזמן
     setRevealed(question.answerIndex)
     setStreak(0)
     setLastPoints(0)
@@ -113,8 +122,8 @@ export function SoloGame({ config, seed, onFinish, onQuit }: Props) {
           question={question}
           index={index}
           total={questions.length}
-          endsAt={questionStartedAt + QUESTION_TIME_MS}
-          timeLimitMs={QUESTION_TIME_MS}
+          endsAt={questionStartedAt + limitMs}
+          timeLimitMs={limitMs}
           selected={selected}
           revealed={revealed}
           onAnswer={answer}
@@ -122,7 +131,7 @@ export function SoloGame({ config, seed, onFinish, onQuit }: Props) {
       </div>
 
       {revealed === null ? (
-        <TimeoutWatch startedAt={questionStartedAt} onTimeout={timeUp} />
+        <TimeoutWatch startedAt={questionStartedAt} limitMs={limitMs} onTimeout={timeUp} />
       ) : (
         <div className="grid gap-2 animate-fade-up">
           {lastPoints > 0 && (
@@ -138,15 +147,23 @@ export function SoloGame({ config, seed, onFinish, onQuit }: Props) {
 }
 
 /** סוגר את השאלה כשנגמר הזמן, גם אם השחקן פשוט הניח את הטלפון */
-function TimeoutWatch({ startedAt, onTimeout }: { startedAt: number; onTimeout: () => void }) {
+function TimeoutWatch({
+  startedAt,
+  limitMs,
+  onTimeout,
+}: {
+  startedAt: number
+  limitMs: number
+  onTimeout: () => void
+}) {
   const callback = useRef(onTimeout)
   callback.current = onTimeout
 
   useEffect(() => {
-    const remaining = Math.max(startedAt + QUESTION_TIME_MS - Date.now(), 0)
+    const remaining = Math.max(startedAt + limitMs - Date.now(), 0)
     const timer = setTimeout(() => callback.current(), remaining)
     return () => clearTimeout(timer)
-  }, [startedAt])
+  }, [startedAt, limitMs])
 
   return <div className="h-14" />
 }

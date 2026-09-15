@@ -3,7 +3,8 @@ import songsJson from '../data/songs.json'
 import { generateQuiz, buildPool, availableKinds } from '../shared/questions.ts'
 import { scoreAnswer, sanitizeElapsed, BASE_POINTS, MAX_SPEED_BONUS } from '../shared/scoring.ts'
 import { createRng, makeRoomCode } from '../shared/rng.ts'
-import type { Song } from '../shared/types.ts'
+import { isOpenQuestion, type Song } from '../shared/types.ts'
+import { matchesAnswer } from '../shared/answer-matching.ts'
 
 const SONGS = songsJson as Song[]
 
@@ -58,17 +59,26 @@ describe('מחולל השאלות', () => {
     }
   })
 
-  it('בכל שאלה יש בדיוק תשובה נכונה אחת, והיא בתוך האפשרויות', () => {
-    for (const q of quiz) {
+  it('בכל שאלה סגורה יש בדיוק תשובה נכונה אחת, והיא בתוך האפשרויות', () => {
+    for (const q of quiz.filter((q) => !isOpenQuestion(q))) {
       expect(q.answerIndex).toBeGreaterThanOrEqual(0)
       expect(q.answerIndex).toBeLessThan(q.choices.length)
       expect(q.choices[q.answerIndex]).toBeTruthy()
     }
   })
 
-  it('לכל שאלה יש טקסט ואפשרויות לא ריקות', () => {
+  it('בכל שאלה פתוחה יש תשובה קבילה ותווית להצגה', () => {
+    for (const q of quiz.filter(isOpenQuestion)) {
+      expect(q.accepted!.length).toBeGreaterThan(0)
+      expect(q.correctLabel).toBeTruthy()
+      expect(matchesAnswer(q.correctLabel!, q.accepted!).correct).toBe(true)
+    }
+  })
+
+  it('לכל שאלה יש טקסט, ולשאלה סגורה גם אפשרויות לא ריקות', () => {
     for (const q of quiz) {
       expect(q.prompt.length).toBeGreaterThan(5)
+      if (isOpenQuestion(q)) continue
       expect(q.choices.length).toBeGreaterThanOrEqual(2)
       for (const choice of q.choices) expect(choice.trim()).not.toBe('')
     }
@@ -83,7 +93,11 @@ describe('מחולל השאלות', () => {
     for (let i = 0; i < 100; i++) {
       for (const q of generateQuiz(SONGS, { seed: `seed-${i}`, questionCount: 10 })) {
         expect(new Set(q.choices).size, `כפילות ב-seed-${i}: ${q.prompt}`).toBe(q.choices.length)
-        expect(q.choices[q.answerIndex]).toBeTruthy()
+        if (isOpenQuestion(q)) {
+          expect(matchesAnswer(q.correctLabel!, q.accepted!).correct).toBe(true)
+        } else {
+          expect(q.choices[q.answerIndex]).toBeTruthy()
+        }
       }
     }
   })
@@ -217,10 +231,14 @@ describe('בחירת סוגי שאלות', () => {
     for (const q of quiz) expect(['year', 'album']).toContain(q.kind)
   })
 
-  it('סוגים שמחכים לתוכן לא מוצעים כשאין תוכן', () => {
+  it('שאלות מילים לא מוצעות כל עוד לא הוזנו שורות', () => {
     const kinds = availableKinds(SONGS, { seed: 'x', questionCount: 10 })
-    expect(kinds).not.toContain('audio')
     expect(kinds).not.toContain('lyric')
+  })
+
+  it('שאלות אודיו מוצעות עכשיו כשיש קטעים במאגר', () => {
+    const kinds = availableKinds(SONGS, { seed: 'x', questionCount: 10 })
+    expect(kinds).toContain('audio-open')
   })
 
   it('בחירת סוג יחד עם תקופה מכבדת את שניהם', () => {
@@ -231,5 +249,113 @@ describe('בחירת סוגי שאלות', () => {
       eras: ['שנות התשעים'],
     })
     for (const q of quiz) expect(q.kind).toBe('year')
+  })
+})
+
+describe('שאלת אודיו פתוחה', () => {
+  const openQuiz = generateQuiz(SONGS, {
+    seed: 'audio-open',
+    questionCount: 12,
+    kinds: ['audio-open'],
+  })
+
+  it('נוצרות שאלות כאלה', () => {
+    expect(openQuiz.length).toBeGreaterThan(0)
+    for (const q of openQuiz) expect(q.kind).toBe('audio-open')
+  })
+
+  it('לכל שאלה יש קטע אודיו', () => {
+    for (const q of openQuiz) expect(q.audioClip).toMatch(/^https?:\/\//)
+  })
+
+  it('אין אפשרויות בחירה — מקלידים', () => {
+    for (const q of openQuiz) {
+      expect(q.choices).toHaveLength(0)
+      expect(q.answerIndex).toBe(-1)
+      expect(isOpenQuestion(q)).toBe(true)
+    }
+  })
+
+  it('אורך הקטע נגזר מרמת הקושי', () => {
+    const expected = { easy: 6, medium: 4, hard: 2 }
+    for (const q of openQuiz) {
+      expect(q.clipSeconds, `קושי ${q.difficulty}`).toBe(expected[q.difficulty])
+    }
+  })
+
+  it('השם הנכון תמיד מתקבל כתשובה', () => {
+    for (const q of openQuiz) {
+      expect(matchesAnswer(q.correctLabel!, q.accepted!).correct).toBe(true)
+    }
+  })
+
+  it('שיר אחר לא מתקבל', () => {
+    for (const q of openQuiz) {
+      const other = SONGS.find((s) => s.title !== q.correctLabel)!
+      expect(matchesAnswer(other.title, q.accepted!).correct).toBe(false)
+    }
+  })
+
+  it('הבחירה הכי קשה נותנת שתי שניות', () => {
+    const hard = generateQuiz(SONGS, {
+      seed: 'hard-only',
+      questionCount: 6,
+      kinds: ['audio-open'],
+      difficulties: ['hard'],
+    })
+    expect(hard.length).toBeGreaterThan(0)
+    for (const q of hard) expect(q.clipSeconds).toBe(2)
+  })
+
+  it('הבחירה הקלה נותנת שש שניות', () => {
+    const easy = generateQuiz(SONGS, {
+      seed: 'easy-only',
+      questionCount: 6,
+      kinds: ['audio-open'],
+      difficulties: ['easy'],
+    })
+    expect(easy.length).toBeGreaterThan(0)
+    for (const q of easy) expect(q.clipSeconds).toBe(6)
+  })
+
+  it('הסוג מוצע רק כשיש אודיו במאגר', () => {
+    expect(availableKinds(SONGS, { seed: 'x', questionCount: 10 })).toContain('audio-open')
+    const noAudio = SONGS.map((s) => ({ ...s, audioClip: undefined }))
+    expect(availableKinds(noAudio, { seed: 'x', questionCount: 10 })).not.toContain('audio-open')
+  })
+})
+
+describe('זמן מענה לפי סוג שאלה', () => {
+  it('שאלה פתוחה מקבלת יותר זמן מהרגיל', () => {
+    const open = generateQuiz(SONGS, { seed: 'time', questionCount: 5, kinds: ['audio-open'] })
+    for (const q of open) expect(q.timeLimitMs).toBe(35_000)
+  })
+
+  it('שאלה עם ארבע אפשרויות נשארת בזמן הרגיל', () => {
+    const closed = generateQuiz(SONGS, { seed: 'time2', questionCount: 5, kinds: ['year'] })
+    for (const q of closed) expect(q.timeLimitMs).toBeUndefined()
+  })
+})
+
+describe('התנהגות בלי רשת', () => {
+  it('שאלות אודיו לא נכנסות כשאין רשת', () => {
+    const quiz = generateQuiz(SONGS, { seed: 'offline', questionCount: 20, allowAudio: false })
+    expect(quiz.length).toBeGreaterThan(0)
+    for (const q of quiz) {
+      expect(q.audioClip).toBeUndefined()
+      expect(['audio', 'audio-open']).not.toContain(q.kind)
+    }
+  })
+
+  it('הסוגים שדורשים אודיו לא מוצעים בהגדרות כשאין רשת', () => {
+    const kinds = availableKinds(SONGS, { seed: 'x', questionCount: 10, allowAudio: false })
+    expect(kinds).not.toContain('audio')
+    expect(kinds).not.toContain('audio-open')
+    expect(kinds).toContain('year')
+  })
+
+  it('כשיש רשת הם כן מוצעים', () => {
+    const kinds = availableKinds(SONGS, { seed: 'x', questionCount: 10 })
+    expect(kinds).toContain('audio-open')
   })
 })

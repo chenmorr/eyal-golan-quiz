@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { generateQuiz } from '../../shared/questions.ts'
 import type { PlayerView, QuestionOutcome, RoomConfig } from '../../shared/protocol.ts'
 import { SONGS } from '../data.ts'
-import { QuestionCard } from '../components/QuestionCard.tsx'
+import { QuestionCard, type Answer } from '../components/QuestionCard.tsx'
 
 interface Props {
   seed: string
@@ -15,7 +15,7 @@ interface Props {
   players: PlayerView[]
   playerId: string | null
   isHost: boolean
-  onAnswer: (questionIndex: number, choiceIndex: number, elapsedMs: number) => void
+  onAnswer: (questionIndex: number, choiceIndex: number, elapsedMs: number, text?: string) => void
   onNext: () => void
 }
 
@@ -40,7 +40,7 @@ export function MultiGame({
     [seed, config],
   )
 
-  const [selected, setSelected] = useState<number | null>(null)
+  const [selected, setSelected] = useState<Answer | null>(null)
   useEffect(() => setSelected(null), [questionIndex])
 
   const question = questions[questionIndex]
@@ -50,9 +50,9 @@ export function MultiGame({
   const activeCount = players.filter((p) => p.connected).length
   const myOutcome = outcomes.find((o) => o.playerId === playerId)
 
-  function answer(choiceIndex: number, elapsedMs: number) {
-    setSelected(choiceIndex)
-    onAnswer(questionIndex, choiceIndex, elapsedMs)
+  function answer(given: Answer, elapsedMs: number) {
+    setSelected(given)
+    onAnswer(questionIndex, given.choiceIndex, elapsedMs, given.text)
   }
 
   return (

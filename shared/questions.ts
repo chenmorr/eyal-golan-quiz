@@ -5,7 +5,9 @@
 // כדי להוסיף סוג שאלה חדש מוסיפים אובייקט אחד למערך GENERATORS למטה.
 
 import { createRng, pick, sample, shuffle, type Rng } from './rng.ts'
-import type { Question, QuestionKind, QuizConfig, Song } from './types.ts'
+import { acceptedAnswers } from './answer-matching.ts'
+import { OPEN_QUESTION_TIME_MS } from './protocol.ts'
+import type { Difficulty, Question, QuestionKind, QuizConfig, Song } from './types.ts'
 
 /** אוסף השירים אחרי סינון, עם אינדקסים מוכנים כדי לא לחשב מחדש בכל שאלה */
 export interface Pool {
@@ -20,6 +22,9 @@ export interface Pool {
 
 export function buildPool(allSongs: Song[], config: QuizConfig): Pool {
   let songs = allSongs.filter((s) => !s.liveOnly)
+  // בלי רשת אין קטעי אודיו, אז השירים נשארים אבל בלי הקישור —
+  // וכך מחוללי האודיו פשוט לא מוצאים חומר ולא נכנסים לחידון
+  if (config.allowAudio === false) songs = songs.map((s) => ({ ...s, audioClip: undefined }))
   if (config.eras?.length) songs = songs.filter((s) => s.era && config.eras!.includes(s.era))
   if (config.difficulties?.length) {
     songs = songs.filter((s) => config.difficulties!.includes(s.difficulty))
@@ -67,6 +72,14 @@ interface Generator {
 }
 
 const yearLabel = (y: number) => String(y)
+
+/**
+ * כמה שניות אודיו משמיעים, לפי כמה השיר מוכר.
+ * להיט מקבל שש שניות ועדיין קל; שיר נדיר מקבל שתיים וזה מבחן אמיתי.
+ */
+function clipLengthFor(difficulty: Difficulty): number {
+  return difficulty === 'easy' ? 6 : difficulty === 'medium' ? 4 : 2
+}
 
 /** בונה ארבע אפשרויות: התשובה הנכונה ועוד שלושה מסיחים, מעורבבות */
 function choicesFrom(rng: Rng, correct: string, distractors: string[]): { choices: string[]; answerIndex: number } | null {
@@ -281,9 +294,37 @@ const GENERATORS: Generator[] = [
     },
   },
   {
+    // נחש את השיר מהקטע והקלד את השם. בלי אפשרויות זה מבחן זיכרון אמיתי,
+    // כי ארבע אפשרויות מסגירות את התשובה כמעט תמיד.
+    kind: 'audio-open',
+    weight: 5,
+    ready: (p) => p.songs.filter((s) => s.audioClip).length >= 1,
+    make(rng, pool, used) {
+      const withAudio = pool.songs.filter((s) => s.audioClip && !used.has(s.id))
+      if (!withAudio.length) return null
+      const song = pick(rng, withAudio)
+      used.add(song.id)
+      return {
+        id: `audioopen:${song.id}`,
+        kind: 'audio-open',
+        prompt: 'איזה שיר זה?',
+        hint: 'תקליטו את שם השיר. טעות כתיב קטנה עוברת',
+        choices: [],
+        answerIndex: -1,
+        accepted: acceptedAnswers(song.title),
+        correctLabel: song.title,
+        difficulty: song.difficulty,
+        audioClip: song.audioClip,
+        clipSeconds: clipLengthFor(song.difficulty),
+        timeLimitMs: OPEN_QUESTION_TIME_MS,
+        reveal: `"${song.title}" מהאלבום "${song.album}" (${song.year}).`,
+      }
+    },
+  },
+  {
     // נחש את השיר מהקטע — נוצרת רק כשיש קבצי אודיו
     kind: 'audio',
-    weight: 4,
+    weight: 2,
     ready: (p) => p.songs.filter((s) => s.audioClip).length >= 4,
     make(rng, pool, used) {
       const withAudio = pool.songs.filter((s) => s.audioClip && !used.has(s.id))

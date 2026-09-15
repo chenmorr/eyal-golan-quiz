@@ -25,6 +25,7 @@ export const KIND_LABELS: Record<string, string> = {
   era: 'אלבום לפי שנה',
   'odd-one-out': 'מי לא שייך',
   audio: 'נחש את השיר',
+  'audio-open': 'נחש והקלד',
   lyric: 'מאיפה השורה',
 }
 

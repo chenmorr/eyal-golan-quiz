@@ -3,6 +3,8 @@
 import { randomBytes, randomUUID } from 'node:crypto'
 import { createRng, makeRoomCode } from '../shared/rng.ts'
 import { generateQuiz } from '../shared/questions.ts'
+import { matchesAnswer } from '../shared/answer-matching.ts'
+import { isOpenQuestion } from '../shared/types.ts'
 import { scoreAnswer, sanitizeElapsed } from '../shared/scoring.ts'
 import {
   MAX_PLAYERS,
@@ -23,7 +25,7 @@ export interface Player {
   streak: number
   connected: boolean
   /** התשובה לשאלה הנוכחית, אם כבר ענה */
-  currentAnswer: { choiceIndex: number; elapsedMs: number } | null
+  currentAnswer: { choiceIndex: number; text?: string; elapsedMs: number } | null
 }
 
 export interface Room {
@@ -128,7 +130,7 @@ export class RoomStore {
     }
     room.questionIndex++
     room.phase = 'question'
-    room.questionEndsAt = Date.now() + QUESTION_TIME_MS
+    room.questionEndsAt = Date.now() + this.timeLimitFor(room)
     for (const player of room.players.values()) player.currentAnswer = null
     room.lastActivity = Date.now()
     return true
@@ -140,22 +142,41 @@ export class RoomStore {
     questionIndex: number,
     choiceIndex: number,
     elapsedMs: number,
+    text?: string,
   ): { error?: string } {
     if (room.phase !== 'question') return { error: 'אין שאלה פתוחה כרגע' }
     if (questionIndex !== room.questionIndex) return { error: 'השאלה הזאת כבר נסגרה' }
     if (player.currentAnswer) return { error: 'כבר ענית' }
 
     const question = room.questions[questionIndex]
-    if (!question || choiceIndex < 0 || choiceIndex >= question.choices.length) {
-      return { error: 'תשובה לא חוקית' }
+    if (!question) return { error: 'תשובה לא חוקית' }
+    const limit = question.timeLimitMs ?? QUESTION_TIME_MS
+
+    if (isOpenQuestion(question)) {
+      const typed = typeof text === 'string' ? text.trim().slice(0, 100) : ''
+      if (!typed) return { error: 'צריך לכתוב תשובה' }
+      player.currentAnswer = {
+        choiceIndex: -1,
+        text: typed,
+        elapsedMs: sanitizeElapsed(elapsedMs, limit),
+      }
+    } else {
+      if (choiceIndex < 0 || choiceIndex >= question.choices.length) {
+        return { error: 'תשובה לא חוקית' }
+      }
+      player.currentAnswer = {
+        choiceIndex,
+        elapsedMs: sanitizeElapsed(elapsedMs, limit),
+      }
     }
 
-    player.currentAnswer = {
-      choiceIndex,
-      elapsedMs: sanitizeElapsed(elapsedMs, QUESTION_TIME_MS),
-    }
     room.lastActivity = Date.now()
     return {}
+  }
+
+  /** כמה זמן יש לשאלה הנוכחית */
+  timeLimitFor(room: Room): number {
+    return room.questions[room.questionIndex]?.timeLimitMs ?? QUESTION_TIME_MS
   }
 
   /** האם כל מי שמחובר כבר ענה — אז אפשר לחתוך את הטיימר */
@@ -165,18 +186,31 @@ export class RoomStore {
   }
 
   /** סוגר את השאלה, מחשב ניקוד לכולם ומחזיר מה קרה */
-  closeQuestion(room: Room): { answerIndex: number; outcomes: QuestionOutcome[]; isLast: boolean } {
+  closeQuestion(room: Room): {
+    answerIndex: number
+    correctLabel?: string
+    outcomes: QuestionOutcome[]
+    isLast: boolean
+  } {
     const question = room.questions[room.questionIndex]
     room.phase = 'reveal'
+
+    const open = isOpenQuestion(question)
+    const limit = question.timeLimitMs ?? QUESTION_TIME_MS
 
     const outcomes: QuestionOutcome[] = []
     for (const player of room.players.values()) {
       const answer = player.currentAnswer
-      const correct = !!answer && answer.choiceIndex === question.answerIndex
+      // בשאלה פתוחה משווים את מה שהוקלד, עם סובלנות לשגיאות כתיב
+      const correct = !answer
+        ? false
+        : open
+          ? matchesAnswer(answer.text ?? '', question.accepted ?? []).correct
+          : answer.choiceIndex === question.answerIndex
       const { points } = scoreAnswer({
         correct,
-        elapsedMs: answer?.elapsedMs ?? QUESTION_TIME_MS,
-        limitMs: QUESTION_TIME_MS,
+        elapsedMs: answer?.elapsedMs ?? limit,
+        limitMs: limit,
         streak: player.streak,
       })
 
@@ -187,9 +221,10 @@ export class RoomStore {
         playerId: player.id,
         nickname: player.nickname,
         correct,
-        elapsedMs: answer?.elapsedMs ?? QUESTION_TIME_MS,
+        elapsedMs: answer?.elapsedMs ?? limit,
         points,
         totalScore: player.score,
+        ...(answer?.text ? { text: answer.text } : {}),
       })
     }
 
@@ -198,6 +233,7 @@ export class RoomStore {
 
     return {
       answerIndex: question.answerIndex,
+      correctLabel: question.correctLabel,
       outcomes,
       isLast: room.questionIndex + 1 >= room.questions.length,
     }

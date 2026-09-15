@@ -17,7 +17,8 @@
     "check:offline": "node offline-check.mjs",
     "shots": "node shots.mjs",
     "url": "node scripts/show-url.mjs",
-    "deploy:pages": "node scripts/deploy-pages.mjs"
+    "deploy:pages": "node scripts/deploy-pages.mjs",
+    "data:previews": "node scripts/fetch-previews.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",

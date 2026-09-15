@@ -47,3 +47,11 @@
       outline-none placeholder:text-white/25 focus:border-gold/60;
   }
 }
+
+@layer utilities {
+  /* מד ההתקדמות של קטע האודיו — נמשך בדיוק כאורך הקטע */
+  @keyframes snippet {
+    from { width: 0% }
+    to { width: 100% }
+  }
+}

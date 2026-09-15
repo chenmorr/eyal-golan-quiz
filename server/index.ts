@@ -10,7 +10,6 @@ import { fileURLToPath } from 'node:url'
 import { WebSocketServer, type WebSocket } from 'ws'
 import { RoomStore, type Room } from './rooms.ts'
 import {
-  QUESTION_TIME_MS,
   REVEAL_TIME_MS,
   type ClientMessage,
   type ServerMessage,
@@ -87,7 +86,9 @@ const LOG_REQUESTS = process.env.QUIZ_LOG_REQUESTS !== '0'
 // פשוט לא הגיעה לשרת, בעוד שהאזנה ישירה עם תעודה עובדת (ככה Claude HQ רץ).
 const CERT = process.env.QUIZ_CERT ?? join(ROOT, 'certs', 'quiz.crt')
 const KEY = process.env.QUIZ_KEY ?? join(ROOT, 'certs', 'quiz.key')
-const useHttps = existsSync(CERT) && existsSync(KEY)
+// QUIZ_HTTP=1 כופה HTTP רגיל — הבדיקות מריצות שרת מקומי ולא רוצות
+// להתעסק בתעודה שמונפקת לשם דומיין אחר
+const useHttps = process.env.QUIZ_HTTP !== '1' && existsSync(CERT) && existsSync(KEY)
 
 // כתובת האזנה: ריק פירושו כל הממשקים. על השרת הזה מגבילים ל-tailnet בלבד.
 const BIND = process.env.QUIZ_BIND || undefined
@@ -102,7 +103,15 @@ const handler = (req: import('node:http').IncomingMessage, res: import('node:htt
 
   if (req.url === '/health') {
     res.writeHead(200, { 'Content-Type': 'application/json' })
-    res.end(JSON.stringify({ ok: true, rooms: store.size, songs: songs.length }))
+          res.end(
+        JSON.stringify({
+          ok: true,
+          rooms: store.size,
+          songs: songs.length,
+          // מאפשר למי שהפעיל את השרת לוודא שהוא מדבר איתו ולא עם שרת ישן
+          instance: process.env.QUIZ_INSTANCE ?? null,
+        }),
+      )
     return
   }
   serveStatic(req, res)
@@ -152,17 +161,18 @@ function startQuestion(room: Room): void {
     return
   }
 
+  const limit = store.timeLimitFor(room)
   broadcast(room, {
     type: 'question-start',
     questionIndex: room.questionIndex,
     endsAt: room.questionEndsAt,
-    timeLimitMs: QUESTION_TIME_MS,
+    timeLimitMs: limit,
   })
   broadcastState(room)
 
   timers.set(
     room.code,
-    setTimeout(() => finishQuestion(room), QUESTION_TIME_MS),
+    setTimeout(() => finishQuestion(room), limit),
   )
 }
 
@@ -175,6 +185,7 @@ function finishQuestion(room: Room): void {
     type: 'question-end',
     questionIndex: room.questionIndex,
     answerIndex: result.answerIndex,
+    correctLabel: result.correctLabel,
     outcomes: result.outcomes,
     isLast: result.isLast,
   })
@@ -301,6 +312,7 @@ function handle(ws: WebSocket, message: ClientMessage): void {
         message.questionIndex,
         message.choiceIndex,
         message.elapsedMs,
+        message.text,
       )
       if (result.error) return send(ws, { type: 'error', message: result.error })
       broadcastState(room)

@@ -267,8 +267,8 @@ export function useRoom() {
     startGame: useCallback(() => send({ type: 'start-game' }), [send]),
     updateConfig: useCallback((config: RoomConfig) => send({ type: 'update-config', config }), [send]),
     answer: useCallback(
-      (questionIndex: number, choiceIndex: number, elapsedMs: number) =>
-        send({ type: 'answer', questionIndex, choiceIndex, elapsedMs }),
+      (questionIndex: number, choiceIndex: number, elapsedMs: number, text?: string) =>
+        send({ type: 'answer', questionIndex, choiceIndex, elapsedMs, text }),
       [send],
     ),
     next: useCallback(() => send({ type: 'next' }), [send]),
