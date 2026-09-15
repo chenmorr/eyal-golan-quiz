@@ -54,9 +54,12 @@ export function Home({ onSolo, onHost, onJoin, online }: Props) {
 
           {!online && (
             <p className="mt-2 text-center text-sm text-white/40">
-              אין כרגע אינטרנט, אז משחק עם חברים לא זמין. משחק לבד עובד רגיל.
+              אין כרגע אינטרנט, אז משחק עם חברים ושאלות אודיו לא זמינים.
+              שאר המשחק לבד עובד רגיל.
             </p>
           )}
+
+          <p className="mt-6 text-center text-xs text-white/20">גרסה {__BUILD_STAMP__}</p>
         </div>
       ) : (
         <form onSubmit={submitJoin} className="grid gap-3">

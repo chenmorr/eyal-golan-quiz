@@ -6,8 +6,13 @@ import { VitePWA } from 'vite-plugin-pwa'
 // אותו קוד נבנה לשניהם, רק ה-base משתנה.
 const BASE = process.env.VITE_BASE ?? '/'
 
+// חותמת שמוצגת באפליקציה, כדי שאפשר יהיה לראות בעין אם המכשיר
+// מגיש גרסה ישנה מהמטמון
+const BUILD_STAMP = new Date().toISOString().slice(0, 16).replace('T', ' ')
+
 export default defineConfig({
   base: BASE,
+  define: { __BUILD_STAMP__: JSON.stringify(BUILD_STAMP) },
   plugins: [
     react(),
     VitePWA({
@@ -34,6 +39,10 @@ export default defineConfig({
         ],
       },
       workbox: {
+        // הגרסה החדשה מחליפה את הישנה מיד, בלי לחכות לסגירת האפליקציה
+        skipWaiting: true,
+        clientsClaim: true,
+        cleanupOutdatedCaches: true,
         // כל התוכן נכנס למטמון בטעינה הראשונה. מרגע שהאפליקציה נטענה פעם אחת,
         // משחק יחיד עובד לגמרי בלי רשת — זו הדרישה המרכזית של המוצר.
         globPatterns: ['**/*.{js,css,html,png,svg,woff2,json}'],
