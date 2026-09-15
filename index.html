@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1" />
     <meta name="theme-color" content="#0b0708" />
+
+    <!--
+      iOS מתעלם מה-manifest לצורך האייקון ומצב האפליקציה. בלי התגיות
+      האלה, הוספה למסך הבית נותנת צילום מסך של הדף במקום אייקון,
+      והאפליקציה נפתחת עם סרגל הכתובת של ספארי.
+    -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="חידון אייל" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="description" content="חידון השירים של אייל גולן. לבד או עם עד עשרה חברים." />
     <title>חידון אייל גולן</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
