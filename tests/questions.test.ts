@@ -467,3 +467,86 @@ describe('איזון נושאים', () => {
     for (const q of only) expect(q.kind).toBe('year')
   })
 })
+
+describe('סוגי השאלות מהמילים', () => {
+  it('"מה השורה הבאה" מציג שורה אמיתית ותשובה אמיתית', () => {
+    const quiz = generateQuiz(SONGS, { seed: 'nl', questionCount: 10, kinds: ['next-line'] })
+    expect(quiz.length).toBeGreaterThan(0)
+    const pairs = new Map(SONGS.filter((s) => s.nextLine).map((s) => [s.nextLine!.line, s.nextLine!.next]))
+    for (const q of quiz) {
+      expect(q.quote).toBeTruthy()
+      expect(pairs.get(q.quote!), `השורה "${q.quote}" לא מוכרת`).toBe(q.choices[q.answerIndex])
+    }
+  })
+
+  it('השורה שמוצגת אף פעם לא מכילה את שם השיר', () => {
+    for (const song of SONGS.filter((s) => s.nextLine)) {
+      const t = song.title.toLowerCase()
+      expect(song.nextLine!.line.toLowerCase().includes(t)).toBe(false)
+      expect(song.nextLine!.next.toLowerCase().includes(t)).toBe(false)
+    }
+  })
+
+  it('"מילה חסרה" — המילה הנכונה משלימה את השורה', () => {
+    const quiz = generateQuiz(SONGS, { seed: 'fg', questionCount: 10, kinds: ['fill-gap'] })
+    expect(quiz.length).toBeGreaterThan(0)
+    for (const q of quiz) {
+      expect(q.quote).toContain('＿＿＿')
+      const word = q.choices[q.answerIndex]
+      expect(q.reveal).toContain(word)
+      // המסיחים לא יכולים להיות זהים לתשובה
+      expect(new Set(q.choices).size).toBe(q.choices.length)
+    }
+  })
+})
+
+describe('שאלות ההשוואה', () => {
+  it('"מי יצא ראשון" — התשובה באמת המוקדמת ביותר', () => {
+    const byTitle = new Map(SONGS.map((s) => [s.title, s]))
+    for (let i = 0; i < 30; i++) {
+      for (const q of generateQuiz(SONGS, { seed: `o${i}`, questionCount: 5, kinds: ['oldest'] })) {
+        const years = q.choices.map((c) => byTitle.get(c)?.year ?? 9999)
+        expect(years[q.answerIndex]).toBe(Math.min(...years))
+        // חייב להיות מנצח יחיד
+        expect(years.filter((y) => y === Math.min(...years))).toHaveLength(1)
+      }
+    }
+  })
+
+  it('"הכי ארוך" — התשובה באמת הארוכה, ובלי מחרוזות', () => {
+    const byTitle = new Map(SONGS.map((s) => [s.title, s]))
+    for (let i = 0; i < 30; i++) {
+      for (const q of generateQuiz(SONGS, { seed: `lo${i}`, questionCount: 5, kinds: ['longest'] })) {
+        const lens = q.choices.map((c) => byTitle.get(c)?.lengthMs ?? 0)
+        expect(lens[q.answerIndex]).toBe(Math.max(...lens))
+        for (const l of lens) expect(l).toBeLessThanOrEqual(8 * 60_000)
+      }
+    }
+  })
+})
+
+describe('אמיתי או המצאה', () => {
+  const titles = new Set(SONGS.map((s) => s.title.trim()))
+
+  it('שם מומצא באמת לא קיים במאגר', () => {
+    for (let i = 0; i < 60; i++) {
+      for (const q of generateQuiz(SONGS, { seed: `rf${i}`, questionCount: 4, kinds: ['real-or-fake'] })) {
+        if (q.answerIndex === 1) {
+          expect(titles.has(q.quote!.trim()), `"${q.quote}" כן קיים`).toBe(false)
+        } else {
+          expect(titles.has(q.quote!.trim()), `"${q.quote}" לא קיים`).toBe(true)
+        }
+      }
+    }
+  })
+
+  it('שם מומצא נראה כמו שיר עברי ולא כמו תקלה', () => {
+    for (let i = 0; i < 60; i++) {
+      for (const q of generateQuiz(SONGS, { seed: `rf2-${i}`, questionCount: 4, kinds: ['real-or-fake'] })) {
+        if (q.answerIndex !== 1) continue
+        expect(q.quote, `"${q.quote}" מכיל תווים זרים`).toMatch(/^[א-ת\s'״׳,!?-]+$/)
+        expect(q.quote!.split(/\s+/).length).toBeGreaterThanOrEqual(2)
+      }
+    }
+  })
+})

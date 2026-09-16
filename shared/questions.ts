@@ -23,6 +23,10 @@ export interface Pool {
   /** כל שיר עם אודיו, כולל כאלה ששרים את שמם */
   audioAny: Song[]
   withLyrics: Song[]
+  withNextLine: Song[]
+  withGap: Song[]
+  /** כל המילים שהוחסרו, מאגר המסיחים לשאלות ההשלמה */
+  gapWords: string[]
 }
 
 export function buildPool(allSongs: Song[], config: QuizConfig): Pool {
@@ -68,6 +72,9 @@ export function buildPool(allSongs: Song[], config: QuizConfig): Pool {
     // מאשר לשאול שאלה שהתשובה שלה נשמעת
     audioSafe: audioAny.filter((s) => s.titleInLyrics === false),
     withLyrics: songs.filter((s) => s.lyricLine),
+    withNextLine: songs.filter((s) => s.nextLine),
+    withGap: songs.filter((s) => s.gap),
+    gapWords: [...new Set(songs.filter((s) => s.gap).map((s) => s.gap!.word))],
     albums: [...albumYear.entries()].map(([title, year]) => ({ title, year })),
     years: [...new Set(dated.map((s) => s.year!))].sort((a, b) => a - b),
     artists,
@@ -107,6 +114,12 @@ const THEME_OF: Record<QuestionKind, string> = {
   lyric: 'lyrics',
   feature: 'guests',
   'guest-count': 'guests',
+  'next-line': 'lyrics',
+  'fill-gap': 'lyrics',
+  // אלה נושא משלהם: הם על השוואה בין שירים, לא על עובדה בודדת
+  oldest: 'trivia',
+  longest: 'trivia',
+  'real-or-fake': 'trivia',
 }
 
 /** אף נושא לא יתפוס יותר מהחלק הזה מהחידון */
@@ -341,7 +354,7 @@ const GENERATORS: Generator[] = [
     // רק שירים שלא שרים את שמם: הקטע של אפל מתחיל סביב הפזמון, ואם השם
     // מופיע במילים הוא נשמע באוזניים והשאלה מגלה את עצמה.
     kind: 'audio-open',
-    weight: 4,
+    weight: 3,
     ready: (p) => p.audioSafe.length >= 1,
     make(rng, pool, used) {
       const withAudio = pool.audioSafe.filter((s) => !used.has(s.id))
@@ -549,7 +562,181 @@ const GENERATORS: Generator[] = [
       }
     },
   },
+  {
+    // מה השורה הבאה. הזוג נלקח ממקומות סמוכים במקור, אז זו באמת
+    // השורה שבאה אחרי ולא ניחוש.
+    kind: 'next-line',
+    weight: 3,
+    ready: (p) => p.withNextLine.length >= 4,
+    make(rng, pool, used) {
+      const candidates = pool.withNextLine.filter((s) => !used.has(s.id))
+      if (!candidates.length) return null
+      const song = pick(rng, candidates)
+      // המסיחים הם שורות אמיתיות משירים אחרים, כדי שכולן יישמעו סבירות
+      const others = pool.withNextLine
+        .filter((s) => s.id !== song.id)
+        .map((s) => s.nextLine!.next)
+      const built = choicesFrom(rng, song.nextLine!.next, others)
+      if (!built) return null
+      used.add(song.id)
+      return {
+        id: `nextline:${song.id}`,
+        kind: 'next-line',
+        prompt: 'מה השורה הבאה?',
+        quote: song.nextLine!.line,
+        ...built,
+        difficulty: song.difficulty,
+        reveal: `מתוך "${song.title}" (${song.year}).`,
+      }
+    },
+  },
+  {
+    // איזו מילה חסרה בשורה
+    kind: 'fill-gap',
+    weight: 3,
+    ready: (p) => p.withGap.length >= 4 && p.gapWords.length >= 6,
+    make(rng, pool, used) {
+      const candidates = pool.withGap.filter((s) => !used.has(s.id))
+      if (!candidates.length) return null
+      const song = pick(rng, candidates)
+      const built = choicesFrom(rng, song.gap!.word, pool.gapWords)
+      if (!built) return null
+      used.add(song.id)
+      return {
+        id: `gap:${song.id}`,
+        kind: 'fill-gap',
+        prompt: 'איזו מילה חסרה?',
+        quote: song.gap!.line,
+        ...built,
+        difficulty: song.difficulty,
+        reveal: `"${song.gap!.line.replace('＿＿＿', song.gap!.word)}" — מתוך "${song.title}".`,
+      }
+    },
+  },
+  {
+    // איזה מהארבעה הכי ותיק
+    kind: 'oldest',
+    weight: 2,
+    ready: (p) => p.dated.length >= 20,
+    make(rng, pool, used) {
+      const four = sample(rng, pool.dated, 4)
+      if (four.length < 4) return null
+      const sorted = [...four].sort((a, b) => a.year! - b.year!)
+      // צריך הבדל ברור בין הראשון לשני, אחרת אין תשובה אחת נכונה
+      if (sorted[0].year === sorted[1].year) return null
+      const key = `oldest:${four.map((s) => s.id).sort().join('|')}`
+      if (used.has(key)) return null
+      used.add(key)
+      const choices = shuffle(rng, four.map((s) => s.title))
+      return {
+        id: key,
+        kind: 'oldest',
+        prompt: 'איזה מהשירים האלה יצא ראשון?',
+        choices,
+        answerIndex: choices.indexOf(sorted[0].title),
+        difficulty: sorted[1].year! - sorted[0].year! >= 8 ? 'medium' : 'hard',
+        reveal: four
+          .slice()
+          .sort((a, b) => a.year! - b.year!)
+          .map((s) => `${s.title} (${s.year})`)
+          .join(' · '),
+      }
+    },
+  },
+  {
+    // איזה מהארבעה הכי ארוך
+    kind: 'longest',
+    weight: 1,
+    ready: (p) => p.songs.filter((s) => s.lengthMs).length >= 20,
+    make(rng, pool, used) {
+      // מעל שמונה דקות זו כמעט תמיד מחרוזת או גרסת הופעה, ואז
+      // השאלה הופכת לטריוויאלית
+      const timed = pool.songs.filter((s) => s.lengthMs && s.lengthMs <= 8 * 60_000)
+      const four = sample(rng, timed, 4)
+      if (four.length < 4) return null
+      const sorted = [...four].sort((a, b) => b.lengthMs! - a.lengthMs!)
+      // פער של חצי דקה לפחות, אחרת זה ניחוש
+      if (sorted[0].lengthMs! - sorted[1].lengthMs! < 30_000) return null
+      const key = `longest:${four.map((s) => s.id).sort().join('|')}`
+      if (used.has(key)) return null
+      used.add(key)
+      const choices = shuffle(rng, four.map((s) => s.title))
+      const mins = (ms: number) => `${Math.floor(ms / 60000)}:${String(Math.round((ms % 60000) / 1000)).padStart(2, '0')}`
+      return {
+        id: key,
+        kind: 'longest',
+        prompt: 'איזה מהשירים האלה הכי ארוך?',
+        choices,
+        answerIndex: choices.indexOf(sorted[0].title),
+        difficulty: 'hard',
+        reveal: sorted.map((s) => `${s.title} ${mins(s.lengthMs!)}`).join(' · '),
+      }
+    },
+  },
+  {
+    // שיר אמיתי או שם מומצא. השם המזויף מורכב משברי שמות אמיתיים,
+    // אז הוא נשמע לגמרי סביר — וזה מה שהופך את זה לקשה.
+    kind: 'real-or-fake',
+    weight: 2,
+    ready: (p) => p.dated.length >= 30,
+    make(rng, pool, used) {
+      const real = pick(rng, pool.dated)
+      const fake = inventTitle(rng, pool)
+      if (!fake) return null
+      const askAboutReal = rng() < 0.5
+      const subject = askAboutReal ? real.title : fake
+      const key = `realfake:${subject}`
+      if (used.has(key)) return null
+      used.add(key)
+      const choices = ['שיר אמיתי', 'לא קיים']
+      return {
+        id: key,
+        kind: 'real-or-fake',
+        prompt: 'יש לאייל גולן שיר בשם הזה?',
+        quote: subject,
+        choices,
+        answerIndex: askAboutReal ? 0 : 1,
+        difficulty: 'medium',
+        reveal: askAboutReal
+          ? `"${real.title}" אמיתי לגמרי — מהאלבום "${real.album}" (${real.year}).`
+          : `לא קיים. המצאנו אותו משברי שמות של שירים אחרים.`,
+      }
+    },
+  },
 ]
+
+/**
+ * ממציא שם שיר שנשמע אמיתי, מצירוף שברים של שמות קיימים.
+ * "לב של גבר" ועוד "חייל של אהבה" נותנים "לב של אהבה" — שם שאף אחד
+ * לא בטוח לגביו, וזה בדיוק העניין.
+ */
+function inventTitle(rng: Rng, pool: Pool): string | null {
+  const existing = new Set(pool.songs.map((s) => s.title.trim()))
+  // רק שמות עבריים נקיים: שם עם סוגריים או אנגלית נראה כמו תקלה,
+  // לא כמו שיר, והשחקן פוסל אותו בלי לחשוב
+  const clean = (t: string) => /^[א-ת\s'״׳,!?-]+$/.test(t) && !/[()\[\]&]/.test(t)
+  const source = pool.dated.filter((s) => clean(s.title))
+  if (source.length < 10) return null
+
+  for (let attempt = 0; attempt < 30; attempt++) {
+    const a = pick(rng, source).title.split(/\s+/)
+    const b = pick(rng, source).title.split(/\s+/)
+    if (a.length < 2 || b.length < 2) continue
+
+    // חצי מהראשון וחצי מהשני
+    const head = a.slice(0, Math.max(1, Math.ceil(a.length / 2)))
+    const tail = b.slice(Math.floor(b.length / 2))
+    const candidate = [...head, ...tail].join(' ').trim()
+
+    if (candidate.split(/\s+/).length < 2 || candidate.length > 30) continue
+    if (!clean(candidate)) continue
+    if (existing.has(candidate)) continue
+    // לא מקבלים שם שהוא בעצם אחד המקוריים
+    if (candidate === a.join(' ') || candidate === b.join(' ')) continue
+    return candidate
+  }
+  return null
+}
 
 function pickUnused(rng: Rng, songs: Song[], used: Set<string>): Song | null {
   const free = songs.filter((s) => !used.has(s.id))

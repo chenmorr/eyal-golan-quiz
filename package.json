@@ -19,7 +19,8 @@
     "url": "node scripts/show-url.mjs",
     "deploy:pages": "node scripts/deploy-pages.mjs",
     "data:previews": "node scripts/fetch-previews.mjs",
-    "data:lyrics": "node scripts/fetch-lyrics.mjs"
+    "data:lyrics": "node scripts/fetch-lyrics.mjs",
+    "data:lyric-questions": "node scripts/build-lyric-data.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",

@@ -31,6 +31,11 @@ export const KIND_LABELS: Record<string, string> = {
   'lyric-open': 'שורה בהקלדה',
   'album-order': 'איזה אלבום קודם',
   'guest-count': 'הכי הרבה דואטים',
+  'next-line': 'מה השורה הבאה',
+  'fill-gap': 'מילה חסרה',
+  oldest: 'מי יצא ראשון',
+  longest: 'השיר הכי ארוך',
+  'real-or-fake': 'אמיתי או המצאה',
   lyric: 'מאיפה השורה',
 }
 

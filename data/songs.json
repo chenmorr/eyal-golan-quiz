@@ -165,7 +165,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e4/95/5f/e4955f70-8f1a-1814-3d7d-d816b10ba9f8/mzaf_11519926078496121919.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "בקצב פעימות הלב"
+    "lyricLine": "בקצב פעימות הלב",
+    "nextLine": {
+      "line": "את ספינתי אקרא בשמך",
+      "next": "מוכן הכל לתת לך אהובה"
+    },
+    "gap": {
+      "line": "זה לא אותו ＿＿＿ יפה",
+      "word": "עולם"
+    }
   },
   {
     "id": "השיר-האחרון",
@@ -185,7 +193,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a4/4f/4b/a44f4b04-a105-fea2-582f-bed63b4ea44a/mzaf_14893714649538287223.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ואת אומרת: \"לא, זה לא ילך\""
+    "lyricLine": "ואת אומרת: \"לא, זה לא ילך\"",
+    "nextLine": {
+      "line": "אל סוף אחר חיפשתי דרך",
+      "next": "אולי למצוא שם אהבה"
+    },
+    "gap": {
+      "line": "אולי ＿＿＿ שם אהבה",
+      "word": "למצוא"
+    }
   },
   {
     "id": "ילדתי-נא-שובי",
@@ -202,7 +218,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bb/d1/d3/bbd1d305-768f-df12-b38e-38f6512a42e1/mzaf_13484300502433615032.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "עד כלות הנשימה"
+    "lyricLine": "עד כלות הנשימה",
+    "nextLine": {
+      "line": "עד שיחלוף לו יום",
+      "next": "ואני כמו בחלום"
+    },
+    "gap": {
+      "line": "עד ＿＿＿ לו יום",
+      "word": "שיחלוף"
+    }
   },
   {
     "id": "לאן-את-הולכת",
@@ -219,7 +243,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3d/d5/b0/3dd5b068-5445-2ebb-3155-85926ad75625/mzaf_7944027113807094797.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "תני עוד חיוך אחד לפני שאת עוזבת"
+    "lyricLine": "תני עוד חיוך אחד לפני שאת עוזבת",
+    "nextLine": {
+      "line": "כי את לי היחידה",
+      "next": "את לי גם החידה"
+    },
+    "gap": {
+      "line": "כי את לי ＿＿＿",
+      "word": "היחידה"
+    }
   },
   {
     "id": "לב-של-גבר",
@@ -241,7 +273,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4b/cc/a6/4bcca600-1d2a-9b50-4252-8273f1d9a43d/mzaf_16394919974552727952.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "החברים אמרו לי לעזוב הכל"
+    "lyricLine": "החברים אמרו לי לעזוב הכל",
+    "nextLine": {
+      "line": "החברים סיפרו שעלייך מדברים",
+      "next": "שבלילות שישי את יוצאת עם אחרים"
+    },
+    "gap": {
+      "line": "＿＿＿ אחרי האור אלייך",
+      "word": "הולך"
+    }
   },
   {
     "id": "נערה",
@@ -258,7 +298,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/32/dd/f432dd52-f48a-12bb-260c-7cf2c8d9a2a9/mzaf_4933288837737840222.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "להתעורר איתך רציתי"
+    "lyricLine": "להתעורר איתך רציתי",
+    "nextLine": {
+      "line": "אותך אף פעם לא הבנתי",
+      "next": "חשבתי שאני תמיד נותן לך את הכל"
+    },
+    "gap": {
+      "line": "מה שנתת לי לא תוכלי לתת ＿＿＿ אחר",
+      "word": "למישהו"
+    }
   },
   {
     "id": "עוד-יום-שעבר",
@@ -275,7 +323,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/56/6a/3e/566a3e40-770e-b591-af74-4c1a670973df/mzaf_5826384717342594536.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "שוב אותן השאלות"
+    "lyricLine": "שוב אותן השאלות",
+    "nextLine": {
+      "line": "לברוח לדבר שלא נגמר",
+      "next": "לברוח אל תאמרו שאי אפשר"
+    },
+    "gap": {
+      "line": "＿＿＿ אל תאמרו שאי אפשר",
+      "word": "לברוח"
+    }
   },
   {
     "id": "עיניך-מספרות",
@@ -292,7 +348,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b4/2e/6e/b42e6e90-b333-c84e-09af-c5bb4d5af495/mzaf_16452632640134333585.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אם יש בליבך מין צער או כאב"
+    "lyricLine": "אם יש בליבך מין צער או כאב",
+    "nextLine": {
+      "line": "אם רק תקרא אני אבוא אליך",
+      "next": "תמיד אזכור את חסד נעוריך"
+    },
+    "gap": {
+      "line": "כי ＿＿＿ אחי כבר אומרות הכל",
+      "word": "עיניך"
+    }
   },
   {
     "id": "צאי-אל-החלון",
@@ -330,7 +394,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f8/5e/c7/f85ec701-622c-d178-63f5-c7d0145f1235/mzaf_742837095861397623.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "את כבשת את לבבי"
+    "lyricLine": "את כבשת את לבבי",
+    "nextLine": {
+      "line": "לא נמוג הוא הכאב",
+      "next": "ממש כמו בהתחלה"
+    },
+    "gap": {
+      "line": "חלפו שנים ואת ＿＿＿",
+      "word": "גדלת"
+    }
   },
   {
     "id": "אותך-אשא",
@@ -365,7 +437,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/95/e2/d495e2e4-22ac-9322-ba5d-8a0304690ccf/mzaf_6188592256578175814.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ולא היתה אישה אוהבת"
+    "lyricLine": "ולא היתה אישה אוהבת",
+    "nextLine": {
+      "line": "הפלגת כבר מספיק למעני",
+      "next": "היה לי בעל ולא אורח"
+    },
+    "gap": {
+      "line": "חוף מבטחים אצלה ＿＿＿",
+      "word": "מצאתי"
+    }
   },
   {
     "id": "דמעות",
@@ -388,7 +468,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e7/a3/db/e7a3dbdd-d564-3500-5f8b-0f443cee11ba/mzaf_8745532724601090109.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ולא היו בך חיים"
+    "lyricLine": "ולא היו בך חיים",
+    "nextLine": {
+      "line": "אמונים לך שמרתי",
+      "next": "ואשמור לך גם אחרי"
+    },
+    "gap": {
+      "line": "הן זולגות אל ＿＿＿ החם",
+      "word": "הקבר"
+    }
   },
   {
     "id": "זרה",
@@ -408,7 +496,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/84/54/a4/8454a4cb-8af0-090b-3e2f-cc55cebff1a2/mzaf_17753637460876148604.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "מילים כמו סכין"
+    "lyricLine": "מילים כמו סכין",
+    "nextLine": {
+      "line": "ואת תמיד אמרת לי",
+      "next": "שאהבה היא שיעמום"
+    },
+    "gap": {
+      "line": "אשקה ＿＿＿ בלי הרף",
+      "word": "אותו"
+    }
   },
   {
     "id": "חיל-של-אהבה",
@@ -425,7 +521,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e9/f5/93/e9f593d3-03a2-f7ec-d5ed-71905dcf3244/mzaf_1026571823085231827.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "בוערת בי אהבתך"
+    "lyricLine": "בוערת בי אהבתך",
+    "nextLine": {
+      "line": "חייל שומר בגבול נמצא רחוק ממך",
+      "next": "אשמור תמיד עלייך ועלי למענך"
+    },
+    "gap": {
+      "line": "זה הלילה ＿＿＿ ואת עוד מחכה לי",
+      "word": "השני"
+    }
   },
   {
     "id": "יפה-שלי",
@@ -447,7 +551,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/b8/3a/67b83a0d-110a-6503-4a1f-b91c0434f875/mzaf_17532921877817365597.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "לחיות את חיי לצידך"
+    "lyricLine": "לחיות את חיי לצידך",
+    "nextLine": {
+      "line": "אתן לך שקט נפשי וכח להמשיך",
+      "next": "רק תני לי לחיות לצידך"
+    },
+    "gap": {
+      "line": "＿＿＿ עיני זאת אהבה עיוורת",
+      "word": "עוצם"
+    }
   },
   {
     "id": "לקנות-לך-יהלום",
@@ -466,7 +578,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/c6/55/acc6555e-b320-6fd8-4c2c-612bd69ad1f3/mzaf_14773743728691341813.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "היא לא נשארת אבודה"
+    "lyricLine": "היא לא נשארת אבודה",
+    "nextLine": {
+      "line": "אם אין לחם אין אהבה",
+      "next": "אני נוסע לסדר לנו עתיד"
+    },
+    "gap": {
+      "line": "לך אני מבטיח ＿＿＿ אצליח",
+      "word": "שבקרוב"
+    }
   },
   {
     "id": "מבקשים-חים",
@@ -497,7 +617,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/20/1d/ca/201dcadf-7ba2-9c24-66f3-2c328f54b09d/mzaf_6440593073267881372.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אז תשאיר הכל מאחוריך"
+    "lyricLine": "אז תשאיר הכל מאחוריך",
+    "nextLine": {
+      "line": "אתה שבוי בהבטחות בלי כיסוי",
+      "next": "לוקח קשה את הכל"
+    },
+    "gap": {
+      "line": "אם ＿＿＿ למחר אולי תהיה מאושר",
+      "word": "תחכה"
+    }
   },
   {
     "id": "אהבה-אחרת",
@@ -514,7 +642,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/47/d3/b3/47d3b3b7-8cb2-f71f-15b4-32397ebc2a59/mzaf_12868504248145944443.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "איתה הייתי מאושר"
+    "lyricLine": "איתה הייתי מאושר",
+    "nextLine": {
+      "line": "לילה שחור, שקטה הרוח",
+      "next": "סיפור פשוט שהסתבך"
+    },
+    "gap": {
+      "line": "גם אם היא ＿＿＿ בי נלחמה",
+      "word": "תמיד"
+    }
   },
   {
     "id": "אהבת-ילדות",
@@ -531,7 +667,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3c/37/94/3c3794f9-4ea2-cb48-ef1d-50e305cf6418/mzaf_16839345593668361570.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "איך פרידה מילאה אותנו באכזבות"
+    "lyricLine": "איך פרידה מילאה אותנו באכזבות",
+    "nextLine": {
+      "line": "עזבי את הצער שבלב",
+      "next": "כי רק אותך אני אוהב"
+    },
+    "gap": {
+      "line": "נשארו לנו אותם ＿＿＿",
+      "word": "הזכרונות"
+    }
   },
   {
     "id": "איך",
@@ -550,7 +694,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5a/c9/0e/5ac90eb0-8f9e-332c-c9f5-18cc4546b29c/mzaf_8939284835937543730.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "לכתך אחריי בחולות"
+    "lyricLine": "לכתך אחריי בחולות",
+    "nextLine": {
+      "line": "אני לא בנוי לפרידה",
+      "next": "קשה כל דבר להסביר"
+    },
+    "gap": {
+      "line": "ואז בי נשבעתי תמיד ＿＿＿ את חיי לה",
+      "word": "שאקדיש"
+    }
   },
   {
     "id": "בעירי",
@@ -569,7 +721,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8c/1d/6b/8c1d6bb2-c346-9519-81a7-2602a1636279/mzaf_13632261025257221050.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כמה מילים עוד לך אומר"
+    "lyricLine": "כמה מילים עוד לך אומר",
+    "nextLine": {
+      "line": "בחץ אהבה הוא ישדך",
+      "next": "את ליבי ואת ליבך"
+    },
+    "gap": {
+      "line": "אני שוב חוזר ＿＿＿",
+      "word": "אלייך"
+    }
   },
   {
     "id": "הסתכלי-אלי",
@@ -591,7 +751,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b5/55/08/b55508ef-ff51-a58a-e060-beb818e291d2/mzaf_4365648584966815172.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "התזמורת מוכנה, הם מריעים לך"
+    "lyricLine": "התזמורת מוכנה, הם מריעים לך",
+    "nextLine": {
+      "line": "בכל שיר הם אוהבים ומריעים לך",
+      "next": "ורק קולך מסגיר את הכאב"
+    },
+    "gap": {
+      "line": "אני יושב מולך הביטי ＿＿＿",
+      "word": "בעיני"
+    }
   },
   {
     "id": "ים-של-טעויות",
@@ -613,7 +781,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/bd/d8/78/bdd8785b-7705-b788-9195-815bbe1314a8/mzaf_9913417300408729821.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "שלא נדע לריב עוד לעולם -"
+    "lyricLine": "שלא נדע לריב עוד לעולם -",
+    "nextLine": {
+      "line": "הסתכלי איך באוקיאנוס צפות הטעויות",
+      "next": "זוגות תמיד חיפשו כאן אהבה"
+    },
+    "gap": {
+      "line": "אחבק, למענך אני ＿＿＿",
+      "word": "קיים"
+    }
   },
   {
     "id": "לב-חולה",
@@ -630,7 +806,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6c/4a/53/6c4a5364-e3c1-000f-cce3-e87b82613097/mzaf_1116006590578400488.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "צריך למצוא רופא שירפא לי את הלב"
+    "lyricLine": "צריך למצוא רופא שירפא לי את הלב",
+    "nextLine": {
+      "line": "תרופה שתעשה לי הקלה",
+      "next": "זה לא יכול להיות שרק אותה אני אוהב"
+    },
+    "gap": {
+      "line": "אבל בה רק הייתי ＿＿＿",
+      "word": "מאוהב"
+    }
   },
   {
     "id": "מלך-המגרש",
@@ -649,7 +833,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a8/6d/b2/a86db220-bcaa-d93e-82f8-66ce254c067a/mzaf_503811151430183309.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ימי ילדות מאושרים"
+    "lyricLine": "ימי ילדות מאושרים",
+    "nextLine": {
+      "line": "תמיד רציתי לתת את הנשמה",
+      "next": "עם כל הכוח לכבוש את העונה"
+    },
+    "gap": {
+      "line": "חבל לי על ＿＿＿",
+      "word": "הזמן"
+    }
   },
   {
     "id": "שושנת-ספרד",
@@ -666,7 +858,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/de/4d/fd/de4dfdf1-5a6c-8b59-1e7f-baaf2e67de85/mzaf_3612823968538075736.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "קסטנייטות מלוות אותה"
+    "lyricLine": "קסטנייטות מלוות אותה",
+    "nextLine": {
+      "line": "תמיד רואה אותה בסוף היום",
+      "next": "היא מופיעה לי ככה בחלום"
+    },
+    "gap": {
+      "line": "זה שירם של ＿＿＿",
+      "word": "אוהבים"
+    }
   },
   {
     "id": "תודה-לאל",
@@ -686,7 +886,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/41/c4/ca/41c4ca00-16fb-c357-9add-a043ef52e4a6/mzaf_15250911515370459375.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "לדאוג לילד רך ולקוות"
+    "lyricLine": "לדאוג לילד רך ולקוות",
+    "nextLine": {
+      "line": "יש בי נשמה בלי צל של נקמה",
+      "next": "לחיים יפים על פני האדמה"
+    },
+    "gap": {
+      "line": "אהבתך תשמור ＿＿＿ ועל ביתנו",
+      "word": "עליי"
+    }
   },
   {
     "id": "איזקינו-הדוד",
@@ -868,7 +1076,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b8/cd/35/b8cd3562-8b1b-a03c-5d04-9786b564aaef/mzaf_17491222357984017763.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "הביני שאותך תמיד חלמתי"
+    "lyricLine": "הביני שאותך תמיד חלמתי",
+    "nextLine": {
+      "line": "זיכרי שאותך אני אוהב",
+      "next": "שימרי ובידקי צעדייך"
+    },
+    "gap": {
+      "line": "תדעי שאותך תמיד ＿＿＿",
+      "word": "אהבתי"
+    }
   },
   {
     "id": "בובים-בובות",
@@ -906,7 +1122,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3d/79/b4/3d79b40e-a4a1-5ca5-7400-8832ae2e8203/mzaf_640358626831177461.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אם אקח את ידך המושטת"
+    "lyricLine": "אם אקח את ידך המושטת",
+    "nextLine": {
+      "line": "אמרת כי אמת את דוברת",
+      "next": "ועל מה שהיה מצטערת"
+    },
+    "gap": {
+      "line": "אני לא ＿＿＿ לא אינני",
+      "word": "אלוהים"
+    }
   },
   {
     "id": "הדרך-ארוכה",
@@ -955,7 +1179,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/46/c8/98/46c898dc-88a7-4f6b-a668-9bdea976b509/mzaf_2315359637841312936.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "שאת תהיי לי, תהיי לי לעולם"
+    "lyricLine": "שאת תהיי לי, תהיי לי לעולם",
+    "nextLine": {
+      "line": "אצלי האושר הוא דבר שלא דעך",
+      "next": "צועד בקצב אל העולם"
+    },
+    "gap": {
+      "line": "אותי ＿＿＿ כבר לא רוצה שתחזרי",
+      "word": "עזבת"
+    }
   },
   {
     "id": "הריקוד-הוא-שלך",
@@ -988,7 +1220,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/57/8c/ba/578cbae2-19f0-885d-6502-7fd7cadb258b/mzaf_9771131016121455368.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "איך טוב לי לצידך"
+    "lyricLine": "איך טוב לי לצידך",
+    "nextLine": {
+      "line": "עוד אין בינינו סוד",
+      "next": "רק רגשות שלא נסוגו"
+    },
+    "gap": {
+      "line": "＿＿＿ נותן עכשיו את הכל",
+      "word": "הייתי"
+    }
   },
   {
     "id": "מיליון-או-דולר",
@@ -1005,7 +1245,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b7/2b/2e/b72b2e60-2bc5-ec2c-1ede-f7d4cc5d0b63/mzaf_8527343082363722222.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "חותמות אותה בנשיקות"
+    "lyricLine": "חותמות אותה בנשיקות",
+    "nextLine": {
+      "line": "אל המבט שבתמונה אני נסחף",
+      "next": "ומנשק לה על האף"
+    },
+    "gap": {
+      "line": "הדביקי בול שלחי ＿＿＿ אלי בדואר",
+      "word": "אותו"
+    }
   },
   {
     "id": "מנגינת-הלב",
@@ -1022,7 +1270,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fe/e6/b9/fee6b9be-5ab3-0ef7-bd7a-35d428090c20/mzaf_13523398961656231032.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כולם שרים שיר אהבה בקול עמוק"
+    "lyricLine": "כולם שרים שיר אהבה בקול עמוק",
+    "nextLine": {
+      "line": "לכן אמרי לי נערה האם תהיי לי",
+      "next": "איך ימי חולפים ואין בי מנוחה"
+    },
+    "gap": {
+      "line": "איך שהלב ＿＿＿ מתקרב",
+      "word": "אלייך"
+    }
   },
   {
     "id": "צליל-מיתר",
@@ -1044,7 +1300,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cf/a1/3f/cfa13f01-b134-b39a-08ca-c6a461094934/mzaf_11578994849008040377.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "לו רק היית פה"
+    "lyricLine": "לו רק היית פה",
+    "nextLine": {
+      "line": "לא אל תוותרי קבלי אותי אלייך",
+      "next": "כי כל יום שבא והולך הוא נצח בלעדייך"
+    },
+    "gap": {
+      "line": "לא אל תוותרי ＿＿＿ אותי אלייך",
+      "word": "קבלי"
+    }
   },
   {
     "id": "אלוהי",
@@ -1064,7 +1328,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/8c/58/338c5822-225e-3d60-1d7a-b8449b249b58/mzaf_9172095348078943063.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "הסתגרתי לי לבד בחדר"
+    "lyricLine": "הסתגרתי לי לבד בחדר",
+    "nextLine": {
+      "line": "האורות כבים בחלונות",
+      "next": "אנשים חולמים על המחר"
+    },
+    "gap": {
+      "line": "＿＿＿ איבדו כיוון וסדר",
+      "word": "החיים"
+    }
   },
   {
     "id": "דברי-איתי",
@@ -1084,7 +1356,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/22/7d/4e/227d4eb4-f24a-d96b-2ca6-4ed03a125bb5/mzaf_17513784853958144430.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אז לא הייתי מספר כמה הקור עוד בי חודר"
+    "lyricLine": "אז לא הייתי מספר כמה הקור עוד בי חודר",
+    "nextLine": {
+      "line": "יש לי עוד מילים יפות לך לומר",
+      "next": "חיזרי מהר אפילו מחר"
+    },
+    "gap": {
+      "line": "שום דבר אצלי איננו ＿＿＿",
+      "word": "מוכר"
+    }
   },
   {
     "id": "האור-שבעינים",
@@ -1103,7 +1383,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/c6/db/94c6db3f-9f13-6464-a4d5-ec75bf705f8d/mzaf_5505905290003246727.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "מה היא עושה לנשמה"
+    "lyricLine": "מה היא עושה לנשמה",
+    "nextLine": {
+      "line": "קטפתי פרח בצבעי האהבה",
+      "next": "אמרו שאת כבר ישנה"
+    },
+    "gap": {
+      "line": "את ＿＿＿ כמה זה קשה להתאהב",
+      "word": "יודעת"
+    }
   },
   {
     "id": "הלילה-השחור",
@@ -1139,7 +1427,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6f/e7/42/6fe742f9-5d88-eb92-32a7-301c3dca30bd/mzaf_13829133808419314770.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "השתנו חיי ללא ספק"
+    "lyricLine": "השתנו חיי ללא ספק",
+    "nextLine": {
+      "line": "בחיים את לידי קרוב ללב",
+      "next": "כשפגשתי בך לראשונה"
+    },
+    "gap": {
+      "line": "עד שבאתי ומצאתי ＿＿＿ אהובתי",
+      "word": "אותך"
+    }
   },
   {
     "id": "ים-פרחים",
@@ -1156,7 +1452,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/57/c4/e7/57c4e78a-2cde-2607-3f23-ef4533b7ff4e/mzaf_3463179138544364201.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אנא אמרי, אמרי מדוע"
+    "lyricLine": "אנא אמרי, אמרי מדוע",
+    "nextLine": {
+      "line": "לו רק מבט היית שולחת",
+      "next": "היית לבטח גם יודעת"
+    },
+    "gap": {
+      "line": "אנא ＿＿＿ לי, מה יהיה איתך?",
+      "word": "אמרי"
+    }
   },
   {
     "id": "לאהוב-אותך",
@@ -1173,7 +1477,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fe/a3/45/fea345f2-9af4-54f4-b992-9ae40ae43043/mzaf_13704861621851927967.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כשהצחוק על שפתייך מה שנשאר"
+    "lyricLine": "כשהצחוק על שפתייך מה שנשאר",
+    "nextLine": {
+      "line": "מי שישלם בזהב ישלם בכסף לא יקנה אותך",
+      "next": "ככה סתם ההפך את תהיי שלו מבחירה מחשק"
+    },
+    "gap": {
+      "line": "אז תאהבי אותי ככה ＿＿＿ או עני",
+      "word": "עשיר"
+    }
   },
   {
     "id": "ראיתי-בך-אשה",
@@ -1207,7 +1519,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0d/4d/a1/0d4da174-3138-1541-47b9-e80c7289fd8a/mzaf_15862233507987605280.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ואוהב אותך כמו שידעתי"
+    "lyricLine": "ואוהב אותך כמו שידעתי",
+    "nextLine": {
+      "line": "אם הייתי מקשיב באמת",
+      "next": "מפרש סימנים שהשארת לי"
+    },
+    "gap": {
+      "line": "והיית ＿＿＿ לי סודות",
+      "word": "מגלה"
+    }
   },
   {
     "id": "האהבה-הישנה",
@@ -1227,7 +1547,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9d/a7/90/9da7901f-08ff-1581-ccee-d2815e6bc925/mzaf_5152842785041730360.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "הכינורות המתוקים לא מנגנים לי"
+    "lyricLine": "הכינורות המתוקים לא מנגנים לי",
+    "nextLine": {
+      "line": "הנביאים כבר מתו ואין מי שינבא לי",
+      "next": "חלליות עפות למעלה ולמטה"
+    },
+    "gap": {
+      "line": "את שוב ＿＿＿ לך שמלת כלה",
+      "word": "לובשת"
+    }
   },
   {
     "id": "חלומות",
@@ -1284,7 +1612,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/48/99/72/489972b3-fd5f-504d-7171-91fb7cece1d2/mzaf_15765952524898350426.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אל תקחי איתך את טעם החיים"
+    "lyricLine": "אל תקחי איתך את טעם החיים",
+    "nextLine": {
+      "line": "השארי לוחש הבית הקירות נאנחים",
+      "next": "תפוחים על השטיח לרגלייך משתטחים"
+    },
+    "gap": {
+      "line": "השארי לוחש הבית הקירות ＿＿＿",
+      "word": "נאנחים"
+    }
   },
   {
     "id": "כשאת-צוחקת",
@@ -1331,7 +1667,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7b/bc/41/7bbc414a-9450-4e2e-ab9d-63b4af30cee8/mzaf_8267357732331434069.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "חולם להיות כאן לצידך"
+    "lyricLine": "חולם להיות כאן לצידך",
+    "nextLine": {
+      "line": "הדרך נגמרת עוד מעט נוגע",
+      "next": "באהבה שלך בחלומות שלי"
+    },
+    "gap": {
+      "line": "רק איתך אני ＿＿＿ קיים",
+      "word": "מרגיש"
+    }
   },
   {
     "id": "מציאות-אחרת",
@@ -1351,7 +1695,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/62/c8/cf/62c8cf29-c0ee-26e0-1e1c-29b20c37aa01/mzaf_1849817833815746198.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "נפגשנו מאוחר מדי"
+    "lyricLine": "נפגשנו מאוחר מדי",
+    "nextLine": {
+      "line": "תהיי בשבילי בשבילי מאושרת",
+      "next": "ויופיך ילטף את חיי"
+    },
+    "gap": {
+      "line": "＿＿＿ ילטף את חיי",
+      "word": "ויופיך"
+    }
   },
   {
     "id": "מתגעגע",
@@ -1368,7 +1720,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2e/45/d5/2e45d537-82da-b3ee-be82-78a3059e0d96/mzaf_15955617965023675687.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "עכשיו הן חשוכות"
+    "lyricLine": "עכשיו הן חשוכות",
+    "nextLine": {
+      "line": "ואין לי רגע שקט",
+      "next": "רואה אותך כיאילו את בכל מקום"
+    },
+    "gap": {
+      "line": "עוד ＿＿＿ שאשתגע בגללך",
+      "word": "תראי"
+    }
   },
   {
     "id": "סרט-שחור-לבן",
@@ -1385,7 +1745,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/97/da/41/97da4104-194d-2567-6d76-3b53bb3a8f58/mzaf_17525841540696510910.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "מדבר אל עצמי ועונה בקלות"
+    "lyricLine": "מדבר אל עצמי ועונה בקלות",
+    "nextLine": {
+      "line": "מטייל על הגבול בין גאונות לטימטום",
+      "next": "את יודעת אף פעם אני לא הייתי נורמאלי"
+    },
+    "gap": {
+      "line": "ושוב אני ＿＿＿ בך ומרגיש נמר",
+      "word": "נוגע"
+    }
   },
   {
     "id": "עוד-כמה-רגעים",
@@ -1460,7 +1828,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/41/b4/3441b498-b735-bd35-da11-b078b6fec112/mzaf_10670239134824824178.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "הזמן עובר לאט חושב עלייך כל דקה"
+    "lyricLine": "הזמן עובר לאט חושב עלייך כל דקה",
+    "nextLine": {
+      "line": "גם אם אראה אותך חובקת סתם אדם אחר",
+      "next": "אוכל מיד לסלוח בואי אלי ונסתדר"
+    },
+    "gap": {
+      "line": "את הלבד אני רוצה אני לא ＿＿＿ מה יהיה",
+      "word": "יודע"
+    }
   },
   {
     "id": "אם-יש-גן-עדן",
@@ -1480,7 +1856,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/12/07/25/1207256c-6715-c6ed-cb23-af6555c4503f/mzaf_3575017567961611648.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "נגמרים ההסברים"
+    "lyricLine": "נגמרים ההסברים",
+    "nextLine": {
+      "line": "לא יודע מה עושים",
+      "next": "מול עיניים אדומות"
+    },
+    "gap": {
+      "line": "אני ＿＿＿ בנפש פנימה",
+      "word": "רוצה"
+    }
   },
   {
     "id": "בשבילך-נוצרתי",
@@ -1501,7 +1885,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/77/f0/80/77f080fe-eaf2-28f1-ebfc-84bb5ca521d4/mzaf_12929340337535871548.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ראיתי איך לפתע"
+    "lyricLine": "ראיתי איך לפתע",
+    "nextLine": {
+      "line": "ואת עושה אותי שמח",
+      "next": "דף חדש אני פותח"
+    },
+    "gap": {
+      "line": "מול יופייך ＿＿＿ את השפתיים ונדהם!",
+      "word": "נושך"
+    }
   },
   {
     "id": "זה-מוזר",
@@ -1518,7 +1910,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/27/11/be/2711be2b-f624-283b-bfd4-ee68904b7d40/mzaf_16960891327643425116.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "נכנסת אל תוך חיי חדרת אל תוך לבי"
+    "lyricLine": "נכנסת אל תוך חיי חדרת אל תוך לבי",
+    "nextLine": {
+      "line": "לאן שלא תלכי, אני אבוא אלייך",
+      "next": "גם אם כל חיי פה אשאר לבד"
+    },
+    "gap": {
+      "line": "להיות בלילה קר בלי ＿＿＿ ידייך",
+      "word": "לאחוז"
+    }
   },
   {
     "id": "כבר-לא-יכול",
@@ -1555,7 +1955,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9e/8d/c6/9e8dc6d7-ab49-44c9-18b9-5fead8dde351/mzaf_11028463315347741477.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כדי למצוא לי איזה רגע של שלמות"
+    "lyricLine": "כדי למצוא לי איזה רגע של שלמות",
+    "nextLine": {
+      "line": "אז מספרים עלי שאני קצת השתניתי",
+      "next": "וזה נכון כי החיוך שב אל פני"
+    },
+    "gap": {
+      "line": "ולא מוצא דבר מוזר ＿＿＿ בו",
+      "word": "שהשתנה"
+    }
   },
   {
     "id": "ליאם",
@@ -1623,7 +2031,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/af/cd/82/afcd8239-9038-9ebb-c169-065c114a7030/mzaf_15700482002695905412.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "רק לשמח את ליבך אהובתי"
+    "lyricLine": "רק לשמח את ליבך אהובתי",
+    "nextLine": {
+      "line": "כי בלעדייך לא יכול מתגעגע",
+      "next": "מה לעשות אני חייל של אהבה"
+    },
+    "gap": {
+      "line": "＿＿＿ לי לאישה ואם לילדיי",
+      "word": "להיות"
+    }
   },
   {
     "id": "מלאך",
@@ -1642,7 +2058,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/df/09/55/df095577-a149-8f2f-fa1d-213f61f46300/mzaf_17780911634594085131.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ניצב למענך יקירה"
+    "lyricLine": "ניצב למענך יקירה",
+    "nextLine": {
+      "line": "וכשאת רוצה להעמיק חזק מאוד",
+      "next": "יש לך אותי בכל מצב"
+    },
+    "gap": {
+      "line": "ועוד יזרח ＿＿＿ אהובה",
+      "word": "האור"
+    }
   },
   {
     "id": "קחי-אותי",
@@ -1696,7 +2120,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/5d/bf/de/5dbfde11-d1fa-9753-eefb-373bf64264a1/mzaf_2970417061337235977.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "מבוישת ולא מאמינה"
+    "lyricLine": "מבוישת ולא מאמינה",
+    "nextLine": {
+      "line": "הגשם מטפטף ברחובות",
+      "next": "הוא מתחזק מעט ובאופק הברק"
+    },
+    "gap": {
+      "line": "ברחובות כל ＿＿＿ שמביטים הם בפנייך",
+      "word": "האנשים"
+    }
   },
   {
     "id": "את-שלי-אני-שלך",
@@ -1715,7 +2147,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d9/c7/e0/d9c7e078-6f62-110a-7851-17981c282a46/mzaf_1443527455522719149.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ואת חגיגה לעיניים"
+    "lyricLine": "ואת חגיגה לעיניים",
+    "nextLine": {
+      "line": "כמה רציתי אותך",
+      "next": "ראיתי את שנינו ביחד"
+    },
+    "gap": {
+      "line": "את ＿＿＿ ואני אתך",
+      "word": "איתי"
+    }
   },
   {
     "id": "בתוך-הקסם",
@@ -1732,7 +2172,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/de/14/c4/de14c41e-4c64-68a0-7a8b-47b6a299b135/mzaf_8852410500555588746.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "את האחת הכי שלי בלב"
+    "lyricLine": "את האחת הכי שלי בלב",
+    "nextLine": {
+      "line": "אלוהים, כשבך אני נוגע",
+      "next": "אלוהים, הלב שלי יודע"
+    },
+    "gap": {
+      "line": "יש ＿＿＿ ים אהבה",
+      "word": "בעולם"
+    }
   },
   {
     "id": "גשם-במאי",
@@ -1749,7 +2197,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/df/64/0f/df640f99-43ca-68df-9dd5-a4aa17a7dd8a/mzaf_397880906679947584.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אין סיבה לרוץ"
+    "lyricLine": "אין סיבה לרוץ",
+    "nextLine": {
+      "line": "כמו תינוק בזרועותייך",
+      "next": "ובלילות ללא ירח"
+    },
+    "gap": {
+      "line": "זו ＿＿＿ שלא נגמרת",
+      "word": "אהבה"
+    }
   },
   {
     "id": "הוזה-אותך-מולי",
@@ -1770,7 +2226,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/67/ac/fb/67acfbc4-82dd-942f-3f41-c8500c478354/mzaf_4350650257523900064.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "תני לי הזדמנות, אני עייפתי"
+    "lyricLine": "תני לי הזדמנות, אני עייפתי",
+    "nextLine": {
+      "line": "תדעי שאת הולכת, הים סוער אין שקט",
+      "next": "ורק דמעות זולגות, שוטפות את כל כולי"
+    },
+    "gap": {
+      "line": "כי את כבר לא ＿＿＿",
+      "word": "איתי"
+    }
   },
   {
     "id": "הלב-שלי",
@@ -1789,7 +2253,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3d/40/13/3d401363-1938-b6cb-5ac9-2117253ffc7b/mzaf_16681043931020160388.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "מחפש ולא מוצא מילה"
+    "lyricLine": "מחפש ולא מוצא מילה",
+    "nextLine": {
+      "line": "יודעת בלי לשאול",
+      "next": "למולך אני פשוט זורח"
+    },
+    "gap": {
+      "line": "ולא מרפה לרגע ＿＿＿",
+      "word": "בגללך"
+    }
   },
   {
     "id": "כמו-גשם-במאי",
@@ -1820,7 +2292,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/99/d7/d6/99d7d663-5d3b-6240-b476-be6630f5d1ce/mzaf_17741772866427428524.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "וכולם רק עלינו היו מסתכלים"
+    "lyricLine": "וכולם רק עלינו היו מסתכלים",
+    "nextLine": {
+      "line": "הכוחות כבר אזלו מדקה של נחת",
+      "next": "ואני רק רוצה אלייך יפתי"
+    },
+    "gap": {
+      "line": "לא יכול ＿＿＿ עלייך, נערה",
+      "word": "לוותר"
+    }
   },
   {
     "id": "מאוהב-כל-הלילה",
@@ -1839,7 +2319,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8e/f6/71/8ef6714b-d1ac-64a5-ad2b-d22b39e77bd2/mzaf_7602733994473734496.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כל היום חושב עלייך, אולי יותר מדי"
+    "lyricLine": "כל היום חושב עלייך, אולי יותר מדי",
+    "nextLine": {
+      "line": "מחכה שתבואי, בלעדייך לא אעזוב",
+      "next": "והלב לא נורמלי, רק אתך מרגיש קרוב"
+    },
+    "gap": {
+      "line": "את האישה לה חיכיתי, ＿＿＿ כל החיים",
+      "word": "אחכה"
+    }
   },
   {
     "id": "מצטער",
@@ -1859,7 +2347,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d6/70/96/d670968d-f726-61da-3a49-a05cbdfe62fb/mzaf_6525637850789501705.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "את משחקת עם עצמך"
+    "lyricLine": "את משחקת עם עצמך",
+    "nextLine": {
+      "line": "ולא חשוב לאן תלכי ממני",
+      "next": "אני תמיד אהיה שם בשבילך"
+    },
+    "gap": {
+      "line": "ואז הכל יהיה ＿＿＿",
+      "word": "בסדר"
+    }
   },
   {
     "id": "נשבע-לך-כאן",
@@ -1879,7 +2375,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/53/4b/1c/534b1c1c-cddb-0726-9d35-3479d64ca2df/mzaf_16487691331474913102.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אילו רק ניחשתי זה מרגיש כמו שאני מרגיש עכשיו"
+    "lyricLine": "אילו רק ניחשתי זה מרגיש כמו שאני מרגיש עכשיו",
+    "nextLine": {
+      "line": "את ואני זה לעולם",
+      "next": "מאחל לנו שנים מאושרות"
+    },
+    "gap": {
+      "line": "אילו רק ניחשתי זה מרגיש כמו ＿＿＿ מרגיש עכשיו",
+      "word": "שאני"
+    }
   },
   {
     "id": "עולם-מושלם",
@@ -1898,7 +2402,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/0e/87/f9/0e87f962-dda1-0f64-e9a9-cbed7ceec9a1/mzaf_17148076138445402214.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "בזמן שהיית כל עולמי"
+    "lyricLine": "בזמן שהיית כל עולמי",
+    "nextLine": {
+      "line": "אמרי, שנוכל להמשיך",
+      "next": "יש לי רגשות אלייך"
+    },
+    "gap": {
+      "line": "ואת יפה גם כשאת ＿＿＿",
+      "word": "כועסת"
+    }
   },
   {
     "id": "פיציריקה",
@@ -1947,7 +2459,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fc/b5/13/fcb51312-3a5f-2844-9a6d-aab7e5a00f5c/mzaf_8286083861219624643.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "בזמן שהיית כל עולמי"
+    "lyricLine": "בזמן שהיית כל עולמי",
+    "nextLine": {
+      "line": "גם אם לפעמים הלב לא יציב",
+      "next": "רוב הזמן חושב עלייך"
+    },
+    "gap": {
+      "line": "ואת יפה גם ＿＿＿ כועסת",
+      "word": "כשאת"
+    }
   },
   {
     "id": "אישה-וגם-ילדה",
@@ -2037,7 +2557,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a7/43/94/a7439427-54bc-3b40-5dde-7dc422d9fadf/mzaf_11105049013113643754.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אלוהים, את חסרה לי"
+    "lyricLine": "אלוהים, את חסרה לי",
+    "nextLine": {
+      "line": "הסליחות כבר לא הועילו",
+      "next": "את הלכת, אבל אפילו"
+    },
+    "gap": {
+      "line": "＿＿＿ חדות כמו חרב",
+      "word": "במילים"
+    }
   },
   {
     "id": "טוב-בלב",
@@ -2054,7 +2582,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3c/58/7d/3c587dfe-fbef-c565-7324-94c8b341eb46/mzaf_10637584876120494331.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אבל הלב שלי בפנים מאוד מאוד שביר"
+    "lyricLine": "אבל הלב שלי בפנים מאוד מאוד שביר",
+    "nextLine": {
+      "line": "את כל החלומות רק איתך אני מגשים",
+      "next": "רוצה לצעוק אוהב שישמעו האנשים"
+    },
+    "gap": {
+      "line": "הו אלוהים אותך ＿＿＿",
+      "word": "אוהב"
+    }
   },
   {
     "id": "יפיופה",
@@ -2073,7 +2609,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/64/72/8f/64728ff2-62a6-a919-e67d-fb452405c45c/mzaf_3234114174830210074.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "שמעתי את השקט שלפני הסערה"
+    "lyricLine": "שמעתי את השקט שלפני הסערה",
+    "nextLine": {
+      "line": "וזה למרות שאת יודעת",
+      "next": "חיים רק פעם אחת"
+    },
+    "gap": {
+      "line": "תני לי נשיקה על ＿＿＿",
+      "word": "השפתיים"
+    }
   },
   {
     "id": "למות-מקינאה",
@@ -2104,7 +2648,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2e/46/e4/2e46e470-9e74-d361-b00b-e77c76af2edd/mzaf_13474208511191679278.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "תלמדי קצת לעצבן"
+    "lyricLine": "תלמדי קצת לעצבן",
+    "nextLine": {
+      "line": "לא יכול להתרגל",
+      "next": "לקבל ולקבל ונכון"
+    },
+    "gap": {
+      "line": "＿＿＿ מקרוב את יודעת לאהוב",
+      "word": "מרחוק"
+    }
   },
   {
     "id": "לנצח-בני",
@@ -2140,7 +2692,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/91/0c/3f/910c3f29-fe19-f40f-8a28-59eace7c897c/mzaf_12279803499508615358.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "לתת לך יד מלטפת"
+    "lyricLine": "לתת לך יד מלטפת",
+    "nextLine": {
+      "line": "המציאות בידייך",
+      "next": "זה הזמן שלך לטרוף את הקלפים"
+    },
+    "gap": {
+      "line": "אני ＿＿＿ את הכל לתת",
+      "word": "מבטיח"
+    }
   },
   {
     "id": "מותק-של-אישה",
@@ -2205,7 +2765,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/95/a6/fd/95a6fdb1-31f9-3917-b687-1215bfdae382/mzaf_10036064066955669446.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "חשבתי שנהיה כל החיים"
+    "lyricLine": "חשבתי שנהיה כל החיים",
+    "nextLine": {
+      "line": "כבר לילה ואת לידי נרדמת",
+      "next": "לא יודע אם חלום או מציאות"
+    },
+    "gap": {
+      "line": "לא ＿＿＿ אחת אחרת שתמלא אותי",
+      "word": "תהיה"
+    }
   },
   {
     "id": "שומרני-אל",
@@ -2224,7 +2792,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/17/91/4e/17914e1e-583e-0e2b-b15e-7cc187b9353b/mzaf_1946497233109733261.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כל יהבי עליך מלך"
+    "lyricLine": "כל יהבי עליך מלך",
+    "nextLine": {
+      "line": "מן המצר אקרא ענני",
+      "next": "רפא נפשי מכאבה"
+    },
+    "gap": {
+      "line": "＿＿＿ עלי גם מעצמי",
+      "word": "ושמור"
+    }
   },
   {
     "id": "שעת-פרידה",
@@ -2241,7 +2817,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/51/ed/8f/51ed8f71-297e-7948-0757-faaf8e482b98/mzaf_10264152729806826875.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "הבנתי מיד ת הכל"
+    "lyricLine": "הבנתי מיד ת הכל",
+    "nextLine": {
+      "line": "עוד רגע חלף ועבר",
+      "next": "עוד רגע יכבו כל האורות"
+    },
+    "gap": {
+      "line": "ועכשיו לו את ＿＿＿",
+      "word": "שייכת"
+    }
   },
   {
     "id": "איפה-את",
@@ -2261,7 +2845,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5c/8f/76/5c8f763a-5161-4fe3-c65d-b668512847b2/mzaf_17021775187098843854.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "מדמיין שאת איתי"
+    "lyricLine": "מדמיין שאת איתי",
+    "nextLine": {
+      "line": "מדמיין שאת איתי",
+      "next": "וואלה את היחידה שאני לוקח רציני"
+    },
+    "gap": {
+      "line": "וואלק כל היום חושב ＿＿＿",
+      "word": "עלייך"
+    }
   },
   {
     "id": "גונגל",
@@ -2278,7 +2870,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/53/ad/8353ad37-36a0-81c1-d916-6a6c6a3c4664/mzaf_8500303960638995989.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אם כמו צייד היו לוכדות אותי עינייך"
+    "lyricLine": "אם כמו צייד היו לוכדות אותי עינייך",
+    "nextLine": {
+      "line": "הייתי שם זמר רומנטיקן",
+      "next": "ואת היית הכי יפה באפריקה"
+    },
+    "gap": {
+      "line": "מבית אביך ＿＿＿ את ידך",
+      "word": "לוקח"
+    }
   },
   {
     "id": "ג’ונגל",
@@ -2309,7 +2909,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b1/50/c5/b150c51f-b74c-ee25-7483-4499aaf009c7/mzaf_3675667341241775433.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "נכנסת לי ללב, משם אין מוצא, יו"
+    "lyricLine": "נכנסת לי ללב, משם אין מוצא, יו",
+    "nextLine": {
+      "line": "נכנסת לי ללב, משם אין מוצא, יה",
+      "next": "עולה לתוך הפקק שבין לגרדיה לרכבת"
+    },
+    "gap": {
+      "line": "יכול להיות שאת במכורה ＿＿＿ רעל",
+      "word": "לאיזה"
+    }
   },
   {
     "id": "דוהר-לתוך-הפקק",
@@ -2326,7 +2934,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/b9/e2/a7b9e2ab-a7a2-fd82-7686-909dd59a1aee/mzaf_2390342956744962541.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "נכנסת לי ללב, משם אין מוצא"
+    "lyricLine": "נכנסת לי ללב, משם אין מוצא",
+    "nextLine": {
+      "line": "אם תעלמי לא אפסיק לדמיין את פנייך",
+      "next": "נכנסת לי ללב, משם אין מוצא"
+    },
+    "gap": {
+      "line": "אולי את סתם יפה שמכורה ＿＿＿ רעל",
+      "word": "לאיזה"
+    }
   },
   {
     "id": "דרך-לחים",
@@ -2346,7 +2962,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3c/d0/91/3cd09120-2c95-ceb4-9258-1c29a0126797/mzaf_6355923900541959645.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "לוקח את הגיטרה"
+    "lyricLine": "לוקח את הגיטרה",
+    "nextLine": {
+      "line": "אצלך יש כוח וביחד",
+      "next": "העננים עוד יכסו שמיים"
+    },
+    "gap": {
+      "line": "כשבי יש עייפות ＿＿＿",
+      "word": "ופחד"
+    }
   },
   {
     "id": "זר-כיסופים",
@@ -2366,7 +2990,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ad/57/0e/ad570e74-68ed-a56a-5ccf-3121c46c29e8/mzaf_10987823933630828359.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "שזרתי בו את כל געגועי"
+    "lyricLine": "שזרתי בו את כל געגועי",
+    "nextLine": {
+      "line": "זר של קנאה הבאתי מגני",
+      "next": "שזרתי לכבודך כל כוחותיי"
+    },
+    "gap": {
+      "line": "＿＿＿ הותירה בי חולשה",
+      "word": "דמותך"
+    }
   },
   {
     "id": "ידעת-שזה-זמני",
@@ -2386,7 +3018,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7e/66/7d/7e667d4a-4545-4c0a-a3f5-309ff6926449/mzaf_12377925411046130854.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "רוצה שתיכנסי לצרה קטנה"
+    "lyricLine": "רוצה שתיכנסי לצרה קטנה",
+    "nextLine": {
+      "line": "אני לא מחפש ריגושים",
+      "next": "אבל צריך קצת עניין בחיים"
+    },
+    "gap": {
+      "line": "אני ＿＿＿ שתהיי יפה, בדיוק לטעמי",
+      "word": "רוצה"
+    }
   },
   {
     "id": "לילד-הזה-התפללתי",
@@ -2405,7 +3045,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/02/f6/97/02f697d9-e22d-7838-fc95-1c405d82c5ff/mzaf_6293931739264455001.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אשר מחלומות יפים עולה."
+    "lyricLine": "אשר מחלומות יפים עולה.",
+    "nextLine": {
+      "line": "תן ברכה ליום שבו עמלתי,",
+      "next": "ואנא שמור לי על הילד מכל רע,"
+    },
+    "gap": {
+      "line": "בזריחה של יום חדש ＿＿＿ תודה",
+      "word": "אלחש"
+    }
   },
   {
     "id": "מחכה-לך",
@@ -2424,7 +3072,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ec/c6/37/ecc6372c-5544-7189-4fc0-afb647d6e96a/mzaf_10520455785101728167.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אפרוש מילותי"
+    "lyricLine": "אפרוש מילותי",
+    "nextLine": {
+      "line": "אני אבוא אליך כמו גנב",
+      "next": "לאור כוכב, אותך אוהב"
+    },
+    "gap": {
+      "line": "אני כאן לבד מושיט ＿＿＿ יד",
+      "word": "אלייך"
+    }
   },
   {
     "id": "מי-שמאמין",
@@ -2446,7 +3102,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/38/01/87/3801871b-6434-b487-d9f0-acd188d0120d/mzaf_10784009236822267123.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "בכל מקום, כל הזמן"
+    "lyricLine": "בכל מקום, כל הזמן",
+    "nextLine": {
+      "line": "את האמונה לאבד",
+      "next": "ולנו יש את מלך העולם"
+    },
+    "gap": {
+      "line": "אחד ועוד אחד זה סוד ＿＿＿",
+      "word": "ההצלחה"
+    }
   },
   {
     "id": "נשיקה-אחת-ממך",
@@ -2463,7 +3127,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ec/52/62/ec5262d5-8698-7e73-60b5-b139b585e941/mzaf_6728328501393898634.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "שבוער ורוצה רק אלייך"
+    "lyricLine": "שבוער ורוצה רק אלייך",
+    "nextLine": {
+      "line": "איך כישפת אותי בעינייך",
+      "next": "איך נשארתי המום"
+    },
+    "gap": {
+      "line": "לאהבה שלי אין ＿＿＿",
+      "word": "גבול"
+    }
   },
   {
     "id": "על-חבל",
@@ -2496,7 +3168,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5f/fa/ec/5ffaec0f-b35a-8206-9ead-e2c6f6afa42d/mzaf_12489785107570223352.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "מכל רגע של שנינו ביחד"
+    "lyricLine": "מכל רגע של שנינו ביחד",
+    "nextLine": {
+      "line": "מולי דמותך קוראת לי",
+      "next": "ליבי יוצא אלייך עכשיו"
+    },
+    "gap": {
+      "line": "כמו רוח ＿＿＿ את מעיפה אותי",
+      "word": "סערה"
+    }
   },
   {
     "id": "תישארי",
@@ -2513,7 +3193,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d8/8a/62/d88a6222-5892-0943-070f-8243bf5b4499/mzaf_363067912997698499.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "נמאס שזה ככה מסובך"
+    "lyricLine": "נמאס שזה ככה מסובך",
+    "nextLine": {
+      "line": "אצלי במחשבות ובמחברת",
+      "next": "אל תצחקי אני התחלתי קצת לכתוב"
+    },
+    "gap": {
+      "line": "ומי ישמור ＿＿＿ בלילות",
+      "word": "עלייך"
+    }
   },
   {
     "id": "תני-לי-לאהוב-אותך",
@@ -2530,7 +3218,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9f/70/73/9f70738f-d7a2-1c70-d312-ed507d4bb628/mzaf_7694240219270788604.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אם ויתרתי כבר אז למה זה כואב"
+    "lyricLine": "אם ויתרתי כבר אז למה זה כואב",
+    "nextLine": {
+      "line": "לאהוב אותי חזק מתוך הלב",
+      "next": "זה נגמר ואני שואל מדוע"
+    },
+    "gap": {
+      "line": "＿＿＿ שלי רוצה להתאהב בך",
+      "word": "הנשמה"
+    }
   },
   {
     "id": "אלין",
@@ -2581,7 +3277,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d8/de/8d/d8de8d6e-c7eb-d131-ae93-ce0f561ac3dd/mzaf_15140269749991762045.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "והבנתי רק איתך אני יכול"
+    "lyricLine": "והבנתי רק איתך אני יכול",
+    "nextLine": {
+      "line": "לוותר על הרגלים",
+      "next": "כדי להיות יותר קרוב ליחידה שבליבי"
+    },
+    "gap": {
+      "line": "והבנתי רק ＿＿＿ אני יכול",
+      "word": "איתך"
+    }
   },
   {
     "id": "הכי-טובה-בעולם",
@@ -2598,7 +3302,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/36/95/60/369560d6-e32f-de66-073a-43083f76ac59/mzaf_3339732049387784353.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "מודה לאל שאת איתי"
+    "lyricLine": "מודה לאל שאת איתי",
+    "nextLine": {
+      "line": "כל רגע איתך זה הרגע שלי",
+      "next": "אל תשאלי רק תשמעי אותי אומר לך"
+    },
+    "gap": {
+      "line": "אל תשאלי רק תשמעי אותי ＿＿＿ לך",
+      "word": "אומר"
+    }
   },
   {
     "id": "הלילה-שלך",
@@ -2617,7 +3329,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3e/4b/ec/3e4bece2-0e0d-0551-5a26-0a7ac16a843d/mzaf_9369995067548290525.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "העולם מלא באור, מיופייך שושן צחור"
+    "lyricLine": "העולם מלא באור, מיופייך שושן צחור",
+    "nextLine": {
+      "line": "ים השיכר מטפס גבוה, לחייך",
+      "next": "ואני אשיר לכבוד, היפה בעלמות"
+    },
+    "gap": {
+      "line": "מישהו ＿＿＿ לנצח לאהוב אותך",
+      "word": "נשבע"
+    }
   },
   {
     "id": "חלק-מחי",
@@ -2634,7 +3354,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/02/aa/7602aa6a-9000-64e0-1b0c-e7027050f85c/mzaf_1263094404912393385.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אל דירה והיא ריקה נורא"
+    "lyricLine": "אל דירה והיא ריקה נורא",
+    "nextLine": {
+      "line": "נפגשים ומתחברים ברגעים",
+      "next": "שאותם אני תמיד זוכר"
+    },
+    "gap": {
+      "line": "זיכרונות יפים ＿＿＿ שני מלאכים",
+      "word": "וכמובן"
+    }
   },
   {
     "id": "כשאחר",
@@ -2653,7 +3381,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/00/ca/51/00ca5121-2fff-e1fb-363a-0f9545e66be7/mzaf_16801016615689467517.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "יתקרב וילחש לך את כל הסודות"
+    "lyricLine": "יתקרב וילחש לך את כל הסודות",
+    "nextLine": {
+      "line": "לאט ישתנה בשבילך",
+      "next": "יכאיב לעצמו כשאת קצת עצובה"
+    },
+    "gap": {
+      "line": "＿＿＿ וילחש לך את כל הסודות",
+      "word": "יתקרב"
+    }
   },
   {
     "id": "ללכת-או-להישאר",
@@ -2702,7 +3438,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b8/8b/dd/b88bddb3-2982-2e97-0223-17ad7156af91/mzaf_5049790263587939197.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "ניצב למענך יקירה"
+    "lyricLine": "ניצב למענך יקירה",
+    "nextLine": {
+      "line": "וכשאת רוצה להעמיק חזק מאוד",
+      "next": "יש לך אותי בכל מצב"
+    },
+    "gap": {
+      "line": "אתן ＿＿＿ מתוך אהבה",
+      "word": "ילדה"
+    }
   },
   {
     "id": "מתפוצץ-בגללך",
@@ -2737,7 +3481,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/75/75/79/757579d9-6939-604d-9706-e3c73259dc60/mzaf_12475093922188454075.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אתך הכל שליו כל כך"
+    "lyricLine": "אתך הכל שליו כל כך",
+    "nextLine": {
+      "line": "שיש לי חיים גם אחרייך",
+      "next": "זה כבר שנה אחר שנה"
+    },
+    "gap": {
+      "line": "אז תחזרי ＿＿＿ נפשי בלעדייך",
+      "word": "עייפה"
+    }
   },
   {
     "id": "רוצה-רק-אליך",
@@ -2754,7 +3506,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/b7/87/d5b787df-abc1-670c-e7aa-92fc83e87e28/mzaf_14921435266015513116.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "איתך אני מוכן לאהבה"
+    "lyricLine": "איתך אני מוכן לאהבה",
+    "nextLine": {
+      "line": "יש לך חיוך שלא נגמר",
+      "next": "אלי את מסתכלת עושה אותי מאושר"
+    },
+    "gap": {
+      "line": "לא מפסיק ＿＿＿ עלייך את מושלמת",
+      "word": "לחשוב"
+    }
   },
   {
     "id": "רציתי-להגיד-לך",
@@ -2819,7 +3579,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6c/2b/be/6c2bbe74-9cfe-dab5-7091-f707b8610935/mzaf_2087714459105155875.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אין לה אדון או מושל בתוכה"
+    "lyricLine": "אין לה אדון או מושל בתוכה",
+    "nextLine": {
+      "line": "האהבה הותירה שממון עמוק",
+      "next": "ואין לי דרך חזרה"
+    },
+    "gap": {
+      "line": "האהבה הותירה ＿＿＿ עמוק",
+      "word": "שממון"
+    }
   },
   {
     "id": "אהובה-שלי",
@@ -2836,7 +3604,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/88/78/70/88787083-645a-6c72-1f10-9ab7727cf6fa/mzaf_11424084254537564209.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "את באת פתאום משום מקום"
+    "lyricLine": "את באת פתאום משום מקום",
+    "nextLine": {
+      "line": "הכול פתאום נפתח",
+      "next": "ולך אומר מכל הלב"
+    },
+    "gap": {
+      "line": "רואה ＿＿＿ שלם ונעלם",
+      "word": "עולם"
+    }
   },
   {
     "id": "אושר-אמיתי",
@@ -2853,7 +3629,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/bd/eb/f4bdeb92-aeae-defd-f97f-67b2896ed958/mzaf_6700576609161961014.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "בך הלב שלי זכה"
+    "lyricLine": "בך הלב שלי זכה",
+    "nextLine": {
+      "line": "את שלי, את נולדת בשבילי",
+      "next": "רק כשאת נמצאת איתי"
+    },
+    "gap": {
+      "line": "את שלי, את ＿＿＿ בשבילי",
+      "word": "נולדת"
+    }
   },
   {
     "id": "איך-הוא-אוהב",
@@ -2886,7 +3670,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/f3/37/54f337b2-e351-6c59-27e4-40bac706d146/mzaf_7326435693339876308.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "עינייך המחכות רק לי"
+    "lyricLine": "עינייך המחכות רק לי",
+    "nextLine": {
+      "line": "כל בוקר שולח אלייך",
+      "next": "תפילה שתרים את לבך"
+    },
+    "gap": {
+      "line": "מתאהב מחדש, אוסף ＿＿＿ לאט",
+      "word": "אותך"
+    }
   },
   {
     "id": "דזה-ו",
@@ -2919,7 +3711,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a0/4f/eb/a04febe1-bd69-12ac-ca4c-7d1e33699f8c/mzaf_5226823364273008495.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ואיך נדמה שזה עכשיו כבר מאוחר"
+    "lyricLine": "ואיך נדמה שזה עכשיו כבר מאוחר",
+    "nextLine": {
+      "line": "ואיך אני לא מתמודד",
+      "next": "מהלבד הזה אני כבר מפחד"
+    },
+    "gap": {
+      "line": "ואת עושה ＿＿＿ כאילו לא יודעת",
+      "word": "עצמך"
+    }
   },
   {
     "id": "כל-כך-יפה",
@@ -2938,7 +3738,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/06/f4/3b/06f43bdb-5b53-2bc5-8d0e-f29d0516c749/mzaf_7425627409537058258.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כל המבטים נשלחים אליה"
+    "lyricLine": "כל המבטים נשלחים אליה",
+    "nextLine": {
+      "line": "כולם רוצים אותה לתת לה אהבה",
+      "next": "אבל הם פוחדים להתקרב"
+    },
+    "gap": {
+      "line": "אבל הם פוחדים ＿＿＿",
+      "word": "להתקרב"
+    }
   },
   {
     "id": "כשאת-איתו",
@@ -2961,7 +3769,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f1/07/6f/f1076f2c-7a56-1492-999e-77a4958919ec/mzaf_8041770011609324740.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כתבת שאת אהבת אותי"
+    "lyricLine": "כתבת שאת אהבת אותי",
+    "nextLine": {
+      "line": "זוכר איך שאהבנו ואת היית לי לאישה",
+      "next": "ימים יפים ידענו"
+    },
+    "gap": {
+      "line": "היכן טעיתי מה לא נכון ＿＿＿",
+      "word": "עשיתי"
+    }
   },
   {
     "id": "לבדי",
@@ -2978,7 +3794,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/62/e6/3e/62e63e64-53e3-ea24-2849-4edfec75d02d/mzaf_3793291365495367595.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אתה מנהיג ברחמייך"
+    "lyricLine": "אתה מנהיג ברחמייך",
+    "nextLine": {
+      "line": "שלמרות שנפלתי אני קם עם חיוך",
+      "next": "ובליבי עוד נושא תפילה"
+    },
+    "gap": {
+      "line": "כי אין בי כלום בלי ＿＿＿",
+      "word": "תורתך"
+    }
   },
   {
     "id": "לו-היתי-יכול",
@@ -2995,7 +3819,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0b/54/bd/0b54bdc7-d578-04b2-a48d-e9cfa3c2bc04/mzaf_13331102229490204633.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "איך טוב לי לצידך"
+    "lyricLine": "איך טוב לי לצידך",
+    "nextLine": {
+      "line": "עוד אין בינינו סוד",
+      "next": "רק רגשות שלא נסוגו"
+    },
+    "gap": {
+      "line": "＿＿＿ נותן עכשיו את הכל",
+      "word": "הייתי"
+    }
   },
   {
     "id": "מלאת-אהבה",
@@ -3014,7 +3846,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5a/bb/c3/5abbc392-1b8e-f654-b602-9d846bd0dbe3/mzaf_14762386607599349058.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "עד אחרון הימים"
+    "lyricLine": "עד אחרון הימים",
+    "nextLine": {
+      "line": "בליבי את שוכנת נצורה לעולם",
+      "next": "כי אותי את בוחרת להיות אהובך מכולם"
+    },
+    "gap": {
+      "line": "＿＿＿ לי מרגוע ושמחה לחיי",
+      "word": "מביאה"
+    }
   },
   {
     "id": "מלכי-המלכים",
@@ -3031,7 +3871,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0a/11/a9/0a11a9c1-378c-0f99-c337-beb63afceccf/mzaf_10897093902713874802.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "היית תמיד בחיי"
+    "lyricLine": "היית תמיד בחיי",
+    "nextLine": {
+      "line": "גם כי אלך ודרכי חשוכה",
+      "next": "בטחתי בך אלוקיי"
+    },
+    "gap": {
+      "line": "על אושר על בכי על ＿＿＿",
+      "word": "צחוק"
+    }
   },
   {
     "id": "ממריאים",
@@ -3062,7 +3910,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d3/78/90/d378900e-6da6-76b4-4954-04720c3ad29b/mzaf_6527705608618388948.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "מפלסת רואה את דרכי"
+    "lyricLine": "מפלסת רואה את דרכי",
+    "nextLine": {
+      "line": "בתוכנו האושר לפנינו",
+      "next": "בואו ונפתח את הנשמה"
+    },
+    "gap": {
+      "line": "גם כשנדמה שזה לא ＿＿＿",
+      "word": "אפשרי"
+    }
   },
   {
     "id": "נגעת-לי-בלב",
@@ -3081,7 +3937,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/82/74/0f/82740f88-3776-d692-255e-dff806d7746f/mzaf_12569583759242892896.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אני אלמד מתי לשתוק"
+    "lyricLine": "אני אלמד מתי לשתוק",
+    "nextLine": {
+      "line": "אני עובר את חיי מתקרב את בורחת",
+      "next": "לאן את הולכת מכאן"
+    },
+    "gap": {
+      "line": "＿＿＿ לי אם באת אלי ליום או שאת נשארת",
+      "word": "תגידי"
+    }
   },
   {
     "id": "פרפר",
@@ -3114,7 +3978,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7f/ab/34/7fab34a6-4d6d-8076-709e-8dfe36fee7c7/mzaf_16708997833270448482.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "את יופייך אזכור לנצח"
+    "lyricLine": "את יופייך אזכור לנצח",
+    "nextLine": {
+      "line": "ויגמר לו החלום",
+      "next": "אך את דמותה תמיד אזכור"
+    },
+    "gap": {
+      "line": "זר ＿＿＿ אני אתן לך",
+      "word": "ורדים"
+    }
   },
   {
     "id": "אוקינוס",
@@ -3131,7 +4003,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/cb/7c/abcb7c94-bfc9-fbaf-3e85-7871152551fa/mzaf_2206806472750399306.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "מנבואות שחורות"
+    "lyricLine": "מנבואות שחורות",
+    "nextLine": {
+      "line": "אין שום עבר או שום דבר",
+      "next": "הגוף גבר על היגיון ובא טירוף"
+    },
+    "gap": {
+      "line": "והייתי ＿＿＿ לך ים",
+      "word": "קונה"
+    }
   },
   {
     "id": "אין-אמת-במזלות",
@@ -3164,7 +4044,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9c/8e/13/9c8e130c-9015-650a-6a3a-bb3e3d73676d/mzaf_7860954067279227759.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "לפתע פתאום נעלמת"
+    "lyricLine": "לפתע פתאום נעלמת",
+    "nextLine": {
+      "line": "לחשוב שהלכת ממני",
+      "next": "לחשוב שיש מישהו אחר"
+    },
+    "gap": {
+      "line": "זה רק ＿＿＿ שיחלוף",
+      "word": "משבר"
+    }
   },
   {
     "id": "אשאל-אלוהיך",
@@ -3197,7 +4085,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c9/b7/6f/c9b76f9d-ba81-cd42-ddee-18d288a02bb9/mzaf_8434873958798155616.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "שאם תקומי ותרצי ללכת"
+    "lyricLine": "שאם תקומי ותרצי ללכת",
+    "nextLine": {
+      "line": "ואם תקומי ותרצי ללכת",
+      "next": "אפול כמו עוד עלה שבשלכת"
+    },
+    "gap": {
+      "line": "אני שלם ＿＿＿ אוהב אותך בכל הכח",
+      "word": "איתך"
+    }
   },
   {
     "id": "אתן-לך",
@@ -3214,7 +4110,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fd/2c/0f/fd2c0f79-7dc6-e8be-0866-56f596496d74/mzaf_2551628291445552269.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אתן גם אם תגידי לא אהיה שלך"
+    "lyricLine": "אתן גם אם תגידי לא אהיה שלך",
+    "nextLine": {
+      "line": "וכמו המים השקופים אני יודע",
+      "next": "אני יודע שאני אוהב אותך"
+    },
+    "gap": {
+      "line": "אתן הכל פה שתהי שלי, לא אוותר לך את כל ＿＿＿",
+      "word": "עולמי"
+    }
   },
   {
     "id": "געגועים",
@@ -3251,7 +4155,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cf/4d/e0/cf4de079-0f2f-69ff-daef-6734daba4a22/mzaf_2064994457996719425.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ממה שלך היה שהפך לי ת'חיים"
+    "lyricLine": "ממה שלך היה שהפך לי ת'חיים",
+    "nextLine": {
+      "line": "ואין לה את הכוח להחיות שוב במבט",
+      "next": "להרעיד את נשמתי או לשבור לי את הלב"
+    },
+    "gap": {
+      "line": "כי היא הכי ＿＿＿ אלייך שנשאר לי מעכשיו",
+      "word": "קרוב"
+    }
   },
   {
     "id": "הלב-על-השולחן",
@@ -3270,7 +4182,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/28/59/77/28597759-9cd1-39bd-effc-6b421df2ac10/mzaf_10491493037430129784.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אז אחרי כל השנים"
+    "lyricLine": "אז אחרי כל השנים",
+    "nextLine": {
+      "line": "ועכשיו כולם רוצים",
+      "next": "להיות לך שאני לא בסביבה"
+    },
+    "gap": {
+      "line": "עוברים הימים ואיתם ＿＿＿",
+      "word": "השנים"
+    }
   },
   {
     "id": "העץ-שבגן",
@@ -3287,7 +4207,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/25/ee/98/25ee9859-7131-0f7f-9e0a-4da38fd094f3/mzaf_13730984299248748215.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ובלילות הקרים, עוד כותב לך שירים"
+    "lyricLine": "ובלילות הקרים, עוד כותב לך שירים",
+    "nextLine": {
+      "line": "רצינו להגשים את כל החלומות",
+      "next": "לפעמים בלילות רואה אותה"
+    },
+    "gap": {
+      "line": "לעיר ＿＿＿ שרחקה עם הזמן",
+      "word": "ילדותי"
+    }
   },
   {
     "id": "חזק-ממני",
@@ -3304,7 +4232,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/51/13/db/5113dbda-c4bf-7f22-b52c-9716d0a82991/mzaf_6067892257370045174.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "עמוק בתוך ראשי, סחרחורת משתוללת"
+    "lyricLine": "עמוק בתוך ראשי, סחרחורת משתוללת",
+    "nextLine": {
+      "line": "ואנחנו הגברים נמשכים כמו דג למים",
+      "next": "נערות יפהפיות, שוטפות את העיניים"
+    },
+    "gap": {
+      "line": "ואני שוב לעצמי אומר ＿＿＿ חביבי תתבגר",
+      "word": "מספיק"
+    }
   },
   {
     "id": "ישראלי",
@@ -3340,7 +4276,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0d/52/f1/0d52f1a7-03a5-fc02-2244-ba4c0e540d87/mzaf_10614336821405475858.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ממחשבות והדמעות לבד זולגות"
+    "lyricLine": "ממחשבות והדמעות לבד זולגות",
+    "nextLine": {
+      "line": "כל מה שהיה לי נתתי לה",
+      "next": "כל מה שעובר עליי בגללה"
+    },
+    "gap": {
+      "line": "איך הלב נשבר ＿＿＿",
+      "word": "לחתיכות"
+    }
   },
   {
     "id": "כשאת-אינך",
@@ -3357,7 +4301,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/99/97/26/99972642-09dc-10ee-6659-557f43358016/mzaf_11226494816034572164.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ועכשיו אין כבר מה להגיד"
+    "lyricLine": "ועכשיו אין כבר מה להגיד",
+    "nextLine": {
+      "line": "ובלעדיי איך תמשיכי מכאן בלעדיי",
+      "next": "את ליבי את לקחת ואולי את תשובי מחר אל חיי"
+    },
+    "gap": {
+      "line": "ועכשיו אין כבר מה ＿＿＿",
+      "word": "להגיד"
+    }
   },
   {
     "id": "מנגנת-את-חי",
@@ -3379,7 +4331,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f6/19/2e/f6192e9f-5680-555d-2200-cd289faccaed/mzaf_3859880580065400652.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ברגעים של עצבת"
+    "lyricLine": "ברגעים של עצבת",
+    "nextLine": {
+      "line": "בלעדייך לא אגיע",
+      "next": "בקולי אותך אשמיע"
+    },
+    "gap": {
+      "line": "אני איתך ＿＿＿ יכול",
+      "word": "הכול"
+    }
   },
   {
     "id": "סטטוס-מאוהב",
@@ -3396,7 +4356,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6a/25/3e/6a253ef7-3bd2-1567-8a9d-379f3787e2d0/mzaf_16367051084162298534.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ומדחיק בלב את כל הסערה"
+    "lyricLine": "ומדחיק בלב את כל הסערה",
+    "nextLine": {
+      "line": "את יודעת לנצל את חולשתי",
+      "next": "מכוונת לי אקדח רומנטי"
+    },
+    "gap": {
+      "line": "＿＿＿ מה עובר עלי עכשיו",
+      "word": "יודעת"
+    }
   },
   {
     "id": "רק-תחיכי",
@@ -3413,7 +4381,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cf/88/8a/cf888aa8-7c9a-c53c-6391-8c5ec6dee838/mzaf_18177870106413741237.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "שלימדת אותי כל שאדע"
+    "lyricLine": "שלימדת אותי כל שאדע",
+    "nextLine": {
+      "line": "אני מאחוריך כל הזמן",
+      "next": "לאן שתסתכלי תראי אותנו"
+    },
+    "gap": {
+      "line": "הוו שהאל לך ＿＿＿ שהכל כבר בסדר",
+      "word": "יגיד"
+    }
   },
   {
     "id": "אהבה-ללא-גבולות",
@@ -3430,7 +4406,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/53/96/47/539647d3-1aa6-50c0-644a-113074d099ad/mzaf_1120818622362303890.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ז'אנר: ים תיכוני"
+    "lyricLine": "ז'אנר: ים תיכוני",
+    "nextLine": {
+      "line": "היא איננה כאן איתי רק דמעותיי",
+      "next": "מי יאמר לאן הלכה ומה קרה לה"
+    },
+    "gap": {
+      "line": "גם בשעות הכי קשות אל תוך ＿＿＿",
+      "word": "הלילה"
+    }
   },
   {
     "id": "אהבתי-בלחש",
@@ -3447,7 +4431,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3f/98/8a/3f988a20-5063-a8a7-6a58-c30d7e7aa641/mzaf_3401420144146195436.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "איך עכשיו תחייכי לעולם"
+    "lyricLine": "איך עכשיו תחייכי לעולם",
+    "nextLine": {
+      "line": "גם אם האושר ידפוק בדלתך",
+      "next": "תישארי אהבתי היחידה"
+    },
+    "gap": {
+      "line": "הכאבים שאת ＿＿＿ בי חודרים כמו להבות",
+      "word": "הותרת"
+    }
   },
   {
     "id": "אני-מקוה",
@@ -3464,7 +4456,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/6c/f8/d96cf8ab-47fb-ea16-ea30-99aabcaaaa30/mzaf_12451077549945650669.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כשהוא שר לך בלילות או מחזיק לך את היד"
+    "lyricLine": "כשהוא שר לך בלילות או מחזיק לך את היד",
+    "nextLine": {
+      "line": "רק שלא יחזור על אותה טעות",
+      "next": "שעשיתי אז אני, כשעוד הייתה לי הזדמנות"
+    },
+    "gap": {
+      "line": "רק שלא ＿＿＿ על אותה טעות",
+      "word": "יחזור"
+    }
   },
   {
     "id": "גבר-מאוהב",
@@ -3481,7 +4481,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/de/53/54de53d4-9080-b5d5-6507-e1964879e27b/mzaf_14799183638782577627.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כסומא בעקבותייך אני הולך"
+    "lyricLine": "כסומא בעקבותייך אני הולך",
+    "nextLine": {
+      "line": "גן העדן הקסום מצאתי אצלך",
+      "next": "שפתותייך פרי אסור ונעול ליבך"
+    },
+    "gap": {
+      "line": "לך נתתי את ＿＿＿ ואת עלומיי",
+      "word": "ליבי"
+    }
   },
   {
     "id": "גבר-של-אישה-אחת",
@@ -3514,7 +4522,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/41/47/67/414767a9-2b2f-f7d5-5a40-7761f5e73a0c/mzaf_11653606077201585610.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ועכשיו אחר לקח ידה"
+    "lyricLine": "ועכשיו אחר לקח ידה",
+    "nextLine": {
+      "line": "מנגנים עוד שיר חדש מעיר בי רגשות",
+      "next": "הלב שלי היה שלה, שלה והיא איננה"
+    },
+    "gap": {
+      "line": "מחפש פינה ＿＿＿ שקט ושלווה",
+      "word": "קטנה"
+    }
   },
   {
     "id": "היתי-בגן-עדן",
@@ -3547,7 +4563,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/81/7d/b0817df3-a0bb-5b09-0924-efcd5b2dfb97/mzaf_17386725616163949660.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "על כל השנים חבל"
+    "lyricLine": "על כל השנים חבל",
+    "nextLine": {
+      "line": "שאת נמצאת בזרועותיי",
+      "next": "ואוהבת עד בלי דיי"
+    },
+    "gap": {
+      "line": "ואם האהבה היא פשע ＿＿＿",
+      "word": "בעולם"
+    }
   },
   {
     "id": "הלילה-תרקדי",
@@ -3564,7 +4588,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/07/f3/07/07f307f5-bbc7-1df1-c34c-b969a71feb98/mzaf_4792518606579330139.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "כמה שאת עושה לי כאבים בלב"
+    "lyricLine": "כמה שאת עושה לי כאבים בלב",
+    "nextLine": {
+      "line": "לילה אתך גורם לי קצת להשתגע",
+      "next": "שידברו לא מעניין אנ'לא שומע"
+    },
+    "gap": {
+      "line": "אנשים ירימו לך ＿＿＿",
+      "word": "ותחייכי"
+    }
   },
   {
     "id": "הקשיבו-חברי",
@@ -3600,7 +4632,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c5/b9/26/c5b92671-ccbc-73f3-6179-2cba9d440118/mzaf_1366565400042939396.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "פחדתי לאבד אותך וזה קרה מהר כל כך"
+    "lyricLine": "פחדתי לאבד אותך וזה קרה מהר כל כך",
+    "nextLine": {
+      "line": "פחדתי לאבד אותך וזה קרה מהר כל כך",
+      "next": "מה לא הייתי מסכן לחזור אל תוך חייך"
+    },
+    "gap": {
+      "line": "מה לא הייתי מסכן לחזור אל תוך ＿＿＿",
+      "word": "חייך"
+    }
   },
   {
     "id": "חגיגה",
@@ -3653,7 +4693,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9c/93/15/9c9315fc-c001-ffe9-6873-50c90808c92a/mzaf_12442160217004710282.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "לילות יגידו את חיי"
+    "lyricLine": "לילות יגידו את חיי",
+    "nextLine": {
+      "line": "אסיט ראשי כשאביט על סף ביתך",
+      "next": "אם אחפש דמיון פנייך בנשות הרחוב"
+    },
+    "gap": {
+      "line": "אם תלכי, אני ＿＿＿ אני שלך אני איתך",
+      "word": "נשבע"
+    }
   },
   {
     "id": "כשהלב-בוכה",
@@ -3686,7 +4734,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/00/69/13/0069134a-6afb-99c7-898b-1eea63f2834d/mzaf_2506219718195383062.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "כל החיים היית איתי"
+    "lyricLine": "כל החיים היית איתי",
+    "nextLine": {
+      "line": "ואת איננה ואת איננה",
+      "next": "אין לי בשביל מה לקום מחר"
+    },
+    "gap": {
+      "line": "גם בפרידה יש קרב ＿＿＿",
+      "word": "מוחות"
+    }
   },
   {
     "id": "משחק-החים",
@@ -3772,7 +4828,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/38/da/fa/38dafad0-c456-7c30-3d76-8723fb2abe1e/mzaf_16937766198027714881.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ולאיש אחר נתנה את אהבתה"
+    "lyricLine": "ולאיש אחר נתנה את אהבתה",
+    "nextLine": {
+      "line": "לבד יושב בתוך חדרי עצוב לי וקר",
+      "next": "רק מכתב אחד ממנה זה מה שנשאר"
+    },
+    "gap": {
+      "line": "לבד יושב ＿＿＿ חדרי עצוב לי וקר",
+      "word": "בתוך"
+    }
   },
   {
     "id": "קרוסלה",
@@ -3837,7 +4901,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ac/86/5a/ac865aba-f372-ae0f-2d73-1141e218f2f8/mzaf_16393322444015529289.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "לגרוני מיתר של אהבה"
+    "lyricLine": "לגרוני מיתר של אהבה",
+    "nextLine": {
+      "line": "רק בגללך אני חולם לי הלאה",
+      "next": "לילה ועוד לילה"
+    },
+    "gap": {
+      "line": "רק בגללך אני ＿＿＿ לי הלאה",
+      "word": "חולם"
+    }
   },
   {
     "id": "אל-תלכי",
@@ -3854,7 +4926,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/59/64/d2/5964d219-8796-e38b-cc66-ff2a059c1c64/mzaf_14748501759449437858.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "הזמן עובר לאט חושב עלייך כל דקה"
+    "lyricLine": "הזמן עובר לאט חושב עלייך כל דקה",
+    "nextLine": {
+      "line": "גם אם אראה אותך חובקת סתם אדם אחר",
+      "next": "אוכל מיד לסלוח בואי אלי ונסתדר"
+    },
+    "gap": {
+      "line": "את הלבד אני רוצה אני לא ＿＿＿ מה יהיה",
+      "word": "יודע"
+    }
   },
   {
     "id": "בסוף-כל-יום",
@@ -3873,7 +4953,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/14/cf/c6/14cfc64a-eab6-4077-9064-b2e55ab169cb/mzaf_12722687695645566695.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "רק הלב הוא מוביל שוב אל עצמו"
+    "lyricLine": "רק הלב הוא מוביל שוב אל עצמו",
+    "nextLine": {
+      "line": "שטרות כבדים של הפחדים",
+      "next": "שלא ידעתי איך לפרוט"
+    },
+    "gap": {
+      "line": "רחוק רחוק, ＿＿＿ האור",
+      "word": "בקצה"
+    }
   },
   {
     "id": "האהבה-הישנה-שלי",
@@ -3890,7 +4978,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e0/11/c7/e011c7a4-930b-a57d-cc77-4a4fd1bab938/mzaf_17946283999863705086.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כשהכל היה פשוט יותר, אפילו אהבה"
+    "lyricLine": "כשהכל היה פשוט יותר, אפילו אהבה",
+    "nextLine": {
+      "line": "בשבתות של אוגוסט חם, דהרנו אל הים",
+      "next": "כל המלח בעולם לא צרב כמו דמעתך"
+    },
+    "gap": {
+      "line": "איך נתתי לך ＿＿＿",
+      "word": "ללכת"
+    }
   },
   {
     "id": "החים-אחריך",
@@ -3907,7 +5003,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/99/fc/36/99fc3626-c352-7876-01f9-62896bcf2a53/mzaf_12837125744883179609.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "את עזבת וזה לא בגללי"
+    "lyricLine": "את עזבת וזה לא בגללי",
+    "nextLine": {
+      "line": "אך כל זה נגמר ואיננו",
+      "next": "אז למה תגידי לי למה"
+    },
+    "gap": {
+      "line": "אז למה ＿＿＿ לי למה",
+      "word": "תגידי"
+    }
   },
   {
     "id": "השמים-הם-הגבול",
@@ -3924,7 +5028,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/29/3e/8d/293e8ddb-af8d-e9d9-adeb-b8a097bbc0e7/mzaf_849390709313707586.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אני גיבור של כלום"
+    "lyricLine": "אני גיבור של כלום",
+    "nextLine": {
+      "line": "עולם שאין בו כלום",
+      "next": "שום הגיון אני לא מוצא"
+    },
+    "gap": {
+      "line": "שקט לי כאן מידי ＿＿＿ את קרה אליי",
+      "word": "ולמה"
+    }
   },
   {
     "id": "כנף-הרוח",
@@ -3941,7 +5053,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/53/b3/c1/53b3c196-8989-8d37-796d-d5a4a976d1b6/mzaf_5010062636959854768.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אל תבכי, אל תבכי"
+    "lyricLine": "אל תבכי, אל תבכי",
+    "nextLine": {
+      "line": "אל תבכי, אל תבכי",
+      "next": "כי בסוף לבטח תחייכי"
+    },
+    "gap": {
+      "line": "היו ＿＿＿ רק לו",
+      "word": "ימייך"
+    }
   },
   {
     "id": "כשתגדל",
@@ -3958,7 +5078,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a2/9d/43/a29d43c1-f2d1-0c85-58e7-a85d07280db7/mzaf_304677151409379034.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אתה יכול להסתדר עם העולם"
+    "lyricLine": "אתה יכול להסתדר עם העולם",
+    "nextLine": {
+      "line": "אז עכשיו תרגיש ת'טעם של הצחוק",
+      "next": "תכתוב מילים בחרוזים על הידיים"
+    },
+    "gap": {
+      "line": "והמזל קצת ＿＿＿ עם הגורל",
+      "word": "יתבלבל"
+    }
   },
   {
     "id": "לטרוף-את-כל-העולם",
@@ -3975,7 +5103,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6a/85/d6/6a85d621-994e-feba-e04c-91a4f3c57726/mzaf_4884526814670164963.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "יביא לך שושנים בצבע דם"
+    "lyricLine": "יביא לך שושנים בצבע דם",
+    "nextLine": {
+      "line": "אולי הוא הוא יגשים לך חלום",
+      "next": "הוא בטח יגיע היום"
+    },
+    "gap": {
+      "line": "עוד יום עובר ואת ＿＿＿ מחכה לו",
+      "word": "עדיין"
+    }
   },
   {
     "id": "מילה-טובה",
@@ -3992,7 +5128,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/77/5f/20/775f2053-3adf-a82a-5707-af5a4d8d6a46/mzaf_1704641557838402207.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "מסתיר לו משפט אחד קטן"
+    "lyricLine": "מסתיר לו משפט אחד קטן",
+    "nextLine": {
+      "line": "בין כל הכוכבים והקלפים",
+      "next": "יושבת לבד על המרפסת"
+    },
+    "gap": {
+      "line": "מילה חמה ＿＿＿ לנשמה החיוך ישוב לפתע",
+      "word": "שחודרת"
+    }
   },
   {
     "id": "נעצר-העולם",
@@ -4011,7 +5155,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b6/1d/74/b61d748b-61ee-5379-a216-4cb6d0cb9490/mzaf_6501190846460952204.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "נשארתי לבד כאן שרוע"
+    "lyricLine": "נשארתי לבד כאן שרוע",
+    "nextLine": {
+      "line": "תביני אותי תנסי שוב לסלוח",
+      "next": "מצטער אם פגעתי"
+    },
+    "gap": {
+      "line": "חלפו השעות אבדו ＿＿＿",
+      "word": "התקוות"
+    }
   },
   {
     "id": "קנה-לך-חבר",
@@ -4028,7 +5180,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/53/b5/d6/53b5d6aa-edf3-af3d-f744-1d5cd18f05b3/mzaf_10290144221426429712.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "מי חובק ומי בורח ברגעים קשים"
+    "lyricLine": "מי חובק ומי בורח ברגעים קשים",
+    "nextLine": {
+      "line": "במשעול הדרך קיימים גם זאבים",
+      "next": "יש אחד ישמח איתך שהחיים יפים"
+    },
+    "gap": {
+      "line": "בימים קשים של קושי ＿＿＿",
+      "word": "ומשבר"
+    }
   },
   {
     "id": "שוב-לאהוב",
@@ -4047,7 +5207,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3e/03/1c/3e031ca1-6323-00a1-56ca-a1958abcaa64/mzaf_5383922747249883410.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אין שקט לליבך"
+    "lyricLine": "אין שקט לליבך",
+    "nextLine": {
+      "line": "עוד מעט יאיר היום וכמו חלום",
+      "next": "תדעי אותו לשכוח"
+    },
+    "gap": {
+      "line": "אל תבכי ＿＿＿ בדמעות לשווא",
+      "word": "ילדה"
+    }
   },
   {
     "id": "שישי-בצהרים",
@@ -4066,7 +5234,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/13/4d/10/134d1051-da2f-725c-6e59-900fa9490b5e/mzaf_10071758899087722212.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "לוקח תיק קטן אני כמעט מוכן"
+    "lyricLine": "לוקח תיק קטן אני כמעט מוכן",
+    "nextLine": {
+      "line": "מתקפל ושוטף את החול ברגליים",
+      "next": "ואת ממש ממול, מנסה להיות קצת קול"
+    },
+    "gap": {
+      "line": "בירות שמש זה ＿＿＿ כואב",
+      "word": "שילוב"
+    }
   },
   {
     "id": "שקרים",
@@ -4101,7 +5277,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/47/bd/7b/47bd7ba5-3e79-3f4f-a064-291b077c056a/mzaf_11362202905557493081.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "שורפים מנועים על זנבות האספלט"
+    "lyricLine": "שורפים מנועים על זנבות האספלט",
+    "nextLine": {
+      "line": "ברגע אחד, בין מיליון רחובות",
+      "next": "אני עוצר על החוף למיין מחשבות"
+    },
+    "gap": {
+      "line": "＿＿＿ שם לוחש לי אל, אל תפחד",
+      "word": "אלוהים"
+    }
   },
   {
     "id": "תחיך",
@@ -4118,7 +5302,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cb/74/3e/cb743ea8-402f-433e-3a92-00b4969c1c5e/mzaf_10625493458973511385.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אך הכל בידי שמים, זה הכל גורל"
+    "lyricLine": "אך הכל בידי שמים, זה הכל גורל",
+    "nextLine": {
+      "line": "בסוף יום נפלא חביבי, גם אתה תבין",
+      "next": "שטפל הופך עיקר, רק אם תאמין"
+    },
+    "gap": {
+      "line": "בלי ＿＿＿ רק שמחה, תנצח כל כאב",
+      "word": "דמעות"
+    }
   },
   {
     "id": "אח-יקר",
@@ -4135,7 +5327,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/a1/f6/eaa1f672-2cf2-f694-e51f-ced1ac7c522b/mzaf_12849565032633294995.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "לא החלפנו אף מילה"
+    "lyricLine": "לא החלפנו אף מילה",
+    "nextLine": {
+      "line": "כן, הדלת נעולה",
+      "next": "שנתיים לא דיברנו בגללה"
+    },
+    "gap": {
+      "line": "שלא תבין אני שמח ＿＿＿ בי עוד לא סולח",
+      "word": "וחלק"
+    }
   },
   {
     "id": "איל-גולן-קורא-לך",
@@ -4152,7 +5352,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/93/58/20/935820cd-62c8-0b71-47cb-06e89866c7a4/mzaf_5580331810910492611.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כמו גדולה יודעת לעשות את זה נכון"
+    "lyricLine": "כמו גדולה יודעת לעשות את זה נכון",
+    "nextLine": {
+      "line": "המלכה של השכונה אל הלבבות חדרה",
+      "next": "ועכשיו אני מבין כמה היא חסרה"
+    },
+    "gap": {
+      "line": "＿＿＿ כמו השמש העולה",
+      "word": "בואי"
+    }
   },
   {
     "id": "אתה-המלך",
@@ -4173,7 +5381,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/76/2d/55/762d5501-ad5e-6bfd-7782-354303354021/mzaf_3802197679640163870.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "מקווים בכל ליבנו שעוד לא מאוחר"
+    "lyricLine": "מקווים בכל ליבנו שעוד לא מאוחר",
+    "nextLine": {
+      "line": "היום שבים אנו אלייך בבושת פנים",
+      "next": "זוכרים שבנו האמנת מכל אותם עמים"
+    },
+    "gap": {
+      "line": "מי ＿＿＿ ועל כל עוונותינו תחמול",
+      "word": "ייתן"
+    }
   },
   {
     "id": "באתי-אליך",
@@ -4192,7 +5408,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/84/cd/9d/84cd9d92-23d6-f062-dc70-f52950579565/mzaf_11810560324581624833.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ואלוקים כבר לא בורא נשים יפות כמוך, כמוך"
+    "lyricLine": "ואלוקים כבר לא בורא נשים יפות כמוך, כמוך",
+    "nextLine": {
+      "line": "דופק ומחכה ליד הדלת, כמו אורח,",
+      "next": "מת שתפתחי למרות שיש עליי את המפתח"
+    },
+    "gap": {
+      "line": "של הגבר המיוסר, את ＿＿＿ לישון",
+      "word": "הולכת"
+    }
   },
   {
     "id": "דבש-בשפתים",
@@ -4211,7 +5435,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d8/d3/2a/d8d32a9f-d25c-6c7c-15ef-2fb378ad8ff9/mzaf_12032197118378242083.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "מה כבר ביקשתי, תשאירי טעם"
+    "lyricLine": "מה כבר ביקשתי, תשאירי טעם",
+    "nextLine": {
+      "line": "למה זה תמיד קורה בדיוק כשזה מתחיל להרגיש שלם",
+      "next": "את שוב רומזת, תקנה טבעת"
+    },
+    "gap": {
+      "line": "ושוב את, ושוב את, כבר מאבד את ＿＿＿",
+      "word": "הצפון"
+    }
   },
   {
     "id": "הופה-פה",
@@ -4228,7 +5460,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/e6/bb/dae6bbce-e89f-7996-26d2-57a8e9bb5f20/mzaf_10318331853932958003.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אני כאן משתגע ואין מי שיושב"
+    "lyricLine": "אני כאן משתגע ואין מי שיושב",
+    "nextLine": {
+      "line": "היום היא סוגרת שבועים ביוון",
+      "next": "בוזוקי מנגן לה מיתר אחר מיתר"
+    },
+    "gap": {
+      "line": "אני כאן ＿＿＿ ואין מי שיושב",
+      "word": "משתגע"
+    }
   },
   {
     "id": "חזק-יותר",
@@ -4245,7 +5485,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c8/89/c1/c889c156-09c0-1ff1-8949-0674c7300478/mzaf_17918547961367779308.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ואור הזרקורים מחביא את הכאב"
+    "lyricLine": "ואור הזרקורים מחביא את הכאב",
+    "nextLine": {
+      "line": "כמו בחזיון הוזה אותך בבית",
+      "next": "אני ואת יודעים את האמת"
+    },
+    "gap": {
+      "line": "כמו ＿＿＿ הוזה אותך בבית",
+      "word": "בחזיון"
+    }
   },
   {
     "id": "טוב-לך-איתו",
@@ -4264,7 +5512,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/93/cb/81/93cb81e0-4c80-906b-5bc6-b7bf51e5c26c/mzaf_5870030071792411071.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "דלת בפניי פתאום נטרקת"
+    "lyricLine": "דלת בפניי פתאום נטרקת",
+    "nextLine": {
+      "line": "תני לי עוד דקה רק להסביר לך",
+      "next": "בלעדייך כלום כבר לא מצליח"
+    },
+    "gap": {
+      "line": "＿＿＿ לשווא בכל הרחובות",
+      "word": "חיפשתי"
+    }
   },
   {
     "id": "כדי-שאלך",
@@ -4297,7 +5553,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3a/26/22/3a262224-ffa4-0db0-352f-a8b6710c0a9a/mzaf_8170952502327765767.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אם רק לי תתני עלומייך אקשור לך כתרים לראשך"
+    "lyricLine": "אם רק לי תתני עלומייך אקשור לך כתרים לראשך",
+    "nextLine": {
+      "line": "בקול ניחר אזמר לך, את סודותיי עד כאב",
+      "next": "נפשי משתוקקת אלייך, ללגום עד יבשו שפתותייך"
+    },
+    "gap": {
+      "line": "בקול ניחר אזמר לך, את ＿＿＿ עד כאב",
+      "word": "סודותיי"
+    }
   },
   {
     "id": "לאן-הגענו",
@@ -4314,7 +5578,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a7/69/e9/a769e941-b4ff-105d-f033-2ed379fdd338/mzaf_12622321638884070213.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "היום הכל מזון מהיר מה כבר הספקנו"
+    "lyricLine": "היום הכל מזון מהיר מה כבר הספקנו",
+    "nextLine": {
+      "line": "זה לא מצחיק אבל מזמן כבר נגמרו לי הדמעות",
+      "next": "יש פה אלפי יונים ולא עלה אחד של זית"
+    },
+    "gap": {
+      "line": "אז בואי ＿＿＿ לרדוף אחרי השקט",
+      "word": "ניסע"
+    }
   },
   {
     "id": "מלך-העולם",
@@ -4331,7 +5603,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2e/d5/08/2ed508b6-3b73-bb82-8a60-22bf07d7d029/mzaf_810346054187100237.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "יאללה לך הביתה תחזור לאישתך"
+    "lyricLine": "יאללה לך הביתה תחזור לאישתך",
+    "nextLine": {
+      "line": "לבשת חליפה שעולה לך כמו בית",
+      "next": "היום עם הנדל\"ן צריך לחשוב לחסוך עדיין"
+    },
+    "gap": {
+      "line": "＿＿＿ דלקו עליי ואיך אני טעיתי",
+      "word": "אורות"
+    }
   },
   {
     "id": "רוקדת-בלילות",
@@ -4348,7 +5628,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/98/37/9c/98379cbb-6e6a-fa69-5838-1a52e62124d7/mzaf_2890385137884621154.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "מזמין עוד כוסית"
+    "lyricLine": "מזמין עוד כוסית",
+    "nextLine": {
+      "line": "משגעת את כולם אך אלי ניגשת",
+      "next": "היא רק איתי רוצה לרקוד"
+    },
+    "gap": {
+      "line": "היא רק איתי רוצה ＿＿＿",
+      "word": "לרקוד"
+    }
   },
   {
     "id": "רוקדת-עם-השיר",
@@ -4365,7 +5653,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/4a/f6/b34af620-06a3-f202-8937-7e116eeaa84a/mzaf_16007204332865006799.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "תגידי לי כבר ערב טוב"
+    "lyricLine": "תגידי לי כבר ערב טוב",
+    "nextLine": {
+      "line": "רוצה אותך כאן לצידי לך אתן את כל כולי",
+      "next": "ותל אביב כך בלילות כולם באים רק לבלות"
+    },
+    "gap": {
+      "line": "רוצה ＿＿＿ כאן לצידי לך אתן את כל כולי",
+      "word": "אותך"
+    }
   },
   {
     "id": "רחוק-מכאן",
@@ -4382,7 +5678,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/aa/1b/d7aa1b81-1dce-1e07-a6a4-599b803da216/mzaf_12539855553900970512.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "לכתוב לך מכתב על שליבי נצרב כל שהיה בנינו"
+    "lyricLine": "לכתוב לך מכתב על שליבי נצרב כל שהיה בנינו",
+    "nextLine": {
+      "line": "עוד יום עבר אני נשבר רק מתפלל שהיגון לא יחזור",
+      "next": "כותב לך מכתב איך שמתחיל הסתיו"
+    },
+    "gap": {
+      "line": "זה ששורף לי את הלב ＿＿＿ ובי נשאר רק הכאב",
+      "word": "מתעתע"
+    }
   },
   {
     "id": "תמיד-בשבילך",
@@ -4399,7 +5703,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/da/01/de/da01de72-7ddb-8e06-19dc-52c3c630eb33/mzaf_17703505399813036872.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "מחייך ויורדות לי דמעות"
+    "lyricLine": "מחייך ויורדות לי דמעות",
+    "nextLine": {
+      "line": "איילן גולן: כמה ילדתי את צודקת",
+      "next": "איך גדלת אלוהים איך גדלת"
+    },
+    "gap": {
+      "line": "אלין גולן: ＿＿＿ יבוא",
+      "word": "וכשהיום"
+    }
   },
   {
     "id": "אל-תגידי-לי-לא",
@@ -4416,7 +5728,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/13/cb/5613cb08-f94c-0008-1a38-df254e948139/mzaf_13922135621958708040.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "את וודאי זוכרת"
+    "lyricLine": "את וודאי זוכרת",
+    "nextLine": {
+      "line": "עוד זריחה אחרת",
+      "next": "נו מה את אומרת?"
+    },
+    "gap": {
+      "line": "תלחשי ＿＿＿ לא יפריד, איתך הלילה",
+      "word": "כלום"
+    }
   },
   {
     "id": "אל-תטעי-בדרך",
@@ -4433,7 +5753,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/00/0b/54000b3e-d120-94fd-34e6-543bf6c727f8/mzaf_6616056554396514948.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "מתי אליי תשובי, מתגעגע"
+    "lyricLine": "מתי אליי תשובי, מתגעגע",
+    "nextLine": {
+      "line": "ברחובות העיר שאלתי, אם ראו פנייך",
+      "next": "היכן שלא חיפשתי, אבדו לי עקבותייך"
+    },
+    "gap": {
+      "line": "עצוב ורע לי ＿＿＿",
+      "word": "בנשמה"
+    }
   },
   {
     "id": "אמא",
@@ -4450,7 +5778,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/21/f5/29/21f529da-3799-aa88-04b1-c53cb5a7d84c/mzaf_11363762279313313735.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אלוקים שמור אותה"
+    "lyricLine": "אלוקים שמור אותה",
+    "nextLine": {
+      "line": "כבר זרקה בה השיבה",
+      "next": "אך האור בה לא כבה"
+    },
+    "gap": {
+      "line": "כי אין עוזר ＿＿＿",
+      "word": "לצידה"
+    }
   },
   {
     "id": "בגדים-ומתנות",
@@ -4467,7 +5803,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ec/a4/b6/eca4b6d7-03f0-3c0d-ecfa-83357643d99e/mzaf_13797270533180549907.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ובסוף גם לקינוח מחייכת ואומרת"
+    "lyricLine": "ובסוף גם לקינוח מחייכת ואומרת",
+    "nextLine": {
+      "line": "אני עובד משמרת לילה וגם סופי שבוע",
+      "next": "אבל היא עוד מפנטזת ובעדינות רומזת"
+    },
+    "gap": {
+      "line": "ובסוף גם לקינוח ＿＿＿ ואומרת",
+      "word": "מחייכת"
+    }
   },
   {
     "id": "בלי-להתכון",
@@ -4484,7 +5828,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/ec/26/abec260e-8c85-e816-692c-dd42dc7d68a4/mzaf_17154505531372295672.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ומה לא עשיתי כדי לשכוח"
+    "lyricLine": "ומה לא עשיתי כדי לשכוח",
+    "nextLine": {
+      "line": "החלפתי אהבות בקצב",
+      "next": "כמו אלוף העולם בלברוח"
+    },
+    "gap": {
+      "line": "＿＿＿ על מי להישען",
+      "word": "כשאין"
+    }
   },
   {
     "id": "זה-מסוכן",
@@ -4501,7 +5853,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8e/1d/6a/8e1d6aa2-5adb-0fc8-77c8-4f6ede24c059/mzaf_8230115539297738808.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "היום טיילת אצלי במחשבות, מודה שקצת בכיתי"
+    "lyricLine": "היום טיילת אצלי במחשבות, מודה שקצת בכיתי",
+    "nextLine": {
+      "line": "היכן אותו בחור כזה שרק חייך בדיוק לפני חודשיים",
+      "next": "איך את לא מתקשרת אליי"
+    },
+    "gap": {
+      "line": "בתוך תוכי ＿＿＿ שאת שם לבדך",
+      "word": "קיוויתי"
+    }
   },
   {
     "id": "חונקת-מאהבה",
@@ -4518,7 +5878,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cd/45/02/cd4502e5-4cb2-82fd-85b8-eb0396576982/mzaf_6338062826437716099.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "תתני לי קצת אוויר אל תעצרי לי את הלב"
+    "lyricLine": "תתני לי קצת אוויר אל תעצרי לי את הלב",
+    "nextLine": {
+      "line": "תתני לי קצת אוויר אל תעצרי לי את הלב",
+      "next": "את לא רואה שאת טועה, אז תעצרי שניה"
+    },
+    "gap": {
+      "line": "אבל את חונקת בשקט, חונקת אותי ＿＿＿",
+      "word": "מאהבה"
+    }
   },
   {
     "id": "יפה-לך-להיות-מאושרת",
@@ -4535,7 +5903,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c3/2a/98/c32a9868-8212-21d2-9167-405a9804dfc3/mzaf_10126401071605065522.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "לא לבד היום לא זה לא חלום"
+    "lyricLine": "לא לבד היום לא זה לא חלום",
+    "nextLine": {
+      "line": "המלכה שלי, את היחידה שלי, כמה שאת בשבילי",
+      "next": "יפה לך רק להיות מאושרת חופשי זה לא להיות לבד"
+    },
+    "gap": {
+      "line": "יפה לך רק ＿＿＿ מאושרת",
+      "word": "להיות"
+    }
   },
   {
     "id": "ירח-נעלם",
@@ -4552,7 +5928,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4b/9d/a1/4b9da13a-a0df-db06-2821-f95518a8bb86/mzaf_3562277953454357135.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כל הלילה לא נרדמתי מתהפך ממחשבות"
+    "lyricLine": "כל הלילה לא נרדמתי מתהפך ממחשבות",
+    "nextLine": {
+      "line": "היי, הוא מתרחק",
+      "next": "מביתך, זה אני הולך"
+    },
+    "gap": {
+      "line": "מי עומד ליד ＿＿＿ בשעה כה מאוחרת, היי, לאן יילך",
+      "word": "הדלת"
+    }
   },
   {
     "id": "יש-לי-רק-אותך",
@@ -4569,7 +5953,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/66/e5/6c66e5c0-457c-af06-a473-b6481c6e9b4f/mzaf_11759462029612849169.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אומרת לי היי, הלילה מתחיל"
+    "lyricLine": "אומרת לי היי, הלילה מתחיל",
+    "nextLine": {
+      "line": "ואת לא עוצרת רצית מסיבה",
+      "next": "קיבלת את הכי טובה שיש"
+    },
+    "gap": {
+      "line": "שאת היפה שלי ＿＿＿ יודעים",
+      "word": "כולם"
+    }
   },
   {
     "id": "לא-פשוט-להיות-פשוט",
@@ -4600,7 +5992,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/95/1a/3b/951a3be4-7830-73f2-a639-1a561076b704/mzaf_8945267077259065806.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אך בליבי בתוך תוכי השלכת"
+    "lyricLine": "אך בליבי בתוך תוכי השלכת",
+    "nextLine": {
+      "line": "מנסה להיות שפוי ולחזור למציאות",
+      "next": "כי את כבר לא איתי ובלעדייך זו בדידות"
+    },
+    "gap": {
+      "line": "תנסי להאמין, לסלוח, ＿＿＿",
+      "word": "להבין"
+    }
   },
   {
     "id": "לשיר-וכדורגל",
@@ -4617,7 +6017,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f3/c3/16/f3c316a1-d24d-796c-b9ed-02d1b5739acc/mzaf_11131686671744523689.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "היית הכי יפה בחדר"
+    "lyricLine": "היית הכי יפה בחדר",
+    "nextLine": {
+      "line": "ולא ידעת אם אני בעניין",
+      "next": "אני כבר מאוהב אז תתני לי סימן"
+    },
+    "gap": {
+      "line": "את יודעת שבא לי לחבק ＿＿＿",
+      "word": "אותך"
+    }
   },
   {
     "id": "מאמי",
@@ -4654,7 +6062,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/97/1d/0c/971d0c9a-f025-7772-e777-0edab813a9c8/mzaf_11552265569277835568.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אני לא יכול להירגע"
+    "lyricLine": "אני לא יכול להירגע",
+    "nextLine": {
+      "line": "כי אני אצלה על אש קטנה הלב רותח",
+      "next": "תוותר אמרו לי חברים - וותר עלייה"
+    },
+    "gap": {
+      "line": "יושב עם ＿＿＿ ושותה",
+      "word": "בקבוק"
+    }
   },
   {
     "id": "משחקים-של-כבוד",
@@ -4671,7 +6087,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/a7/c1/c5a7c149-1db4-3054-f872-81d9948de6af/mzaf_1778680305167205957.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אך את בשלך את לא מוותרת"
+    "lyricLine": "אך את בשלך את לא מוותרת",
+    "nextLine": {
+      "line": "כמו שאיש לא יכול",
+      "next": "חברות לך סיפרו דברים שעשיתי"
+    },
+    "gap": {
+      "line": "＿＿＿ מלחמה נושבות בלי לחדול",
+      "word": "רוחות"
+    }
   },
   {
     "id": "נסחפת-כמו-ילדה",
@@ -4688,7 +6112,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/41/82/d9/4182d9de-7be0-b98b-f731-82e83eb5598f/mzaf_11145360859454942642.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "לא יודעת שכל זה לשווא, הבחור אינו מאוהב"
+    "lyricLine": "לא יודעת שכל זה לשווא, הבחור אינו מאוהב",
+    "nextLine": {
+      "line": "ערב אחד הוא איתה, ערב אחר לבדה",
+      "next": "היא נסחפת תמיד אחריו ונושקת בחום לשפתיו"
+    },
+    "gap": {
+      "line": "נסחפת אבודה, מתי ＿＿＿ ותדע",
+      "word": "תתעורר"
+    }
   },
   {
     "id": "פרחים-במדבר",
@@ -4705,7 +6137,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/fb/83/e6fb83b1-a0f0-5192-66b0-39a815297daf/mzaf_1633007575796869369.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "כשקשה להתקרב"
+    "lyricLine": "כשקשה להתקרב",
+    "nextLine": {
+      "line": "להביט בך בלילה",
+      "next": "במקום ללכת לישון"
+    },
+    "gap": {
+      "line": "＿＿＿ בין המילים גם",
+      "word": "לקרוא"
+    }
   },
   {
     "id": "רק-תדעי",
@@ -4758,7 +6198,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c2/96/e8/c296e8a3-b7ad-2431-6413-a4c14bdff790/mzaf_6404837615045191291.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ואת כבר מזמן לא איתי"
+    "lyricLine": "ואת כבר מזמן לא איתי",
+    "nextLine": {
+      "line": "שמעתי שאת בסביבה",
+      "next": "זה כמו כדור שנפלט אל הלב"
+    },
+    "gap": {
+      "line": "בכל פינה ＿＿＿ מתפלל",
+      "word": "שהולך"
+    }
   },
   {
     "id": "אל-נבקש",
@@ -4813,7 +6261,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b8/59/e6/b859e640-b015-69f5-18d3-e78de6dfb1a9/mzaf_15478722147312417758.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ואני כמבוהל רק שאלתי לשמה"
+    "lyricLine": "ואני כמבוהל רק שאלתי לשמה",
+    "nextLine": {
+      "line": "בחוצות הסתובבתי מוכה סחרחורת",
+      "next": "רעב ויגע ובלי כל תקוה"
+    },
+    "gap": {
+      "line": "ואני ＿＿＿ רק ביקשתי ללחוש",
+      "word": "כמבוהל"
+    }
   },
   {
     "id": "ים-של-דמעות",
@@ -4832,7 +6288,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3b/c6/34/3bc63468-5dea-4d0d-6fa9-22c4908701c5/mzaf_15286404752771609765.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ותפילה, תפילה כנה שתחזור."
+    "lyricLine": "ותפילה, תפילה כנה שתחזור.",
+    "nextLine": {
+      "line": "השעון שעל הקיר ליבו נדם",
+      "next": "ובודד בפינה הכסא שאהבת"
+    },
+    "gap": {
+      "line": "ליבי ＿＿＿ שובה אלי",
+      "word": "זועק"
+    }
   },
   {
     "id": "להיות-אדם",
@@ -4887,7 +6351,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f7/1b/4f/f71b4ff0-6116-535c-0ae3-f800ce60fb57/mzaf_11098484312357463154.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "ויום שלישי הוא יום חדש"
+    "lyricLine": "ויום שלישי הוא יום חדש",
+    "nextLine": {
+      "line": "יום שני אני זורח",
+      "next": "ויום שלישי כוכב חדש"
+    },
+    "gap": {
+      "line": "יום יום אני הופך מחומר ＿＿＿",
+      "word": "לאבק"
+    }
   },
   {
     "id": "סימתי-מילואים",
@@ -4906,7 +6378,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a2/f2/ae/a2f2ae02-3c52-22d6-437e-20bcad651208/mzaf_14199818873468461085.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ליד החוף אצעד בדד"
+    "lyricLine": "ליד החוף אצעד בדד",
+    "nextLine": {
+      "line": "האור קורא קורא ממרחקים",
+      "next": "אני בים ספינה רואה"
+    },
+    "gap": {
+      "line": "ושוב ＿＿＿ אל סלע קט",
+      "word": "אביט"
+    }
   },
   {
     "id": "עד-מתי-אלוהי",
@@ -4943,7 +6423,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/82/a7/5d/82a75dc4-839c-e588-b4c3-7b8186cd9d26/mzaf_5716937571791146902.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "את שותקת, מתבוננת"
+    "lyricLine": "את שותקת, מתבוננת",
+    "nextLine": {
+      "line": "עוד מבט שוב מעינייך",
+      "next": "זה אתמול היה חלום"
+    },
+    "gap": {
+      "line": "את לא יונה ＿＿＿",
+      "word": "שבודדה"
+    }
   },
   {
     "id": "אהבה-ראשונה",
@@ -4960,7 +6448,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e0/3f/0b/e03f0b6a-a91f-9e53-d209-26296c673599/mzaf_16792969989677025508.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "חכי תני לי רק להגיד לך מילה"
+    "lyricLine": "חכי תני לי רק להגיד לך מילה",
+    "nextLine": {
+      "line": "אני יושב בלילות וחושב מה איתה",
+      "next": "אולי לבדה או חולקת מיטה"
+    },
+    "gap": {
+      "line": "אז למה ארזת ＿＿＿ של שנים",
+      "word": "חלום"
+    }
   },
   {
     "id": "אחי-אמר-לי",
@@ -4977,7 +6473,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/03/04/e6/0304e67d-56ad-4e73-1cc0-1cd0889e4718/mzaf_2984826585871539181.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אף פעם אל תשכח אתה בן של אבא אוהב"
+    "lyricLine": "אף פעם אל תשכח אתה בן של אבא אוהב",
+    "nextLine": {
+      "line": "אחי כל כולך מתנה",
+      "next": "שבת אחת שישה ימים תן קצת רגעים"
+    },
+    "gap": {
+      "line": "אף פעם לא יהיה לך ＿＿＿",
+      "word": "מספיק"
+    }
   },
   {
     "id": "אסתדר-לבד",
@@ -4994,7 +6498,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b6/74/45/b67445b8-bedd-5d93-c5c5-629768842d6f/mzaf_8261339803812476873.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ואם לא אז תתפלאי יש רגשות גם לגברים"
+    "lyricLine": "ואם לא אז תתפלאי יש רגשות גם לגברים",
+    "nextLine": {
+      "line": "כמה שאת יודעת אהבתי והייתי גם מוכן למענך למות",
+      "next": "ואמא'שלי אומרת כל הזמן שאת טיפוס הזוי"
+    },
+    "gap": {
+      "line": "והמדריך ללב ＿＿＿ עוד לא קיים",
+      "word": "שבור"
+    }
   },
   {
     "id": "האם-להיות-בך-מאוהב",
@@ -5011,7 +6523,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/81/e7/b4/81e7b47e-469e-25ad-08a9-38ae9336acf5/mzaf_10441433768274703220.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ואת לא פה לידי"
+    "lyricLine": "ואת לא פה לידי",
+    "nextLine": {
+      "line": "כי הכל נובל אצלי",
+      "next": "ואם את רוצה לשמוח תברחי"
+    },
+    "gap": {
+      "line": "כי כלום לא מצחיק ＿＿＿",
+      "word": "אותי"
+    }
   },
   {
     "id": "הולכים-להשתגע",
@@ -5044,7 +6564,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ae/93/61/ae93613f-acdf-e585-8fca-6f483854d666/mzaf_18139930900709451821.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כל העיר כבר ישנה וקר לי"
+    "lyricLine": "כל העיר כבר ישנה וקר לי",
+    "nextLine": {
+      "line": "כמו עיוור בלילה אז הלכתי",
+      "next": "אחרי הלב שלא נכנע"
+    },
+    "gap": {
+      "line": "אני כותב לך שבלעדייך גם ＿＿＿ מעונן",
+      "word": "הקיץ"
+    }
   },
   {
     "id": "הפוך-מהיקום",
@@ -5061,7 +6589,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/50/29/f5/5029f54f-d2b8-586b-8a59-370c244373b9/mzaf_138001859069444922.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אותו מבט חולם שוב מסתכל אליי"
+    "lyricLine": "אותו מבט חולם שוב מסתכל אליי",
+    "nextLine": {
+      "line": "תגלי אותי לפני שאאבד אותך",
+      "next": "שוחה בים אלכוהול"
+    },
+    "gap": {
+      "line": "שבלילה כשכולם הולכים ＿＿＿",
+      "word": "לישון"
+    }
   },
   {
     "id": "טירוף-מתוק",
@@ -5078,7 +6614,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7f/1f/60/7f1f6066-b11e-02ea-20ca-170ba5ff28f8/mzaf_15277163280993481297.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כותב את שמך בחול"
+    "lyricLine": "כותב את שמך בחול",
+    "nextLine": {
+      "line": "אז תבואי מהר כי זה קצת מכאיב",
+      "next": "שאת לא נמצאת אני קצת שביר"
+    },
+    "gap": {
+      "line": "מתקרבת עד אליי זה ＿＿＿ לי טוב",
+      "word": "עושה"
+    }
   },
   {
     "id": "כמה-טוב-לי-שבאת",
@@ -5125,7 +6669,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/32/78/4f/32784f2f-2290-ca1f-ddb9-d9cbf6cc053d/mzaf_6509904538618107774.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אז אם אנחנו יחד בוא נשכח מהכל"
+    "lyricLine": "אז אם אנחנו יחד בוא נשכח מהכל",
+    "nextLine": {
+      "line": "עכשיו אפשר לשיר בשני קולות",
+      "next": "לשנינו יש כאן את אותה מנגינה"
+    },
+    "gap": {
+      "line": "＿＿＿ לי סיבה להמשיך לעשות",
+      "word": "נתנו"
+    }
   },
   {
     "id": "כמו-בספרים-ההם",
@@ -5142,7 +6694,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/04/99/f6/0499f658-b10c-8474-092a-75c7aa87ea09/mzaf_7780184375231262458.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ועיניים טובות"
+    "lyricLine": "ועיניים טובות",
+    "nextLine": {
+      "line": "אל תהיה לי תמים דון קישוט",
+      "next": "כמה התרגשתי נולד קטן"
+    },
+    "gap": {
+      "line": "בשבילי את כל ＿＿＿ הזה",
+      "word": "העולם"
+    }
   },
   {
     "id": "לא-מבינה-עברית",
@@ -5177,7 +6737,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/04/75/28/0475287a-281e-6c6e-5ee0-60030f313ca4/mzaf_4473889441828644338.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "ואת אומרת לי"
+    "lyricLine": "ואת אומרת לי",
+    "nextLine": {
+      "line": "הערב שוב יורד על השעון",
+      "next": "זה סוף דצמבר האורות דולקים בכל מקום"
+    },
+    "gap": {
+      "line": "ושוב אותו חיוך ＿＿＿",
+      "word": "מוכר"
+    }
   },
   {
     "id": "לרקוד-כמו-משוגע",
@@ -5196,7 +6764,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/17/45/5d/17455d33-1ec2-87df-3bdc-4bf270286db2/mzaf_11370351588773509873.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "את הצרות נשאיר מאחורינו"
+    "lyricLine": "את הצרות נשאיר מאחורינו",
+    "nextLine": {
+      "line": "האוטו מתקשה לסחוב",
+      "next": "את השיגרה המתח והעומס"
+    },
+    "gap": {
+      "line": "לרקוד איתך כמו ＿＿＿",
+      "word": "משוגע"
+    }
   },
   {
     "id": "ממה-את-מפחדת",
@@ -5217,7 +6793,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/57/07/06/57070601-a2c8-1e83-c433-ff2e5e42a7fd/mzaf_7419756808733274106.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "הן כבר לא מספרות על מחר"
+    "lyricLine": "הן כבר לא מספרות על מחר",
+    "nextLine": {
+      "line": "איך סגורות שוב דלתות פנייך",
+      "next": "הן כבר לא מגלות לי דבר"
+    },
+    "gap": {
+      "line": "עוד שנייה זה בנינו ＿＿＿",
+      "word": "נגמר"
+    }
   },
   {
     "id": "ממחר",
@@ -5234,7 +6818,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/01/60/45/01604512-72a7-bb1b-5c36-28eb20da0759/mzaf_4265208967556365171.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "לא מוצא מקום כל הרגש מסתבך לי"
+    "lyricLine": "לא מוצא מקום כל הרגש מסתבך לי",
+    "nextLine": {
+      "line": "מחפש את עצמי עוד מבוך על הלב",
+      "next": "לא מוצא מקום כל הרגש מסתבך לי"
+    },
+    "gap": {
+      "line": "העיקר שמחר ＿＿＿ הרבה פחות כואב",
+      "word": "יהיה"
+    }
   },
   {
     "id": "מקום-אחר",
@@ -5267,7 +6859,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/46/56/1b/46561b2c-808c-245b-64ca-9a2b4b751743/mzaf_3080684102960386826.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אל תדאג יותר תהיה רגוע"
+    "lyricLine": "אל תדאג יותר תהיה רגוע",
+    "nextLine": {
+      "line": "השמחה תפרוץ כמו געגעוע",
+      "next": "תהיה שמח תהיה מאושר"
+    },
+    "gap": {
+      "line": "＿＿＿ נרים ויאללה שרים",
+      "word": "ידיים"
+    }
   },
   {
     "id": "קחי-לך-את-היום",
@@ -5284,7 +6884,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0f/76/51/0f76510d-75ce-0666-8597-3faf81e7dbc6/mzaf_11696096366940490871.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כבר ידעתי קחי לך רגע לנשום"
+    "lyricLine": "כבר ידעתי קחי לך רגע לנשום",
+    "nextLine": {
+      "line": "מבט של מדרון תלול וגם איזה חיוך תפל",
+      "next": "בחייך קחי לך רגע לנשום"
+    },
+    "gap": {
+      "line": "תשתי כוס תה ותשכבי לנוח עוד ＿＿＿",
+      "word": "היום"
+    }
   },
   {
     "id": "שיכור-בלילות",
@@ -5301,7 +6909,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c0/a3/8b/c0a38b76-1223-4646-5016-bbd2db238368/mzaf_2845677833692071757.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כל השירים האפורים עכשיו אליי כה מדברים"
+    "lyricLine": "כל השירים האפורים עכשיו אליי כה מדברים",
+    "nextLine": {
+      "line": "האהבה זורמת לי בדם",
+      "next": "כמו שמש בשמים שנינו לעולם"
+    },
+    "gap": {
+      "line": "אור דולק ＿＿＿ בספסל אל מול ביתך",
+      "word": "בחלונך"
+    }
   },
   {
     "id": "אוסף-עוד-געגוע",
@@ -5318,7 +6934,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b6/d1/9f/b6d19fe4-ceee-df5f-0279-6c4d25f1e708/mzaf_16613067851899593855.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ואמא כל הזמן אומרת תהיה חזק"
+    "lyricLine": "ואמא כל הזמן אומרת תהיה חזק",
+    "nextLine": {
+      "line": "כל הבגדים שאת השארת זרוקים בחדר",
+      "next": "תמונות שלך על קיר ישן מספרות הכל"
+    },
+    "gap": {
+      "line": "אז תגידי איך ＿＿＿ תמיד חוזרים להתחלה",
+      "word": "בסוף"
+    }
   },
   {
     "id": "אם-רק-הית-יודעת",
@@ -5335,7 +6959,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d3/dd/7a/d3dd7a11-ab7d-7fd1-c4a9-633d9c336ddc/mzaf_7098680061457413215.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "רק תגידי שהכל בסדר"
+    "lyricLine": "רק תגידי שהכל בסדר",
+    "nextLine": {
+      "line": "לאן כולם נוסעים כאן לעזאזל",
+      "next": "אולי תגידי לי מילים טובות"
+    },
+    "gap": {
+      "line": "המנגינות ＿＿＿ צריך לנוע",
+      "word": "באות"
+    }
   },
   {
     "id": "חוזר-הביתה",
@@ -5352,7 +6984,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0d/bd/b8/0dbdb8a6-5b92-380e-881f-43ada5de24b2/mzaf_3281692181394134050.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כולם פה זה אחד ואת איתי אני יודע"
+    "lyricLine": "כולם פה זה אחד ואת איתי אני יודע",
+    "nextLine": {
+      "line": "אולי אנ'לא אומר מספיק אוהב אותך",
+      "next": "אבל מרגיש אותך בתוך הנשמה שלי"
+    },
+    "gap": {
+      "line": "אוהב אותך אמא עוד כמה ＿＿＿",
+      "word": "ימים"
+    }
   },
   {
     "id": "לעשות-איתך-שלום",
@@ -5369,7 +7009,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/61/4b/7b/614b7bdf-8fd3-4ba3-7efe-607e541e09e7/mzaf_6714836306691790126.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "תגידי שאת בסדר"
+    "lyricLine": "תגידי שאת בסדר",
+    "nextLine": {
+      "line": "אז מה עם הגעגוע",
+      "next": "עבר כבר כמעט שבוע"
+    },
+    "gap": {
+      "line": "אני כבר ＿＿＿ ליד הדלת",
+      "word": "מחכה"
+    }
   },
   {
     "id": "מכאן-ועד-הנצח",
@@ -5386,7 +7034,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9d/7a/98/9d7a985d-3669-b4e1-2c77-e9bb2fb5a43c/mzaf_2362742560680596279.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כשאת צוחקת כלכך רגוע לי בפנים"
+    "lyricLine": "כשאת צוחקת כלכך רגוע לי בפנים",
+    "nextLine": {
+      "line": "מבטיח לך לשמור עלינו",
+      "next": "כמו על העיניים"
+    },
+    "gap": {
+      "line": "הירוקות שלך איך באת לי ＿＿＿",
+      "word": "משמיים"
+    }
   },
   {
     "id": "מכל-האהבות-הזמניות",
@@ -5421,7 +7077,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9f/b1/bf/9fb1bf52-9d32-98e9-ea66-b0cbd8ed8a0d/mzaf_1531150112000560827.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אתה מנהיג ברחמייך"
+    "lyricLine": "אתה מנהיג ברחמייך",
+    "nextLine": {
+      "line": "שלמרות שנפלתי אני קם עם חיוך",
+      "next": "ובליבי עוד נושא תפילה"
+    },
+    "gap": {
+      "line": "כי אין בי כלום בלי ＿＿＿",
+      "word": "תורתך"
+    }
   },
   {
     "id": "עושה-עם-העינים",
@@ -5438,7 +7102,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/57/89/ce5789fc-c424-aa29-1fa0-21b96bce5801/mzaf_5853400128771257016.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "נשבע שבכלל לא תכננתי לריב"
+    "lyricLine": "נשבע שבכלל לא תכננתי לריב",
+    "nextLine": {
+      "line": "אני מכיר אחרות",
+      "next": "וזה לא שאהבנו לרגע פחות"
+    },
+    "gap": {
+      "line": "אשאיר לך את ＿＿＿ בינתיים",
+      "word": "עצמי"
+    }
   },
   {
     "id": "קרובה-אלי",
@@ -5455,7 +7127,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8c/aa/03/8caa03b7-17fb-934b-a191-53a675be25f6/mzaf_3051747869462735051.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ברדיו משמיעים עוד איזה שיר על אהבה מדברים"
+    "lyricLine": "ברדיו משמיעים עוד איזה שיר על אהבה מדברים",
+    "nextLine": {
+      "line": "ואם תרגישי עצובה",
+      "next": "אני אבוא ואחבק"
+    },
+    "gap": {
+      "line": "＿＿＿ קשות שרק אני ואת ואלוקים שומע",
+      "word": "תקופות"
+    }
   },
   {
     "id": "רכבת-הרים",
@@ -5472,7 +7152,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0a/39/14/0a3914c0-761f-bc8f-e7cd-fb90a97c4be4/mzaf_14687031067716831214.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "הלב שלי גם ככה ישן"
+    "lyricLine": "הלב שלי גם ככה ישן",
+    "nextLine": {
+      "line": "אותך איתי לכל מקום אני לא יודע",
+      "next": "אם את מאושרת עכשיו כשאת חוזרת"
+    },
+    "gap": {
+      "line": "＿＿＿ הולך לישון הלילה",
+      "word": "אנלא"
+    }
   },
   {
     "id": "רק-לעוד-דקה",
@@ -5489,7 +7177,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/18/8a/fe/188afe43-fd79-4900-65c4-5992232759c4/mzaf_5779993244026611398.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כשאני עוד לא מבין מה קרה"
+    "lyricLine": "כשאני עוד לא מבין מה קרה",
+    "nextLine": {
+      "line": "איך הזיכרונות עולים צפים עכשיו",
+      "next": "זוכרת שהבטחנו שתמיד נאהב"
+    },
+    "gap": {
+      "line": "אל תאמרי שאת ＿＿＿",
+      "word": "עוזבת"
+    }
   },
   {
     "id": "שבוי-לאהבה",
@@ -5506,7 +7202,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/34/b5/3334b554-8fda-0dc9-1412-1d90f264f07d/mzaf_3859394779401846010.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ועכשיו את שותקת"
+    "lyricLine": "ועכשיו את שותקת",
+    "nextLine": {
+      "line": "אני בורח מעצמי",
+      "next": "כבר גמרתי את הכוסית האחרונה"
+    },
+    "gap": {
+      "line": "עוד שמורה לך ＿＿＿ כנה",
+      "word": "אהבה"
+    }
   },
   {
     "id": "שומרים-אהבה",
@@ -5523,7 +7227,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8c/63/2f/8c632f3d-fb95-8455-c9c9-360e7d561fff/mzaf_3025261062460585034.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "חברים אומרים שזה פרפרים"
+    "lyricLine": "חברים אומרים שזה פרפרים",
+    "nextLine": {
+      "line": "תמיד פחדת להתקרב אבל בחרת אותי",
+      "next": "כי יש לך טעם מושלם"
+    },
+    "gap": {
+      "line": "רק ＿＿＿ ישנה והחיוך שלך",
+      "word": "גיטרה"
+    }
   },
   {
     "id": "אומר-לך-תודה",
@@ -5540,7 +7252,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ca/d4/18/cad4180d-7fa1-eb57-0ce8-7033cecbcb76/mzaf_7265187399313248896.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "שא תפילה חייך אל המחר"
+    "lyricLine": "שא תפילה חייך אל המחר",
+    "nextLine": {
+      "line": "כן רק אתה זה שעונה לתפילותיי",
+      "next": "ביום בלילה מלמעלה אתה שומר עליי"
+    },
+    "gap": {
+      "line": "＿＿＿ עולם כן רק אתה יודע מה עובר עליי",
+      "word": "בורא"
+    }
   },
   {
     "id": "אין-תרופה-לאהבה",
@@ -5557,7 +7277,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/05/ed/11/05ed11bf-6a3d-bdc6-d097-56c8cccc38d0/mzaf_7260417108099119019.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ולי קשה לנשום"
+    "lyricLine": "ולי קשה לנשום",
+    "nextLine": {
+      "line": "הלכו לי הימים שיחקת ברגשות",
+      "next": "לב של גבר שנשבר לחתיכות"
+    },
+    "gap": {
+      "line": "הגעגוע שוב ＿＿＿ לי",
+      "word": "לוחש"
+    }
   },
   {
     "id": "אל-תאמרו-לה",
@@ -5574,7 +7302,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/29/c6/95/29c6958a-5609-395d-a9e6-ed92f4787851/mzaf_18397307559586866800.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ויצאה עם השקיעה"
+    "lyricLine": "ויצאה עם השקיעה",
+    "nextLine": {
+      "line": "עוד חושב על שתי עיניה",
+      "next": "אם עצוב לה או שמחה"
+    },
+    "gap": {
+      "line": "מה ＿＿＿ לי משתגע עוד ממשיך ונאחז",
+      "word": "נשאר"
+    }
   },
   {
     "id": "באור-גדול",
@@ -5630,7 +7366,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9f/0a/53/9f0a5377-c46a-43b2-89e7-c11a8cb94e05/mzaf_16925453958690201234.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ואת בדלת מחכה"
+    "lyricLine": "ואת בדלת מחכה",
+    "nextLine": {
+      "line": "אני כאן כדי לשמור עליך",
+      "next": "לך תגשים את עצמך"
+    },
+    "gap": {
+      "line": "ואם ＿＿＿ בא אלייך",
+      "word": "הייתי"
+    }
   },
   {
     "id": "בלונים",
@@ -5647,7 +7391,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c6/4c/7e/c64c7ed0-dbf8-e4ca-c91b-e9bab7422455/mzaf_3382026611795898390.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "קיץ ילטף לך בשיער תשעני אחורה"
+    "lyricLine": "קיץ ילטף לך בשיער תשעני אחורה",
+    "nextLine": {
+      "line": "בכל מבט בכל אחת",
+      "next": "אני מרגיש את זה כבר כל הזמן"
+    },
+    "gap": {
+      "line": "＿＿＿ כמו קרוסלה היא עשתה לי כבר סחרחורת",
+      "word": "האהבה"
+    }
   },
   {
     "id": "הלב-הזה",
@@ -5664,7 +7416,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fc/0c/51/fc0c51ea-7ab2-e359-2baf-f745cefd0890/mzaf_2867373775385429203.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "ככה זה אצלנו זה אחרת"
+    "lyricLine": "ככה זה אצלנו זה אחרת",
+    "nextLine": {
+      "line": "שמישהו יגיד לי מה קרה לה",
+      "next": "אוהב אותה ובא לה להפוך לי ת'חיים (להפוך לי ת'חיים)"
+    },
+    "gap": {
+      "line": "היינו מדברים שעות מול ＿＿＿",
+      "word": "הירח"
+    }
   },
   {
     "id": "וי-כחול",
@@ -5684,7 +7444,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bd/c5/47/bdc54770-1ca6-6f67-a604-807fb6bfea2a/mzaf_7097209270341602826.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "וכמה נעליים מי סופר"
+    "lyricLine": "וכמה נעליים מי סופר",
+    "nextLine": {
+      "line": "הדרכון שלה כבר מתפוצץ",
+      "next": "יש לה בכל צבע בגד ים"
+    },
+    "gap": {
+      "line": "יש לה את השם הכי ＿＿＿ בכל העיר",
+      "word": "קליט"
+    }
   },
   {
     "id": "טעיתי",
@@ -5701,7 +7469,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bd/52/82/bd528270-892d-735c-91d8-a2fb01966910/mzaf_7815086900209798465.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "איך הכל הרסתי איך"
+    "lyricLine": "איך הכל הרסתי איך",
+    "nextLine": {
+      "line": "כי ככה זה להתאהב",
+      "next": "מאות שירים אני אוסף"
+    },
+    "gap": {
+      "line": "להיות מי שהכי טוב ＿＿＿",
+      "word": "בשבילך"
+    }
   },
   {
     "id": "ימים-טובים",
@@ -5718,7 +7494,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a5/28/68/a528685e-f7da-f74f-1986-9e02450cbe90/mzaf_17226464407880633383.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כמו הבעל בית של העיר"
+    "lyricLine": "כמו הבעל בית של העיר",
+    "nextLine": {
+      "line": "שהלבבות מתרחבים",
+      "next": "ובני אדם אז נפתחים כמו פרחים"
+    },
+    "gap": {
+      "line": "ואתה מביא לה ＿＿＿ של פרחים",
+      "word": "בושם"
+    }
   },
   {
     "id": "כמו-משוגע",
@@ -5735,7 +7519,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/6e/9e/8c6e9e6e-9c98-4dcd-4e22-b55b0036e571/mzaf_1672069795616228435.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "לעצמך בשבילי בשבילך"
+    "lyricLine": "לעצמך בשבילי בשבילך",
+    "nextLine": {
+      "line": "והזמן לא שוכח הלוואי שגם את",
+      "next": "מבינה שאני מצטער"
+    },
+    "gap": {
+      "line": "ופרחים את ＿＿＿ מזכירים לך את החג",
+      "word": "אומרת"
+    }
   },
   {
     "id": "להיות-מאושר",
@@ -5752,7 +7544,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bb/54/90/bb5490f0-85d5-a222-3f20-96bf9a87b8f6/mzaf_11229556530617018471.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "העיקר לברוח מהשקט"
+    "lyricLine": "העיקר לברוח מהשקט",
+    "nextLine": {
+      "line": "אני עדיין חשוף אבל הרוח לא נכנסת",
+      "next": "מספיק סוער לי בפנים"
+    },
+    "gap": {
+      "line": "עוד מילה שבקלות ＿＿＿",
+      "word": "נישברת"
+    }
   },
   {
     "id": "לכתוב-אותך",
@@ -5769,7 +7569,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f2/c8/8d/f2c88dbe-7af9-edb6-6eb9-0c9060ba15ed/mzaf_13894718025189202161.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "לילה אני לא ישן, אני מנגן"
+    "lyricLine": "לילה אני לא ישן, אני מנגן",
+    "nextLine": {
+      "line": "צלילים שלא נותנים לנוח",
+      "next": "על מה בדיוק אני חושב"
+    },
+    "gap": {
+      "line": "כמה מילים ＿＿＿ שלך",
+      "word": "בשתיקות"
+    }
   },
   {
     "id": "מאתים-מחזרים",
@@ -5786,7 +7594,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/7a/65/d47a65fc-d769-343f-05a0-c57cea1f4561/mzaf_3599235142674948402.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כשהיא הגיע ונתנה לו נשיקה"
+    "lyricLine": "כשהיא הגיע ונתנה לו נשיקה",
+    "nextLine": {
+      "line": "איזה כבוד היא מקבלת על הפאדי",
+      "next": "היא המלכה במסיבות של תל אביב"
+    },
+    "gap": {
+      "line": "איתה רוקדים ולא ＿＿＿ שהם נופלים אצלה בבור",
+      "word": "יודעים"
+    }
   },
   {
     "id": "מכל-הכוכבים-בלילה",
@@ -5841,7 +7657,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/57/70/de/5770de97-c446-1f68-be6f-0e229d33c017/mzaf_13360548372848724939.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "שלחתי לך עוד פרח"
+    "lyricLine": "שלחתי לך עוד פרח",
+    "nextLine": {
+      "line": "החיים האלה משכו אותי אליך",
+      "next": "כמעט שהתייאשתי קיבלתי את מתנה של החיים"
+    },
+    "gap": {
+      "line": "רק אל תגידי זה לא ＿＿＿",
+      "word": "ייגמר"
+    }
   },
   {
     "id": "נראתה-לאחרונה",
@@ -5858,7 +7682,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3e/98/6c/3e986c45-78ac-1cfc-f488-749424e609b3/mzaf_18142421658944044087.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "האם זו מלחמה"
+    "lyricLine": "האם זו מלחמה",
+    "nextLine": {
+      "line": "ברחוב אין נפש חיה",
+      "next": "קורא לאל בתפילה"
+    },
+    "gap": {
+      "line": "＿＿＿ חסר משקל, מקולקל",
+      "word": "מרגיש"
+    }
   },
   {
     "id": "סוכריות-קופצות",
@@ -5875,7 +7707,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e3/3c/31/e33c318d-2527-e094-d58f-d5b90002ce6c/mzaf_13032563828637867151.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "זה מה שיעשה אותי שמח"
+    "lyricLine": "זה מה שיעשה אותי שמח",
+    "nextLine": {
+      "line": "ונרים פה מסיבה של החיים",
+      "next": "עם אנשים יפים באמצע הקיץ"
+    },
+    "gap": {
+      "line": "את קצת ＿＿＿ ואת זה אני אוהב",
+      "word": "משוגעת"
+    }
   },
   {
     "id": "פעם-ועוד-פעם",
@@ -5892,7 +7732,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cb/01/7b/cb017b49-9c7d-e685-a43d-dbe5c848db58/mzaf_13588665469064373557.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "באתי לאהוב ולא לחשוב על אהבה"
+    "lyricLine": "באתי לאהוב ולא לחשוב על אהבה",
+    "nextLine": {
+      "line": "על מה שהיה על כל הטעויות",
+      "next": "ארבע בבוקר ושוב לא נרדם"
+    },
+    "gap": {
+      "line": "＿＿＿ שתהיי לנצח לעולם",
+      "word": "רוצה"
+    }
   },
   {
     "id": "קצב-מזרחי",
@@ -5909,7 +7757,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fa/da/d1/fadad1d6-14b2-ee41-b166-85cd272b416e/mzaf_15915175207235405798.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "חלאס טכנו באנגלית"
+    "lyricLine": "חלאס טכנו באנגלית",
+    "nextLine": {
+      "line": "יאללה קאעדה על הטול חביבי",
+      "next": "לא חייב להיות מסטול יסידי"
+    },
+    "gap": {
+      "line": "אני בא כמו ＿＿＿",
+      "word": "מכונה"
+    }
   },
   {
     "id": "אהבה-של-ילדים",
@@ -5926,7 +7782,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cc/6e/e6/cc6ee672-98be-98ea-598f-c9694f39fba5/mzaf_1427081349434845720.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "בא לי לחבק אותך אין אהבות כאלה"
+    "lyricLine": "בא לי לחבק אותך אין אהבות כאלה",
+    "nextLine": {
+      "line": "לפעמים הוא מסובך",
+      "next": "ואם תרצי אני אלמד"
+    },
+    "gap": {
+      "line": "את משלימה את ＿＿＿",
+      "word": "החסר"
+    }
   },
   {
     "id": "אושר-מזויף",
@@ -5943,7 +7807,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e7/d2/11/e7d2116b-2983-a432-5891-7d9ff32bb0f5/mzaf_6150162774947918978.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "תודה לך שנתת לי להבין"
+    "lyricLine": "תודה לך שנתת לי להבין",
+    "nextLine": {
+      "line": "גם אם הם התנפצו כשאספנו ת'דמעות",
+      "next": "למדתי מה זה אושר משוגע"
+    },
+    "gap": {
+      "line": "יכולתי להיות ＿＿＿ אדיש וגם הרבה יותר רגיש, בטח אלייך",
+      "word": "פחות"
+    }
   },
   {
     "id": "איזה-געגוע",
@@ -5960,7 +7832,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e4/83/ae/e483aef9-5ae4-4dab-2a1f-41bf17445152/mzaf_10276035499286175318.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "בלב שלי יש חורף שלא מתבהר"
+    "lyricLine": "בלב שלי יש חורף שלא מתבהר",
+    "nextLine": {
+      "line": "בחוץ אצלי הכל נראה רגוע",
+      "next": "אבל בפנים אני חייל פצוע שכבר עייף ממלחמות"
+    },
+    "gap": {
+      "line": "איך ＿＿＿ אהבה על הפסנתר",
+      "word": "עשינו"
+    }
   },
   {
     "id": "אכאב-אותך-בשקט",
@@ -5993,7 +7873,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3c/44/4c/3c444ca4-a416-ce97-fd89-3bd984371928/mzaf_8121769004129973854.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "סיפור קטן לפני חלום"
+    "lyricLine": "סיפור קטן לפני חלום",
+    "nextLine": {
+      "line": "בכל האהבות נשבעתי את המציאות האמיתית",
+      "next": "בתוך עולם כזה של תיאטרון"
+    },
+    "gap": {
+      "line": "איתך כבר אין מה למהר ＿＿＿ גם ככה ייעצר",
+      "word": "הזמן"
+    }
   },
   {
     "id": "בזמן-האחרון",
@@ -6012,7 +7900,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8f/78/06/8f780637-a991-f925-c975-4e4031483691/mzaf_10872819465234178279.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "לא הייתי שם אורח"
+    "lyricLine": "לא הייתי שם אורח",
+    "nextLine": {
+      "line": "בסרט שלי אני הוא החזק",
+      "next": "זה שלא שכחת אותו"
+    },
+    "gap": {
+      "line": "אז אם ＿＿＿ פה לידי בוודאי היה שמח",
+      "word": "היית"
+    }
   },
   {
     "id": "ביום-שישי",
@@ -6029,7 +7925,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/36/63/6a/36636afe-c73f-73eb-991e-52da1c209b6c/mzaf_382973346456854851.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "יש כאלה אומרים שזה סוף העולם"
+    "lyricLine": "יש כאלה אומרים שזה סוף העולם",
+    "nextLine": {
+      "line": "איך נסחפנו לאי וודאות",
+      "next": "ידעתי איתך זה לשחות או למות"
+    },
+    "gap": {
+      "line": "כל מה ＿＿＿ כל מה שבנינו",
+      "word": "שהיינו"
+    }
   },
   {
     "id": "גלביה",
@@ -6062,7 +7966,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a5/62/71/a56271f1-d2a0-88c0-fb0a-be64d9fde753/mzaf_3237247053327944739.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אבל מה עושים כשנפרדים"
+    "lyricLine": "אבל מה עושים כשנפרדים",
+    "nextLine": {
+      "line": "לא רציתי ככה לעזוב",
+      "next": "לא למדתי עוד איך מתבגרים"
+    },
+    "gap": {
+      "line": "בסוף אתה ＿＿＿ לבד",
+      "word": "תמיד"
+    }
   },
   {
     "id": "דרך-חדשה",
@@ -6079,7 +7991,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/27/23/a8/2723a80a-5391-166e-ed18-0fe5b0b9e977/mzaf_13273481638698887225.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אולי מתגעגע, אני כבר לא יודע"
+    "lyricLine": "אולי מתגעגע, אני כבר לא יודע",
+    "nextLine": {
+      "line": "ואם את מקשיבה תדעי",
+      "next": "השיר הזה הוא לא שלך"
+    },
+    "gap": {
+      "line": "ולמה? המחשבות אינן ＿＿＿",
+      "word": "חודלות"
+    }
   },
   {
     "id": "חצי-משוגעת",
@@ -6096,7 +8016,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ec/ba/97/ecba97b5-9b4f-6e0c-c537-9b5069978571/mzaf_10973291225525602967.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ויש לך קטע שכבר אין לאף אחת"
+    "lyricLine": "ויש לך קטע שכבר אין לאף אחת",
+    "nextLine": {
+      "line": "אין לי ברירות זה לא כוחות",
+      "next": "את כמו רכבת לכיוון אחד"
+    },
+    "gap": {
+      "line": "לאן את ＿＿＿ סרט",
+      "word": "ממהרת"
+    }
   },
   {
     "id": "חתונה-ממבט-ראשון",
@@ -6113,7 +8041,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ae/fb/47/aefb477f-5af3-d167-1f79-0f86347b6c27/mzaf_5412483429663492923.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "את יפה הלילה וניראה לי אני מאוהב"
+    "lyricLine": "את יפה הלילה וניראה לי אני מאוהב",
+    "nextLine": {
+      "line": "כבר מדמיין אותך בקיץ מתחתנת",
+      "next": "איתי בשמלת כלה בצבע של שמנת"
+    },
+    "gap": {
+      "line": "＿＿＿ אותך לאמא זה הצעד הנכון",
+      "word": "להביא"
+    }
   },
   {
     "id": "כאן-בשבילה",
@@ -6130,7 +8066,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a8/91/f3/a891f342-bf05-17aa-2506-8f79b3d90806/mzaf_5664374263822147481.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כמו ילד בלילות בוכה בסתר"
+    "lyricLine": "כמו ילד בלילות בוכה בסתר",
+    "nextLine": {
+      "line": "אולי אני חי בעולם של שקר",
+      "next": "אם מישהו אשם כאן זה אני"
+    },
+    "gap": {
+      "line": "ואולי ＿＿＿ היא עוד תשוב",
+      "word": "אליי"
+    }
   },
   {
     "id": "כל-הלילה",
@@ -6147,7 +8091,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/57/42/d5/5742d5bf-5563-dbd5-9b88-9edb0c3f50b1/mzaf_2260348564553576223.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "באמצע היום את מסתכלת עלי וזה לא סתם"
+    "lyricLine": "באמצע היום את מסתכלת עלי וזה לא סתם",
+    "nextLine": {
+      "line": "תשימי לי שיר שאת אוהבת",
+      "next": "באמצע היום את מתקרבת אלי וזה לא סתם"
+    },
+    "gap": {
+      "line": "אין לך סוף וזה ＿＿＿",
+      "word": "מסוכן"
+    }
   },
   {
     "id": "מיליון-שירים",
@@ -6164,7 +8116,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/88/25/b2/8825b236-e75d-a862-b0f1-8625c8b365d1/mzaf_16377027110272974024.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אתכם כאן עד הסוף"
+    "lyricLine": "אתכם כאן עד הסוף",
+    "nextLine": {
+      "line": "ויאללה ערב טוב",
+      "next": "חשוב לי להסביר, אין לכם מחיר"
+    },
+    "gap": {
+      "line": "אני ＿＿＿ איתכם חיים",
+      "word": "עושה"
+    }
   },
   {
     "id": "מסיבה-עם-פפיון",
@@ -6199,7 +8159,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/9b/92/b39b92ff-5748-dcb6-5677-0cfea42a854c/mzaf_16656410716071682874.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ולמה זה קל לך"
+    "lyricLine": "ולמה זה קל לך",
+    "nextLine": {
+      "line": "הנשמה שלי רצתה רק שקט",
+      "next": "היית לי עוגן והלכת"
+    },
+    "gap": {
+      "line": "איך יש לך לב ＿＿＿ עכשיו עם כל בחור?",
+      "word": "לצאת"
+    }
   },
   {
     "id": "קצת-שמח-קצת-עצוב",
@@ -6216,7 +8184,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3d/36/02/3d360277-e465-ee33-ea9e-94ee1b818607/mzaf_5032077645926429285.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "\"עוזבת\" את לא יכולה"
+    "lyricLine": "\"עוזבת\" את לא יכולה",
+    "nextLine": {
+      "line": "שטלטלו את הסירה",
+      "next": "לצד האושר השמחה, מתי תביני"
+    },
+    "gap": {
+      "line": "קצת מוזר, קצת לא ＿＿＿",
+      "word": "צפוי"
+    }
   },
   {
     "id": "תמיד-נשארת",
@@ -6233,7 +8209,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/29/c8/71/29c87147-720c-62aa-c1f2-2a20f73994ec/mzaf_17700593355598131106.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "נמאס שזה ככה מסובך"
+    "lyricLine": "נמאס שזה ככה מסובך",
+    "nextLine": {
+      "line": "אצלי במחשבות ובמחברת",
+      "next": "אל תצחקי אני התחלתי קצת לכתוב"
+    },
+    "gap": {
+      "line": "ומי ＿＿＿ עלייך בלילות",
+      "word": "ישמור"
+    }
   },
   {
     "id": "תן-מילה-טובה",
@@ -6250,7 +8234,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9d/f3/fa/9df3fa00-76bd-a2ec-4929-a14c122697a2/mzaf_14767553139340760499.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "איך פתאום הבנת"
+    "lyricLine": "איך פתאום הבנת",
+    "nextLine": {
+      "line": "לאן אתמול הלכת",
+      "next": "עכשיו אתה מבין שאין"
+    },
+    "gap": {
+      "line": "תן לה רק מילה ＿＿＿",
+      "word": "טובה"
+    }
   },
   {
     "id": "תני-סימן",
@@ -6267,7 +8259,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/07/a8/ff/07a8ff3b-c417-aba8-7885-72fab528fdb6/mzaf_16107385496156075014.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ואני כבר כמעט נעלם כמו ארמון ששוקע בחול"
+    "lyricLine": "ואני כבר כמעט נעלם כמו ארמון ששוקע בחול",
+    "nextLine": {
+      "line": "עד שתביני אותי לא אפסיק לנסות",
+      "next": "אחבק לך את כל השריטות"
+    },
+    "gap": {
+      "line": "כל ＿＿＿ עשויה מדמעות",
+      "word": "שתיקה"
+    }
   },
   {
     "id": "איזה-בוקר",
@@ -6284,7 +8284,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/77/16/6c/77166c80-9c94-d1a7-67a6-dc66917f4811/mzaf_11915703425447610134.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אני נושם אבל לא חי"
+    "lyricLine": "אני נושם אבל לא חי",
+    "nextLine": {
+      "line": "את מה זה ממכרת וואי",
+      "next": "אני נושם אבל לא חי"
+    },
+    "gap": {
+      "line": "שנינו יחד מת ＿＿＿",
+      "word": "מפחד"
+    }
   },
   {
     "id": "אין-כבר-מלחמה",
@@ -6301,7 +8309,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/56/98/47/569847a3-5957-480f-9718-46919b5440a2/mzaf_1851589518547998163.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ומזכיר לכולם שהכל זה בגללי"
+    "lyricLine": "ומזכיר לכולם שהכל זה בגללי",
+    "nextLine": {
+      "line": "אני עדיין אוהב זה לא עובר בקלות",
+      "next": "אז מזל שיש שירים ויום אחד את תשמעי"
+    },
+    "gap": {
+      "line": "עשיתי ＿＿＿ זה לא בסדר דברים שלא כתובים בספר",
+      "word": "טעויות"
+    }
   },
   {
     "id": "אין-לי-כח",
@@ -6352,7 +8368,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3c/ff/15/3cff15ba-24cc-350c-a2de-fb2a4bd44e24/mzaf_2020972238270369149.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "מחזיק לי תלב עם היד הקטנה"
+    "lyricLine": "מחזיק לי תלב עם היד הקטנה",
+    "nextLine": {
+      "line": "בשעות הקטנות על כל מה שתרצה להיות",
+      "next": "לנגב לך את הדמעות שרוצות להסתיר"
+    },
+    "gap": {
+      "line": "ואל ＿＿＿ יותר מדי בפנים זה יגיע ממך עד אלי",
+      "word": "תשמור"
+    }
   },
   {
     "id": "דבקה-בתל-אביב",
@@ -6371,7 +8395,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f3/a3/e1/f3a3e177-4663-a8b2-aad5-8d698aabab03/mzaf_12266445144535252098.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "והוא מסתובב שיכור"
+    "lyricLine": "והוא מסתובב שיכור",
+    "nextLine": {
+      "line": "מה ביקשתי סך הכל",
+      "next": "לבלות עם חברים"
+    },
+    "gap": {
+      "line": "לא יודעות ＿＿＿ לו שקל",
+      "word": "שאין"
+    }
   },
   {
     "id": "דבר-אליו",
@@ -6388,7 +8420,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/a8/a5/73a8a5ea-3a3d-f5f6-e1ad-7abad9e8a06d/mzaf_15343386804270968958.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ואל תחפש כאן אשמים"
+    "lyricLine": "ואל תחפש כאן אשמים",
+    "nextLine": {
+      "line": "אל תפסיק לחלום",
+      "next": "עוד יגיע היום שלך"
+    },
+    "gap": {
+      "line": "אתה תמיד תיהיה ＿＿＿ ומיוחד",
+      "word": "יחיד"
+    }
   },
   {
     "id": "החים-פאנן",
@@ -6405,7 +8445,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8f/1f/07/8f1f0743-02f1-fe3e-3e86-4920c96cda41/mzaf_7832282073654547796.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כולם מתודלקים הראש בזיקוקים"
+    "lyricLine": "כולם מתודלקים הראש בזיקוקים",
+    "nextLine": {
+      "line": "מוקף בחברים כאן כל הערב",
+      "next": "אני כבר בכוס החמישית"
+    },
+    "gap": {
+      "line": "אני אוהב כך ＿＿＿ כל סוף שבוע",
+      "word": "לבלות"
+    }
   },
   {
     "id": "ואת-אינך",
@@ -6422,7 +8470,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/17/63/7c/17637cb7-4213-fee0-7f4d-c29fb4626eee/mzaf_4257427379825617419.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "קחי את הבגדים"
+    "lyricLine": "קחי את הבגדים",
+    "nextLine": {
+      "line": "דיברתי גם עם אלוהים",
+      "next": "והוא שתק אז הוא מסכים"
+    },
+    "gap": {
+      "line": "רציתי רק ＿＿＿ זה מסתבך",
+      "word": "פשוט"
+    }
   },
   {
     "id": "זה-אני-&-מציאות-אחרת",
@@ -6489,7 +8545,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a7/b1/fb/a7b1fbb6-3d4b-936d-e651-039205599115/mzaf_4656627448011951350.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "מי צריך פה חברים"
+    "lyricLine": "מי צריך פה חברים",
+    "nextLine": {
+      "line": "כשהמצלמה נסגרת",
+      "next": "בא לי כבר למות"
+    },
+    "gap": {
+      "line": "ועכשיו את מטיילת לי ＿＿＿ העצבים",
+      "word": "בתוך"
+    }
   },
   {
     "id": "מלכת-היופי-&-מתגעגע",
@@ -6522,7 +8586,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9e/ec/36/9eec3614-b908-0e71-1656-a206878b86d7/mzaf_12341451334199749842.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "שגם סלעים הם נשברים"
+    "lyricLine": "שגם סלעים הם נשברים",
+    "nextLine": {
+      "line": "בין כל האנשים שבעולם",
+      "next": "אני רציתי להיות שלך"
+    },
+    "gap": {
+      "line": "ואיך פתאום המציאות ＿＿＿ סיוט",
+      "word": "הפכה"
+    }
   },
   {
     "id": "נחמות-מתוקות",
@@ -6539,7 +8611,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3d/a8/d7/3da8d776-ef77-502c-20e4-2073053694df/mzaf_13369920417229795428.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כי ככה זה לפעמים"
+    "lyricLine": "כי ככה זה לפעמים",
+    "nextLine": {
+      "line": "כי כולך יהלומים",
+      "next": "אז בשביל מה מלחמה?"
+    },
+    "gap": {
+      "line": "כבר נגמרו לי כל ＿＿＿",
+      "word": "השורות"
+    }
   },
   {
     "id": "נתתי-לך-תלב",
@@ -6556,7 +8636,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/98/ed/05/98ed051c-3cb9-fd04-8533-8e1b79e04ca9/mzaf_15085229835991792451.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אוסף לי עוד כוחות גם אחרייך"
+    "lyricLine": "אוסף לי עוד כוחות גם אחרייך",
+    "nextLine": {
+      "line": "היום אני מוכן לא שואל יותר לאן",
+      "next": "עכשיו הכל ביננו כבר מובן"
+    },
+    "gap": {
+      "line": "תראי אני חזק ＿＿＿ הכל",
+      "word": "למרות"
+    }
   },
   {
     "id": "סוף-ידוע",
@@ -6573,7 +8661,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/36/29/b1362920-4093-746a-6b16-1f624abd6d6a/mzaf_5594867758220996558.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ואיך פתאום מופיע געגוע"
+    "lyricLine": "ואיך פתאום מופיע געגוע",
+    "nextLine": {
+      "line": "לא מחפש היגיון",
+      "next": "תגידי מאמי מה איתנו"
+    },
+    "gap": {
+      "line": "אז רציתי רק לשאול ＿＿＿ מדוע",
+      "word": "אותך"
+    }
   },
   {
     "id": "עטלף-עיור",
@@ -6590,7 +8686,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/24/5c/5b/245c5bcf-9cf4-af03-5c6b-2a6241ae1681/mzaf_4526778320698161109.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "גם לעצמי סיפרתי סיפורים עליי"
+    "lyricLine": "גם לעצמי סיפרתי סיפורים עליי",
+    "nextLine": {
+      "line": "כשנגמר לי האוויר",
+      "next": "אני בוכה לבד ברכב"
+    },
+    "gap": {
+      "line": "זה מנקה ＿＿＿ עצב",
+      "word": "ממני"
+    }
   },
   {
     "id": "עיר-נמל",
@@ -6607,7 +8711,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b7/e9/1e/b7e91e51-c220-f904-e94e-cefd44869817/mzaf_5082354336069596120.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "מזכירים אותך בינתיים איש זקן לבד יושב לו"
+    "lyricLine": "מזכירים אותך בינתיים איש זקן לבד יושב לו",
+    "nextLine": {
+      "line": "מחפש טיפה של אושר",
+      "next": "איש אחד פושט ידיים"
+    },
+    "gap": {
+      "line": "מלטפת את המים לא ＿＿＿ לי פה חטף",
+      "word": "עוזר"
+    }
   },
   {
     "id": "עם-ישראל-חי",
@@ -6624,7 +8736,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/52/e6/e652e6ff-b445-5f5d-4c01-16d83f29b607/mzaf_2671399191842192094.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כולם יחזרו הביתה"
+    "lyricLine": "כולם יחזרו הביתה",
+    "nextLine": {
+      "line": "ויונה תפרוש כנפיים",
+      "next": "התקווה בת שנות 2000"
+    },
+    "gap": {
+      "line": "אז מי ＿＿＿ עלינו",
+      "word": "יכול"
+    }
   },
   {
     "id": "פופקורן",
@@ -6657,7 +8777,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/19/01/2d/19012dd4-c861-1f63-5d6c-c46d08099d26/mzaf_10314576145507916598.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "לאהוב אותך זה בא לי בקלות"
+    "lyricLine": "לאהוב אותך זה בא לי בקלות",
+    "nextLine": {
+      "line": "אם אני בוכה סימן שרע לי",
+      "next": "בחיוך קטן עושה שלום"
+    },
+    "gap": {
+      "line": "חפלה נדירה הלילה הם לא ＿＿＿",
+      "word": "ישנים"
+    }
   },
   {
     "id": "קצת-שמח-קצת-עצוב-&-כל-החלומות",
@@ -6708,7 +8836,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3a/06/23/3a062351-5d39-d2e6-a2b8-93219505b264/mzaf_10092128153974347345.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כל היום כבר נמאס מנפש משוטטת"
+    "lyricLine": "כל היום כבר נמאס מנפש משוטטת",
+    "nextLine": {
+      "line": "כל היום אין לי טעם כי זה בלעדיה",
+      "next": "מה רואים בהשתקפות עיניה שבנינו לא נשאר דבר"
+    },
+    "gap": {
+      "line": "תדעי יש מישהו שדואג לך ＿＿＿",
+      "word": "מרחוק"
+    }
   },
   {
     "id": "תופס-לך-את-הדמעות",
@@ -6725,7 +8861,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/33/96/e533969b-a5c5-ca05-2f5c-55559d9558fa/mzaf_12944308278763089583.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "איך אהבה כזאת הלכה לעזאזל"
+    "lyricLine": "איך אהבה כזאת הלכה לעזאזל",
+    "nextLine": {
+      "line": "זה מסוכן להיות לבד",
+      "next": "כמעט כבר משתגע"
+    },
+    "gap": {
+      "line": "תראי ＿＿＿ לא אמיתי",
+      "word": "אותי"
+    }
   },
   {
     "id": "2-דקות",
@@ -6806,7 +8950,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/79/77/55/797755aa-3bfa-1671-ee89-b0ceec31ab6d/mzaf_9011743412972212965.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "לא מכור למחיאות כפיים"
+    "lyricLine": "לא מכור למחיאות כפיים",
+    "nextLine": {
+      "line": "הכל מונח אצלי על הנייר",
+      "next": "יש מה להגיד ברוך ה'"
+    },
+    "gap": {
+      "line": "נר על החלון יין ＿＿＿",
+      "word": "בסלון"
+    }
   },
   {
     "id": "אין-לי-מזל",
@@ -6823,7 +8975,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/ab/f1/baabf190-95e7-7c31-25eb-e2c7fd484323/mzaf_4021356717645243610.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אני לא יכול להירגע"
+    "lyricLine": "אני לא יכול להירגע",
+    "nextLine": {
+      "line": "כי אני אצלה על אש קטנה הלב רותח",
+      "next": "תוותר אמרו לי חברים - וותר עלייה"
+    },
+    "gap": {
+      "line": "ואם הכל מן ＿＿＿",
+      "word": "אללה"
+    }
   },
   {
     "id": "את-לי-הנצח",
@@ -6842,7 +9002,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/f3/4d/d7f34db3-b256-222b-0caf-3c96e4a50138/mzaf_15081829271038813794.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "את לי כאב את נחמה"
+    "lyricLine": "את לי כאב את נחמה",
+    "nextLine": {
+      "line": "הרימי ראשך אל תהי עצובה",
+      "next": "אתן את חיי בשבילך אהובה בחיי"
+    },
+    "gap": {
+      "line": "כי אחרי המבול עוד ＿＿＿ לאהוב",
+      "word": "נחזור"
+    }
   },
   {
     "id": "בימים-של-עצב",
@@ -6875,7 +9043,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f6/ea/f6/f6eaf670-c68e-b285-120c-31e12224f383/mzaf_16573478222386700915.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כשעוד יום נגמר אני מדליק נרות"
+    "lyricLine": "כשעוד יום נגמר אני מדליק נרות",
+    "nextLine": {
+      "line": "תזכור להתקשר שיש לך קצת זמן",
+      "next": "תדע שבחיים בסוף הכל עובר"
+    },
+    "gap": {
+      "line": "ואם כואב לך אז ＿＿＿ עליי",
+      "word": "שיבוא"
+    }
   },
   {
     "id": "ילדת-מילים",
@@ -6892,7 +9068,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b1/80/b5/b180b551-f437-75e5-a670-5270562b8173/mzaf_6567604463246365350.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "הייתי לך כל החיים"
+    "lyricLine": "הייתי לך כל החיים",
+    "nextLine": {
+      "line": "מה אם תגידי לי כמה אתה אידיוט",
+      "next": "העיקר שאתה איתי"
+    },
+    "gap": {
+      "line": "אל ＿＿＿ לי רחוק מכאן",
+      "word": "תלכי"
+    }
   },
   {
     "id": "לילה-ושקט",
@@ -6909,7 +9093,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/18/0e/14180ef3-076c-fdac-f3fc-a92690da8415/mzaf_17154158948085166480.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "כבר שבוע אני בלעדייך"
+    "lyricLine": "כבר שבוע אני בלעדייך",
+    "nextLine": {
+      "line": "למה עכשיו זה קשה כל כך",
+      "next": "למה אני פה ולא איתך"
+    },
+    "gap": {
+      "line": "את הלב ＿＿＿ לך הכול",
+      "word": "שנתן"
+    }
   },
   {
     "id": "מביט-אל-השמים",
@@ -6990,7 +9182,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/20/dd/7120dd03-bcec-a45f-c6ac-8f26e0c2bc94/mzaf_5567872311818785480.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אז תחזרי לכאן גם אם זה לדקה"
+    "lyricLine": "אז תחזרי לכאן גם אם זה לדקה",
+    "nextLine": {
+      "line": "גם ככה הדרכים שלנו נפרדות",
+      "next": "זה סתם משחק מוחות את גם ככה השולטת"
+    },
+    "gap": {
+      "line": "היו ימים הלב היה רגוע ＿＿＿ כבר לא שואל מדוע",
+      "word": "היום"
+    }
   },
   {
     "id": "שכחתי-מזמן",
@@ -7007,7 +9207,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/aa/3e/2a/aa3e2aec-0291-0cfb-7987-37b1a561db54/mzaf_6659130425414337730.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אז תתני לי עוד רגע או כמה דקות"
+    "lyricLine": "אז תתני לי עוד רגע או כמה דקות",
+    "nextLine": {
+      "line": "בחדרך הקטן את כיבית האור",
+      "next": "שיותר לא אראה את הדרך לחזור"
+    },
+    "gap": {
+      "line": "תמיד בליבך הרגשתי ＿＿＿",
+      "word": "אורח"
+    }
   },
   {
     "id": "שלום-אהובתי",
@@ -7056,7 +9264,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dd/85/24/dd852450-164c-5ebe-ebdc-097698baf7ec/mzaf_12601867014774909352.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "והדמיון מכושף"
+    "lyricLine": "והדמיון מכושף",
+    "nextLine": {
+      "line": "והשינה לא שינה",
+      "next": "יותר מידיי ציפיות"
+    },
+    "gap": {
+      "line": "אני לא מוצא ＿＿＿ לרקוד עם שיר ישן",
+      "word": "עניין"
+    }
   },
   {
     "id": "אהבה-מנצחת-הכל",
@@ -7073,7 +9289,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/84/b5/a9/84b5a9ea-6502-1028-b0cb-a13ace4f2502/mzaf_4184582097113526534.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ויש את הלילות מדמיין מה את עושה"
+    "lyricLine": "ויש את הלילות מדמיין מה את עושה",
+    "nextLine": {
+      "line": "ולמה עכשיו את כל הסודות",
+      "next": "גילית למשהו אחר"
+    },
+    "gap": {
+      "line": "ושוב את ＿＿＿ לי בכל הדרכים",
+      "word": "עולה"
+    }
   },
   {
     "id": "אל-תבכי",
@@ -7122,7 +9346,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/45/7c/73457c1e-daeb-066d-7d12-050f74843371/mzaf_12818286407273927362.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "עכשיו שאת לא כאן"
+    "lyricLine": "עכשיו שאת לא כאן",
+    "nextLine": {
+      "line": "עדיין לא מצאתי לי תשובה",
+      "next": "ועוד שבת נכנסת"
+    },
+    "gap": {
+      "line": "כמו את ＿＿＿ שלנו",
+      "word": "הסוף"
+    }
   },
   {
     "id": "חדר-התמימות",
@@ -7139,7 +9371,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9f/98/4d/9f984df9-827e-5da2-6777-df7567abdaab/mzaf_16257325359559834861.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אדליק סיגריה עם עצמי"
+    "lyricLine": "אדליק סיגריה עם עצמי",
+    "nextLine": {
+      "line": "את מחקת את כל הרגעים",
+      "next": "ארזת לך את כל הבגדים"
+    },
+    "gap": {
+      "line": "ואת לא פה אני נשארתי כאן ＿＿＿ על הכאב",
+      "word": "לישון"
+    }
   },
   {
     "id": "חצי-חים",
@@ -7172,7 +9412,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/85/ac/b8/85acb8ed-18ba-71bc-f4fa-9d72e2bda3d2/mzaf_17530659717589136904.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אמרה לי שהיום אבוא לפגוש את ההורים"
+    "lyricLine": "אמרה לי שהיום אבוא לפגוש את ההורים",
+    "nextLine": {
+      "line": "כולם יוצאים הלילה ולא בא לי להבריז",
+      "next": "פתאום היא מתקשרת ואומרת בוא זריז"
+    },
+    "gap": {
+      "line": "ואבא שלה עושה לה עוד ＿＿＿ של לא מבין",
+      "word": "פרצוף"
+    }
   },
   {
     "id": "כלוב-זהב",
@@ -7189,7 +9437,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b4/d0/a7/b4d0a7f4-6c5c-54c9-aab7-e84793b40855/mzaf_17519161081870249110.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "כל הסיפור הזה נהייה גדול עליי"
+    "lyricLine": "כל הסיפור הזה נהייה גדול עליי",
+    "nextLine": {
+      "line": "היא זן נדיר בנוף ואין לה יופי ממוצע",
+      "next": "וגם הדיג'יי שם לה איזה שיר שהיא רוצה"
+    },
+    "gap": {
+      "line": "＿＿＿ חץ אני נופל לאט לאט",
+      "word": "שולחת"
+    }
   },
   {
     "id": "לא-פורח-בלעדיך",
@@ -7238,7 +9494,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c7/9e/d3/c79ed3f3-5959-7c4d-d798-27deb343736d/mzaf_17679211886394310520.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "מחביא את הגולדות רק מתחת לשולחן"
+    "lyricLine": "מחביא את הגולדות רק מתחת לשולחן",
+    "nextLine": {
+      "line": "נגן לי שיר ישן",
+      "next": "הוא היה מוכר פלאפל"
+    },
+    "gap": {
+      "line": "אני עף ברוח כמו הבושם ＿＿＿",
+      "word": "הישן"
+    }
   },
   {
     "id": "מחכה-לו",
@@ -7289,7 +9553,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c7/bc/ed/c7bced84-1c25-04b6-58d4-d2210abd94d8/mzaf_1476387479852183526.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "מתגעגע לריחות ההם שלך"
+    "lyricLine": "מתגעגע לריחות ההם שלך",
+    "nextLine": {
+      "line": "כמעט שבועיים אני עוצר את המכונית בצד הדרך",
+      "next": "כי גם ללב כואב בסוף נגמר הדלק"
+    },
+    "gap": {
+      "line": "אני ＿＿＿ בשבילנו סוף אחר",
+      "word": "רציתי"
+    }
   },
   {
     "id": "עוזב-את-העיר",
@@ -7322,7 +9594,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0a/0c/58/0a0c581a-be73-4b8e-7b2f-884e30ae3055/mzaf_1241103008486531400.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אני הייתי לא אני כשזה נגמר"
+    "lyricLine": "אני הייתי לא אני כשזה נגמר",
+    "nextLine": {
+      "line": "את בטח שבורה אני לא מצטער",
+      "next": "את שרפת לי ת'נשמה"
+    },
+    "gap": {
+      "line": "כל ＿＿＿ באוטו שירים עצובים",
+      "word": "הדרך"
+    }
   },
   {
     "id": "קלואי",
@@ -7355,7 +9635,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e1/df/73/e1df7352-9291-7c61-5628-d6feb23a7a31/mzaf_15479421916126952773.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "תגידי לי על מה?"
+    "lyricLine": "תגידי לי על מה?",
+    "nextLine": {
+      "line": "אם היה לך טוב איתי",
+      "next": "אז איך את מוותרת?"
+    },
+    "gap": {
+      "line": "לא אמרתי לך תודה על ＿＿＿ לי",
+      "word": "שהלכת"
+    }
   },
   {
     "id": "אם-רק-היתי",
@@ -7374,7 +9662,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/9e/4c/d49e4c41-9385-abea-9ea3-990c85abe700/mzaf_17938871026160410007.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "מלחין כמו לנון"
+    "lyricLine": "מלחין כמו לנון",
+    "nextLine": {
+      "line": "אמיץ כמעט כמו עמדי",
+      "next": "אז הייתי שולח שירי אהבה"
+    },
+    "gap": {
+      "line": "בשבילך הייתי קונה ＿＿＿ למדונה",
+      "word": "כרטיסים"
+    }
   },
   {
     "id": "אני-נשבע",
@@ -7481,7 +9777,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/d8/e4/e6d8e4a3-2ca2-9b33-1281-d09eae421677/mzaf_402523175589391561.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "שיש מרדף אחרי השם"
+    "lyricLine": "שיש מרדף אחרי השם",
+    "nextLine": {
+      "line": "בשמיים יש כבר פקק מהתפילות",
+      "next": "כי בשיגרה הזאת חיפשתי נחמות"
+    },
+    "gap": {
+      "line": "＿＿＿ שלי ספג את כל הדם",
+      "word": "והדם"
+    }
   },
   {
     "id": "דכאון-וגיטרה",
@@ -7518,7 +9822,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/32/78/c7/3278c733-f001-47a5-52c4-61230f349bf2/mzaf_15389036505021546073.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "זה החדש או הישן"
+    "lyricLine": "זה החדש או הישן",
+    "nextLine": {
+      "line": "כולם רואים לך בעיניים",
+      "next": "ובכל רגע שעובר"
+    },
+    "gap": {
+      "line": "＿＿＿ נרים עוד כוס לחיים",
+      "word": "בואו"
+    }
   },
   {
     "id": "הכל-טוב",
@@ -7573,7 +9885,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/81/52/9981522b-3013-3867-170a-3e471d7d331e/mzaf_1363202091044169613.plus.aac.p.m4a",
     "titleInLyrics": false,
-    "lyricLine": "אני סוחב את הימים"
+    "lyricLine": "אני סוחב את הימים",
+    "nextLine": {
+      "line": "בלי ליפול לשפתייך ברגש בכל יום",
+      "next": "איך הכל התפרק בדקה"
+    },
+    "gap": {
+      "line": "＿＿＿ שוב זה מתפרק לי מול העיניים",
+      "word": "ולמה"
+    }
   },
   {
     "id": "חיה-פצועה",
@@ -7642,7 +9962,15 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/f3/66/a7f36629-3e19-3979-c0d8-4bebda05b976/mzaf_3909920725230731636.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "או שלא הבנתי מה הרס לי את היום"
+    "lyricLine": "או שלא הבנתי מה הרס לי את היום",
+    "nextLine": {
+      "line": "כי את חיית מסיבות",
+      "next": "ואני חי על תפילות"
+    },
+    "gap": {
+      "line": "ואם את הולכת אז רק לא ＿＿＿",
+      "word": "איתו"
+    }
   },
   {
     "id": "כיכר-האכזבות",
@@ -7697,7 +10025,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/a4/19/67a4192e-2432-f4c4-f6bd-b27c68269a1b/mzaf_16210969908881804863.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "וזה הלב שלא מרגיש לי מסוגל"
+    "lyricLine": "וזה הלב שלא מרגיש לי מסוגל",
+    "nextLine": {
+      "line": "נסעתי קצת רחוק לבינתיים",
+      "next": "מה שרואים משם כבר לא רואים מכאן"
+    },
+    "gap": {
+      "line": "שמהכל אני קצת בקלות ＿＿＿",
+      "word": "נבהל"
+    }
   },
   {
     "id": "מחזיק-לך-את-היד",
@@ -7716,7 +10052,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/88/aa/d0/88aad063-5826-eab0-dabc-be4a6e8df376/mzaf_16717985724873800298.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "מי זה שמשאיר לך סימנים"
+    "lyricLine": "מי זה שמשאיר לך סימנים",
+    "nextLine": {
+      "line": "וכמו עיוור ברחוב",
+      "next": "אני חיפשתי אותנו"
+    },
+    "gap": {
+      "line": "תופס לך את הלב ＿＿＿ זכרונות",
+      "word": "ואוסף"
+    }
   },
   {
     "id": "מלנכוליה",
@@ -7789,7 +10133,15 @@
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/de/9a/de/de9adee1-3687-9c95-b3f8-a668dd2b7e38/mzaf_2834627936931581297.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "אז אאלתר בשבילך את כל מה שאפשר"
+    "lyricLine": "אז אאלתר בשבילך את כל מה שאפשר",
+    "nextLine": {
+      "line": "תארוז כבר ת'לב ואת מה שנשבר",
+      "next": "אני דפוק שניסיתי להיות מיוחד"
+    },
+    "gap": {
+      "line": "את רגילה לורדים ואני ＿＿＿",
+      "word": "למילים"
+    }
   },
   {
     "id": "פרק-ב",
@@ -7914,7 +10266,15 @@
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/78/07/2a780748-734c-9978-9ad1-7f7a243b9c38/mzaf_5579212228086599401.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "ואוהב אותך כמו שידעתי"
+    "lyricLine": "ואוהב אותך כמו שידעתי",
+    "nextLine": {
+      "line": "אם הייתי מקשיב באמת",
+      "next": "מפרש סימנים שהשארת לי"
+    },
+    "gap": {
+      "line": "והיית ＿＿＿ לי סודות",
+      "word": "מגלה"
+    }
   },
   {
     "id": "מפה-לשם",
@@ -7967,6 +10327,14 @@
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2a/c5/43/2ac5438b-71fe-b307-8bd6-81620d7d4086/mzaf_4333723541520926437.plus.aac.p.m4a",
     "titleInLyrics": true,
-    "lyricLine": "טיפשים, יצאו מרוששים מכל שמחה בלב"
+    "lyricLine": "טיפשים, יצאו מרוששים מכל שמחה בלב",
+    "nextLine": {
+      "line": "כן, היו בי צפיות לחיות איך שארצה לחיות",
+      "next": "להותיר עוד תהיות אם את בסוף תשובי"
+    },
+    "gap": {
+      "line": "＿＿＿ אני כבר לא כועס",
+      "word": "חזרי"
+    }
   }
 ]

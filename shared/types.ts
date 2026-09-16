@@ -23,6 +23,10 @@ export interface Song {
    * כי התשובה נאמרת באוזניים. undefined = לא ידוע, מתייחסים כאילו כן.
    */
   titleInLyrics?: boolean
+  /** זוג שורות רצופות מהשיר, לשאלת "מה השורה הבאה" */
+  nextLine?: { line: string; next: string }
+  /** שורה עם מילה שהוחסרה, והמילה עצמה */
+  gap?: { line: string; word: string }
 }
 
 export type QuestionKind =
@@ -42,6 +46,11 @@ export type QuestionKind =
   | 'lyric-open' // מאיזה שיר השורה, בהקלדה
   | 'album-order' // איזה אלבום יצא קודם
   | 'guest-count' // עם מי אייל שר הכי הרבה
+  | 'next-line' // מה השורה הבאה בשיר
+  | 'fill-gap' // איזו מילה חסרה בשורה
+  | 'oldest' // איזה מהשירים האלה הכי ותיק
+  | 'longest' // איזה מהשירים האלה הכי ארוך
+  | 'real-or-fake' // שיר אמיתי או שם מומצא
 
 export interface Question {
   id: string
