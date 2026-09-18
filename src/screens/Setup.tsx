@@ -3,6 +3,7 @@ import { availableKinds } from '../../shared/questions.ts'
 import type { Difficulty, QuestionKind } from '../../shared/types.ts'
 import type { RoomConfig } from '../../shared/protocol.ts'
 import { DIFFICULTY_LABELS, ERAS, KIND_LABELS, SONGS } from '../data.ts'
+import { unlockAudio } from '../audio-unlock.ts'
 
 interface Props {
   initial: RoomConfig
@@ -118,7 +119,12 @@ export function Setup({ initial, title, submitLabel, note, allowAudio = true, on
         <button
           type="button"
           disabled={tooNarrow}
-          onClick={() => onSubmit(config)}
+          onClick={() => {
+            // חייב לקרות בתוך הלחיצה עצמה, אחרת ספארי יחסום
+            // את הניגון בשאלות שאחריה
+            unlockAudio()
+            onSubmit(config)
+          }}
           className="btn-gold py-4 text-lg"
         >
           {submitLabel}

@@ -780,7 +780,7 @@
     "isTitleTrack": false,
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/bd/d8/78/bdd8785b-7705-b788-9195-815bbe1314a8/mzaf_9913417300408729821.plus.aac.p.m4a",
-    "titleInLyrics": false,
+    "titleInLyrics": true,
     "lyricLine": "שלא נדע לריב עוד לעולם -",
     "nextLine": {
       "line": "הסתכלי איך באוקיאנוס צפות הטעויות",
@@ -2908,7 +2908,7 @@
     "isTitleTrack": false,
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b1/50/c5/b150c51f-b74c-ee25-7483-4499aaf009c7/mzaf_3675667341241775433.plus.aac.p.m4a",
-    "titleInLyrics": false,
+    "titleInLyrics": true,
     "lyricLine": "נכנסת לי ללב, משם אין מוצא, יו",
     "nextLine": {
       "line": "נכנסת לי ללב, משם אין מוצא, יה",
@@ -4430,7 +4430,7 @@
     "isTitleTrack": false,
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3f/98/8a/3f988a20-5063-a8a7-6a58-c30d7e7aa641/mzaf_3401420144146195436.plus.aac.p.m4a",
-    "titleInLyrics": false,
+    "titleInLyrics": true,
     "lyricLine": "איך עכשיו תחייכי לעולם",
     "nextLine": {
       "line": "גם אם האושר ידפוק בדלתך",
@@ -4587,7 +4587,7 @@
     "isTitleTrack": false,
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/07/f3/07/07f307f5-bbc7-1df1-c34c-b969a71feb98/mzaf_4792518606579330139.plus.aac.p.m4a",
-    "titleInLyrics": false,
+    "titleInLyrics": true,
     "lyricLine": "כמה שאת עושה לי כאבים בלב",
     "nextLine": {
       "line": "לילה אתך גורם לי קצת להשתגע",
@@ -4692,7 +4692,7 @@
     "isTitleTrack": false,
     "difficulty": "easy",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9c/93/15/9c9315fc-c001-ffe9-6873-50c90808c92a/mzaf_12442160217004710282.plus.aac.p.m4a",
-    "titleInLyrics": false,
+    "titleInLyrics": true,
     "lyricLine": "לילות יגידו את חיי",
     "nextLine": {
       "line": "אסיט ראשי כשאביט על סף ביתך",
@@ -5002,7 +5002,7 @@
     "isTitleTrack": false,
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/99/fc/36/99fc3626-c352-7876-01f9-62896bcf2a53/mzaf_12837125744883179609.plus.aac.p.m4a",
-    "titleInLyrics": false,
+    "titleInLyrics": true,
     "lyricLine": "את עזבת וזה לא בגללי",
     "nextLine": {
       "line": "אך כל זה נגמר ואיננו",
@@ -5702,7 +5702,7 @@
     "isTitleTrack": false,
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/da/01/de/da01de72-7ddb-8e06-19dc-52c3c630eb33/mzaf_17703505399813036872.plus.aac.p.m4a",
-    "titleInLyrics": false,
+    "titleInLyrics": true,
     "lyricLine": "מחייך ויורדות לי דמעות",
     "nextLine": {
       "line": "איילן גולן: כמה ילדתי את צודקת",
@@ -5877,7 +5877,7 @@
     "isTitleTrack": false,
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cd/45/02/cd4502e5-4cb2-82fd-85b8-eb0396576982/mzaf_6338062826437716099.plus.aac.p.m4a",
-    "titleInLyrics": false,
+    "titleInLyrics": true,
     "lyricLine": "תתני לי קצת אוויר אל תעצרי לי את הלב",
     "nextLine": {
       "line": "תתני לי קצת אוויר אל תעצרי לי את הלב",
@@ -6136,7 +6136,7 @@
     "isTitleTrack": false,
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/fb/83/e6fb83b1-a0f0-5192-66b0-39a815297daf/mzaf_1633007575796869369.plus.aac.p.m4a",
-    "titleInLyrics": false,
+    "titleInLyrics": true,
     "lyricLine": "כשקשה להתקרב",
     "nextLine": {
       "line": "להביט בך בלילה",
@@ -6763,7 +6763,7 @@
     "isTitleTrack": false,
     "difficulty": "medium",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/17/45/5d/17455d33-1ec2-87df-3bdc-4bf270286db2/mzaf_11370351588773509873.plus.aac.p.m4a",
-    "titleInLyrics": false,
+    "titleInLyrics": true,
     "lyricLine": "את הצרות נשאיר מאחורינו",
     "nextLine": {
       "line": "האוטו מתקשה לסחוב",
@@ -8233,7 +8233,7 @@
     "isTitleTrack": false,
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9d/f3/fa/9df3fa00-76bd-a2ec-4929-a14c122697a2/mzaf_14767553139340760499.plus.aac.p.m4a",
-    "titleInLyrics": false,
+    "titleInLyrics": true,
     "lyricLine": "איך פתאום הבנת",
     "nextLine": {
       "line": "לאן אתמול הלכת",
@@ -9634,7 +9634,7 @@
     "isTitleTrack": false,
     "difficulty": "hard",
     "audioClip": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e1/df/73/e1df7352-9291-7c61-5628-d6feb23a7a31/mzaf_15479421916126952773.plus.aac.p.m4a",
-    "titleInLyrics": false,
+    "titleInLyrics": true,
     "lyricLine": "תגידי לי על מה?",
     "nextLine": {
       "line": "אם היה לך טוב איתי",

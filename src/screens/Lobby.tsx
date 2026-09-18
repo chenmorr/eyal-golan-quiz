@@ -1,5 +1,7 @@
+import { useEffect } from 'react'
 import { MAX_PLAYERS, type PlayerView, type RoomConfig } from '../../shared/protocol.ts'
 import { DIFFICULTY_LABELS } from '../data.ts'
+import { unlockAudio } from '../audio-unlock.ts'
 
 interface Props {
   code: string
@@ -13,6 +15,13 @@ interface Props {
 
 export function Lobby({ code, players, config, isHost, onStart, onEditConfig, onLeave }: Props) {
   const canStart = players.filter((p) => p.connected).length >= 1
+
+  // אורח לא לוחץ על "מתחילים", אז פותחים לו את הנגן בכל מגע ראשון
+  useEffect(() => {
+    const open = () => unlockAudio()
+    document.addEventListener('pointerdown', open, { once: true })
+    return () => document.removeEventListener('pointerdown', open)
+  }, [])
 
   async function share() {
     const text = `בוא נשחק חידון אייל גולן. קוד החדר: ${code}\n${location.origin}`
@@ -85,7 +94,10 @@ export function Lobby({ code, players, config, isHost, onStart, onEditConfig, on
             </button>
             <button
               type="button"
-              onClick={onStart}
+              onClick={() => {
+                unlockAudio()
+                onStart()
+              }}
               disabled={!canStart}
               className="btn-gold py-4 text-lg"
             >

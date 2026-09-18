@@ -106,7 +106,21 @@ for (const song of songs) {
     .map((l) => l.trim())
     .filter((l) => l.length >= 12 && l.length <= 60 && /[א-ת]/.test(l))
 
-  const titleAppears = lines.some((l) => normalize(l).includes(title))
+  // בדיקה מחמירה בכוונה. התאמה מדויקת בלבד פספסה המון: שיר בשם
+  // "אוהב אותך" ששר "אני אוהב אותך כל כך" לא נתפס, והשחקן שמע את
+  // התשובה. לכן גם רוב המילים של השם, וגם מילה ארוכה ומזוהה אחת,
+  // נחשבות כאילו השם נשמע.
+  const titleWords = title.split(' ').filter((w) => w.length >= 3)
+  const body = lines.map(normalize).join(' ')
+
+  const exact = body.includes(title)
+  const mostWords =
+    titleWords.length >= 2 &&
+    titleWords.filter((w) => body.includes(w)).length / titleWords.length >= 0.6
+  // מילה ייחודית וארוכה משם השיר שמופיעה בשיר מסגירה אותו כמעט תמיד
+  const rareWord = titleWords.some((w) => w.length >= 5 && body.includes(w))
+
+  const titleAppears = exact || mostWords || rareWord
   song.titleInLyrics = titleAppears
   if (titleAppears) flagged++
 

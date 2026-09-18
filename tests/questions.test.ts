@@ -550,3 +550,45 @@ describe('אמיתי או המצאה', () => {
     }
   })
 })
+
+describe('תדירות לפי גודל המאגר', () => {
+  // הבעיה שזה פותר: סוג שנשען על עשרים שירים הופיע באותה תדירות
+  // כמו סוג שנשען על ארבע מאות, וזו הייתה התחושה של "אותם שירים"
+  it('סוג עם מאגר קטן מופיע פחות מסוג עם מאגר גדול', () => {
+    const counts = new Map<string, number>()
+    for (let i = 0; i < 200; i++) {
+      for (const q of generateQuiz(SONGS, { seed: `sup-${i}`, questionCount: 10 })) {
+        counts.set(q.kind, (counts.get(q.kind) ?? 0) + 1)
+      }
+    }
+    const identify = (counts.get('audio-open') ?? 0) + (counts.get('audio') ?? 0)
+    const yearly = (counts.get('year') ?? 0) + (counts.get('audio-year') ?? 0)
+    // זיהוי שיר נשען על פחות מ-30 שירים, שנה על יותר מ-400
+    expect(identify).toBeLessThan(yearly)
+  })
+
+  it('אף סוג לא תופס יותר מעשירית מהשאלות', () => {
+    const counts = new Map<string, number>()
+    let total = 0
+    for (let i = 0; i < 200; i++) {
+      for (const q of generateQuiz(SONGS, { seed: `share-${i}`, questionCount: 10 })) {
+        counts.set(q.kind, (counts.get(q.kind) ?? 0) + 1)
+        total++
+      }
+    }
+    for (const [kind, n] of counts) {
+      expect(n / total, `${kind} תופס ${Math.round((n / total) * 100)}%`).toBeLessThan(0.1)
+    }
+  })
+
+  it('עשרה משחקים רצופים כמעט בלי חזרות', () => {
+    const seen = new Map<string, number>()
+    for (let i = 0; i < 10; i++) {
+      for (const q of generateQuiz(SONGS, { seed: `ten-${i}`, questionCount: 10 })) {
+        seen.set(q.id, (seen.get(q.id) ?? 0) + 1)
+      }
+    }
+    const repeated = [...seen.values()].filter((n) => n > 1).length
+    expect(repeated, `${repeated} שאלות חזרו ב-100 שאלות`).toBeLessThanOrEqual(6)
+  })
+})

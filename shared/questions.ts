@@ -88,6 +88,25 @@ interface Generator {
   weight: number
   ready(pool: Pool): boolean
   make(rng: Rng, pool: Pool, used: Set<string>): Question | null
+  /**
+   * כמה שאלות שונות הסוג הזה יכול בכלל לייצר מהמאגר הנוכחי.
+   * זה מה שמונע את התחושה של "כבר ראיתי את זה": סוג שנשען על
+   * עשרים שירים לא אמור להופיע באותה תדירות כמו סוג שנשען על
+   * ארבע מאות, גם אם הוא כיפי יותר.
+   */
+  supply(pool: Pool): number
+}
+
+/**
+ * משקל אחרי התחשבות בגודל המאגר. מתחת לסף הזה הסוג מדולל יחסית,
+ * מעליו הוא מקבל את מלוא המשקל שלו.
+ */
+const HEALTHY_SUPPLY = 60
+
+function effectiveWeight(g: Generator, pool: Pool): number {
+  const supply = g.supply(pool)
+  if (supply <= 0) return 0
+  return g.weight * Math.min(1, supply / HEALTHY_SUPPLY)
 }
 
 /**
@@ -148,6 +167,7 @@ const GENERATORS: Generator[] = [
     // באיזו שנה יצא השיר
     kind: 'year',
     weight: 3,
+      supply: (p) => p.dated.length,
     ready: (p) => p.dated.length >= 10 && p.years.length >= 4,
     make(rng, pool, used) {
       const song = pickUnused(rng, pool.dated, used)
@@ -170,6 +190,7 @@ const GENERATORS: Generator[] = [
     // מאיזה אלבום השיר
     kind: 'album',
     weight: 3,
+      supply: (p) => p.dated.length,
     ready: (p) => p.albums.length >= 4 && p.dated.length >= 10,
     make(rng, pool, used) {
       const song = pickUnused(rng, pool.dated, used)
@@ -195,6 +216,7 @@ const GENERATORS: Generator[] = [
     // מה יצא קודם
     kind: 'which-first',
     weight: 2,
+      supply: (p) => p.dated.length,
     ready: (p) => p.dated.length >= 20,
     make(rng, pool, used) {
       const a = pickUnused(rng, pool.dated, used)
@@ -220,6 +242,7 @@ const GENERATORS: Generator[] = [
     // איזה מהשירים האלה מהאלבום הזה
     kind: 'album-song',
     weight: 2,
+      supply: (p) => [...p.byAlbum.values()].filter((v) => v.length >= 2).length * 3,
     ready: (p) => [...p.byAlbum.values()].filter((v) => v.length >= 2).length >= 3,
     make(rng, pool, used) {
       const candidates = [...pool.byAlbum.entries()].filter(([, songs]) => songs.length >= 2)
@@ -248,6 +271,7 @@ const GENERATORS: Generator[] = [
     // עם מי הוא שר את זה
     kind: 'feature',
     weight: 2,
+      supply: (p) => p.songs.filter((s) => s.features.some((f) => p.artists.includes(f))).length,
     ready: (p) => p.artists.length >= 4,
     make(rng, pool, used) {
       const duets = pool.songs.filter(
@@ -273,6 +297,7 @@ const GENERATORS: Generator[] = [
     // איזה שיר נתן לאלבום את שמו
     kind: 'title-track',
     weight: 1,
+      supply: (p) => p.dated.filter((s) => s.isTitleTrack).length,
     ready: (p) => p.songs.filter((s) => s.isTitleTrack).length >= 3,
     make(rng, pool, used) {
       const titleTracks = pool.dated.filter((s) => s.isTitleTrack && !used.has(s.id))
@@ -300,6 +325,7 @@ const GENERATORS: Generator[] = [
     // איזה אלבום יצא בשנה הזאת
     kind: 'era',
     weight: 1,
+      supply: (p) => p.albums.length,
     ready: (p) => p.albums.length >= 5,
     make(rng, pool, used) {
       const albums = pool.albums.filter((a) => !used.has(`album:${a.title}`))
@@ -323,6 +349,7 @@ const GENERATORS: Generator[] = [
     // איזה שיר לא שייך לחבורה
     kind: 'odd-one-out',
     weight: 1,
+      supply: (p) => [...p.byAlbum.values()].filter((v) => v.length >= 3).length * 3,
     ready: (p) => [...p.byAlbum.values()].filter((v) => v.length >= 3).length >= 2,
     make(rng, pool, used) {
       const rich = [...pool.byAlbum.entries()].filter(([, songs]) => songs.length >= 3)
@@ -355,6 +382,7 @@ const GENERATORS: Generator[] = [
     // מופיע במילים הוא נשמע באוזניים והשאלה מגלה את עצמה.
     kind: 'audio-open',
     weight: 3,
+      supply: (p) => p.audioSafe.length,
     ready: (p) => p.audioSafe.length >= 1,
     make(rng, pool, used) {
       const withAudio = pool.audioSafe.filter((s) => !used.has(s.id))
@@ -382,6 +410,7 @@ const GENERATORS: Generator[] = [
     // נחש את השיר מהקטע — נוצרת רק כשיש קבצי אודיו
     kind: 'audio',
     weight: 2,
+      supply: (p) => p.audioSafe.length,
     ready: (p) => p.audioSafe.length >= 4,
     make(rng, pool, used) {
       const withAudio = pool.audioSafe.filter((s) => !used.has(s.id))
@@ -407,6 +436,7 @@ const GENERATORS: Generator[] = [
     // זה חצי מהדרך, עדיין צריך לדעת באיזה אלבום הוא יצא.
     kind: 'audio-album',
     weight: 3,
+      supply: (p) => p.audioAny.length,
     ready: (p) => p.audioAny.length >= 4 && p.albums.length >= 4,
     make(rng, pool, used) {
       const candidates = pool.audioAny.filter((s) => s.album && s.year && !used.has(s.id))
@@ -436,6 +466,7 @@ const GENERATORS: Generator[] = [
     // באיזו שנה יצא הקטע
     kind: 'audio-year',
     weight: 3,
+      supply: (p) => p.audioAny.length,
     ready: (p) => p.audioAny.length >= 4 && p.years.length >= 4,
     make(rng, pool, used) {
       const candidates = pool.audioAny.filter((s) => s.year && !used.has(s.id))
@@ -461,6 +492,7 @@ const GENERATORS: Generator[] = [
     // מאיזה שיר השורה, בהקלדה
     kind: 'lyric-open',
     weight: 3,
+      supply: (p) => p.withLyrics.length,
     ready: (p) => p.withLyrics.length >= 1,
     make(rng, pool, used) {
       const candidates = pool.withLyrics.filter((s) => !used.has(s.id))
@@ -487,6 +519,7 @@ const GENERATORS: Generator[] = [
     // איזה אלבום יצא קודם
     kind: 'album-order',
     weight: 2,
+      supply: (p) => p.albums.length * 2,
     ready: (p) => p.albums.length >= 6,
     make(rng, pool, used) {
       const a = pick(rng, pool.albums)
@@ -513,6 +546,7 @@ const GENERATORS: Generator[] = [
     // עם מי אייל שר הכי הרבה
     kind: 'guest-count',
     weight: 1,
+      supply: () => 1,
     ready: (p) => p.artists.length >= 4,
     make(rng, pool, used) {
       const key = 'guestcount'
@@ -543,6 +577,7 @@ const GENERATORS: Generator[] = [
     // מאיזה שיר השורה — ארבע אפשרויות
     kind: 'lyric',
     weight: 2,
+      supply: (p) => p.withLyrics.length,
     ready: (p) => p.withLyrics.length >= 4,
     make(rng, pool, used) {
       const withLyrics = pool.withLyrics.filter((s) => !used.has(s.id))
@@ -567,6 +602,7 @@ const GENERATORS: Generator[] = [
     // השורה שבאה אחרי ולא ניחוש.
     kind: 'next-line',
     weight: 3,
+      supply: (p) => p.withNextLine.length,
     ready: (p) => p.withNextLine.length >= 4,
     make(rng, pool, used) {
       const candidates = pool.withNextLine.filter((s) => !used.has(s.id))
@@ -594,6 +630,7 @@ const GENERATORS: Generator[] = [
     // איזו מילה חסרה בשורה
     kind: 'fill-gap',
     weight: 3,
+      supply: (p) => p.withGap.length,
     ready: (p) => p.withGap.length >= 4 && p.gapWords.length >= 6,
     make(rng, pool, used) {
       const candidates = pool.withGap.filter((s) => !used.has(s.id))
@@ -617,6 +654,7 @@ const GENERATORS: Generator[] = [
     // איזה מהארבעה הכי ותיק
     kind: 'oldest',
     weight: 2,
+      supply: (p) => p.dated.length,
     ready: (p) => p.dated.length >= 20,
     make(rng, pool, used) {
       const four = sample(rng, pool.dated, 4)
@@ -647,6 +685,7 @@ const GENERATORS: Generator[] = [
     // איזה מהארבעה הכי ארוך
     kind: 'longest',
     weight: 1,
+      supply: (p) => p.songs.filter((s) => s.lengthMs).length,
     ready: (p) => p.songs.filter((s) => s.lengthMs).length >= 20,
     make(rng, pool, used) {
       // מעל שמונה דקות זו כמעט תמיד מחרוזת או גרסת הופעה, ואז
@@ -678,6 +717,7 @@ const GENERATORS: Generator[] = [
     // אז הוא נשמע לגמרי סביר — וזה מה שהופך את זה לקשה.
     kind: 'real-or-fake',
     weight: 2,
+      supply: (p) => p.dated.length,
     ready: (p) => p.dated.length >= 30,
     make(rng, pool, used) {
       const real = pick(rng, pool.dated)
@@ -781,7 +821,7 @@ export function generateQuiz(allSongs: Song[], config: QuizConfig): Question[] {
         : available
     const pickFrom = capped.length ? capped : available
 
-    const generator = weightedPick(rng, pickFrom)
+    const generator = weightedPick(rng, pickFrom, pool)
     const question = generator.make(rng, pool, used)
     if (!question || seenIds.has(question.id)) continue
 
@@ -794,11 +834,13 @@ export function generateQuiz(allSongs: Song[], config: QuizConfig): Question[] {
   return questions
 }
 
-function weightedPick(rng: Rng, generators: Generator[]): Generator {
-  const total = generators.reduce((sum, g) => sum + g.weight, 0)
+function weightedPick(rng: Rng, generators: Generator[], pool: Pool): Generator {
+  const weights = generators.map((g) => effectiveWeight(g, pool))
+  const total = weights.reduce((sum, w) => sum + w, 0)
+  if (total <= 0) return generators[generators.length - 1]
   let roll = rng() * total
-  for (const g of generators) {
-    roll -= g.weight
+  for (const [i, g] of generators.entries()) {
+    roll -= weights[i]
     if (roll <= 0) return g
   }
   return generators[generators.length - 1]

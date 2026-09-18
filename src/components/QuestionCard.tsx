@@ -101,6 +101,7 @@ export function QuestionCard({
           src={question.audioClip}
           seconds={question.clipSeconds ?? 6}
           questionId={question.id}
+          startAt={question.clipStart ?? 0}
           unlocked={revealed !== null}
         />
       )}
